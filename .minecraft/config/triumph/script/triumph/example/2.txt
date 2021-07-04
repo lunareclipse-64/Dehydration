@@ -1,0 +1,8 @@
+setIcon(<minecraft:book>)
+setTitle("端点星市长")
+setDescription("前五十年唯一任务")
+addParent("triumph:example/t")
+setPos(0,-25)
+hideLines()
+criteria = addCriteria("impossible", "minecraft:impossible")
+setFrameType("CHALLENGE")

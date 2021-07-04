@@ -1,0 +1,33 @@
+{
+    "machine": "orbital_transceiver",
+    "registryName": "transceiver1",
+    "recipeTime": 120,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 50
+        },
+        {
+            "type": "grid",
+            "io-type": "input",
+            "power" : 16
+        },
+		{
+            "type": "item",
+            "io-type": "input",
+            "item": "immersiveengineering:blueprint",
+            "nbt": {
+                "blueprint": "electronics"
+            }
+        },
+        {
+        	"type": "item",
+        	"io-type": "output",
+        	"item": "immersiveengineering:blueprint",
+            "nbt": {
+                "blueprint": "GPChannels"
+            }
+        }
+    ]
+}

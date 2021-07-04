@@ -1,0 +1,63 @@
+{
+    "priority": 1000000000001,
+	"populate": {
+	    "dirt": {
+			"distribution": "uniform",
+			"generator": {
+			    "block": {
+				    "name":"biomesoplenty:dirt",
+					"properties": {
+					    "coarse":"true",
+						"variant":"sandy"
+					}
+				},
+				"material": "minecraft:sandstone",
+				"cluster-size":128
+			},
+			"cluster-count": 1,
+			"min-height": 62,
+			"max-height": 75,
+			"chunk-chance": 8,
+			"retrogen": "true",
+			"biome": "all"
+		},
+		"salt": {
+			"distribution": "uniform",
+			"generator": {
+			    "block": {
+				    "name":"rockhounding_chemistry:misc_blocks_a",
+					"properties": {
+						"variant":"poor_raw_salt"
+					}
+				},
+				"material": "minecraft:sandstone",
+				"cluster-size":128
+			},
+			"cluster-count": 1,
+			"min-height": 62,
+			"max-height": 75,
+			"chunk-chance": 4,
+			"retrogen": "true",
+			"biome": "all"
+		},
+		"carbonate": {
+			"distribution": "uniform",
+			"generator": {
+			    "block": {
+				    "name":"primal:carbonate_stone",
+					"properties": {
+						"type":"normal"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size":128
+			},
+			"cluster-count": 4,
+			"min-height": 12,
+			"max-height": 60,
+			"chunk-chance": 6,
+			"retrogen": "true",
+			"biome": "all"
+		}
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "config_version":{
+	    "id":"dehydration",
+		"version":1
+	},
+	"dimensions":[
+	    {
+		     "dim": 1,
+            "unregister": true
+		},
+		{
+            "dim": -1,
+            "unregister": true
+        },
+		{
+		    "dim":2333,
+			"biome": "biometweaker:dehydration",
+			"dimensiontype":{
+			    "id":2333,
+				"name":"Dehydration",
+				"suffix":"_dim2333",
+				"keeploaded":false,
+				"worldprovider": "WorldProviderSurfaceJED",
+				"require_exact_match": true
+			},
+			"jed":{
+			    "CustomDayCycle": true,
+                "DayLength": 8000,
+                "NightLength": 8000,
+                "SkyColor": "ebf0c5",
+                "CloudColor": "f2bc50",
+                "FogColor": "f2bc50",
+                "CloudHeight": 220
+			},
+			"worldinfo_onetime": {
+                "generatorName": "BIOMESOP"
+			}
+		}
+	]
+}

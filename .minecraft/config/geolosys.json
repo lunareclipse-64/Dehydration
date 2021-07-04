@@ -1,0 +1,420 @@
+{
+	"ores": [{
+			"blocks": [
+				"minecraft:coal_ore",
+				98,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample_vanilla:0",
+				100
+			],
+			"yMin": 8,
+			"yMax": 78,
+			"chance": 7,
+			"size": 68,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.7
+		},
+		{
+			"blocks": [
+				"geolosys:ore_vanilla:1",
+				98,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample_vanilla:1",
+				100
+			],
+			"yMin": 5,
+			"yMax": 12,
+			"chance": 5,
+			"size": 60,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.75
+		},
+		{
+			"blocks": [
+				"geolosys:ore_vanilla:2",
+				98,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample_vanilla:2",
+				100
+			],
+			"yMin": 5,
+			"yMax": 32,
+			"chance": 4,
+			"size": 52,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.9
+		},
+		{
+			"blocks": [
+				"geolosys:ore_vanilla:3",
+				83,
+				"chisel:limestone2:7",
+				15,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample_vanilla:3",
+				100
+			],
+			"yMin": 10,
+			"yMax": 32,
+			"chance": 4,
+			"size": 44,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.9
+		},
+		{
+			"blocks": [
+				"thaumcraft:ore_quartz",
+				73,
+				"thaumcraft:ore_cinnabar",
+				25,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample_vanilla:4",
+				100
+			],
+			"yMin": 12,
+			"yMax": 50,
+			"chance": 6,
+			"size": 60,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.8
+		},
+		{
+			"blocks": [
+				"geolosys:ore_vanilla:5",
+				98,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample_vanilla:5",
+				100
+			],
+			"yMin": 2,
+			"yMax": 16,
+			"chance": 3,
+			"size": 44,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.9
+		},
+		{
+			"blocks": [
+				"geolosys:ore_vanilla:6",
+				88,
+				"geolosys:ore:4",
+                10,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample_vanilla:6",
+				100
+			],
+			"yMin": 4,
+			"yMax": 32,
+			"chance": 2,
+			"size": 22,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.95
+		},
+		{
+			"blocks": [
+				"geolosys:ore:0",
+				88,
+				"forestry:resources",
+				10,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample:0",
+				100
+			],
+			"yMin": 32,
+			"yMax": 60,
+			"chance": 6,
+			"size": 64,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.85
+		},
+		{
+			"blocks": [
+				"geolosys:ore:1",
+				88,
+				"minecraft:clay",
+				10,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample:1",
+				100
+			],
+			"yMin": 6,
+			"yMax": 32,
+			"chance": 4,
+			"size": 76,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density":0.95
+		},
+		{
+			"blocks": [
+				"geolosys:ore:2",
+				68,
+				"geolosys:ore:3",
+				30,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample:2",
+				80,
+				"geolosys:ore_sample:3",
+				20
+			],
+			"yMin": 30,
+			"yMax": 56,
+			"chance": 10,
+			"size": 75,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.95
+		},
+		{
+			"blocks": [
+				"geolosys:ore:4",
+				58,
+				"geolosys:ore:5",
+				40,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample:4",
+				100
+			],
+			"yMin": 44,
+			"yMax": 68,
+			"chance": 5,
+			"size": 44,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.85
+		},
+		{
+			"blocks": [
+				"geolosys:ore:6",
+				68,
+				"geolosys:ore:10",
+				30,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample:6",
+				100
+			],
+			"yMin": 16,
+			"yMax": 50,
+			"chance": 4,
+			"size": 70,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.9
+		},
+		{
+			"blocks": [
+				"geolosys:ore:7",
+				98,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample:7",
+				100
+			],
+			"yMin": 45,
+			"yMax": 70,
+			"chance": 3,
+			"size": 65,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.9
+		},
+		{
+			"blocks": [
+				"geolosys:ore:8",
+				78,
+				"thermalfoundation:ore",
+				20,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample:8",
+				100
+			],
+			"yMin": 3,
+			"yMax": 25,
+			"chance": 2,
+			"size": 32,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.9
+		},
+		{
+			"blocks": [
+				"thermalfoundation:ore",
+				93,
+				"geolosys:ore:8",
+				5,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample:8",
+				100
+			],
+			"yMin": 20,
+			"yMax": 40,
+			"chance": 9,
+			"size": 50,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.9
+		},
+		{
+			"blocks": [
+				"immersiveengineering:ore:5",
+				68,
+				"geolosys:ore:9",
+				30,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample:9",
+				100
+			],
+			"yMin": 8,
+			"yMax": 33,
+			"chance": 3,
+			"size": 56,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.95
+		},
+		{
+			"blocks": [
+				"appliedenergistics2:quartz_ore",
+				83,
+				"thaumcraft:ore_quartz",
+				15,
+				"rockhounding_chemistry:uninspected_mineral",
+				2
+			],
+			"samples": [
+				"geolosys:ore_sample:10",
+				100
+			],
+			"yMin": 5,
+			"yMax": 15,
+			"chance": 5,
+			"size": 48,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 0.9
+		}
+	],
+	"stones": [{
+			"block": "minecraft:stone:1",
+			"size": 40,
+			"chance": 10,
+			"yMin": 2,
+			"yMax": 70,
+			"dimBlacklist": [
+				-1,
+				1
+			]
+		},
+		{
+			"block": "minecraft:stone:3",
+			"size": 40,
+			"chance": 10,
+			"yMin": 2,
+			"yMax": 70,
+			"dimBlacklist": [
+				-1,
+				1
+			]
+		},
+		{
+			"block": "minecraft:stone:5",
+			"size": 40,
+			"chance": 10,
+			"yMin": 2,
+			"yMax": 70,
+			"dimBlacklist": [
+				-1,
+				1
+			]
+		}
+	]
+}

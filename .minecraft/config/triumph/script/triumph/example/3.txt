@@ -1,0 +1,8 @@
+setIcon(<minecraft:diamond_sword>)
+setTitle("阿瓦达索命")
+setDescription("根本就不需要法杖")
+addParent("triumph:example/t")
+setPos(25,0)
+hideLines()
+criteria = addCriteria("impossible", "minecraft:impossible")
+setFrameType("CHALLENGE")

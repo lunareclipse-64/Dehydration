@@ -1,0 +1,2739 @@
+{
+    "registryname": "orbital_transceiver",
+    "localizedname": "轨道收发器",
+    "color": "A6C2BF",
+    "requires-blueprint": true,
+    "parts": [
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "qmd:beamline@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "qmd:beamline@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "qmd:beamline@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "qmd:beamline@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": [-3,-2,-1,0,1,2,3],
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration0@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -3,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -3,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration0@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -3,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": [-1,0,1],
+            "y": -4,
+            "z": 0,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": [-1,0,1],
+            "y": -4,
+            "z": 10,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -3,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -3,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration0@3"
+            ]
+        },
+        {
+            "x": [-1,0,1],
+            "y": -5,
+            "z": 9,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -3,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -4,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration0@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -4,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration0@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -4,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -3,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": [-3,-2,-1,0,1,2,3],
+            "y": -1,
+            "z": 10,
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -5,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -3,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration0@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -5,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration0@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -3,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -5,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 10,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 10,
+            "elements": [
+                "qmd:beamline@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 10,
+            "elements": [
+                "qmd:beamline@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 10,
+            "elements": [
+                "modularmachinery:blockenergyinputhatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -4,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": [-1,0,1],
+            "y": -2,
+            "z": 9,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 10,
+            "elements": [
+                "qmd:beamline@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -4,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration0@3"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 10,
+            "elements": [
+                "qmd:beamline@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -4,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 10,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 10,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -5,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": [-1,0,1],
+            "y": -3,
+            "z": 8,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -5,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:metal_decoration0@3"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -5,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 9,
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 9,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 10,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 10,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 9,
+            "elements": [
+                "qmd:beamline@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 10,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": [-1,0,1],
+            "y": -4,
+            "z": 7,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 9,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -5,
+            "z": 6,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 10,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -5,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -5,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -5,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -5,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -5,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@6"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -5,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 8,
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -5,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -5,
+            "z": 6,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -4,
+            "z": 6,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -4,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -4,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 9,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "qmd:beamline@2"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -4,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -4,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -4,
+            "z": 6,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -3,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -3,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -5,
+            "z": 5,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -5,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -5,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 7,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -5,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -5,
+            "z": 5,
+            "elements": [
+                "modularmagic:blockgridproviderinput"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -5,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@6"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -5,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@4"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -5,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@4"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -3,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -5,
+            "z": 5,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -3,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "qmd:beamline@2"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -4,
+            "z": 5,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -4,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 9,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -4,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -4,
+            "z": [4,5,6],
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "chisel:energizedvoidstone@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 6,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -4,
+            "z": 5,
+            "elements": [
+                "qmd:beamline@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -4,
+            "z": [4,5,6],
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -4,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@4"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "qmd:beamline@2"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -4,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@4"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -2,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -4,
+            "z": 5,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -3,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@4"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -3,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@4"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -5,
+            "z": 4,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -3,
+            "z": [4,5,6],
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 8,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -5,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 6,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -5,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 6,
+            "elements": [
+                "chisel:iron@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -5,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -3,
+            "z": 5,
+            "elements": [
+                "qmd:beamline@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 6,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -5,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -5,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -5,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -3,
+            "z": [4,5,6],
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -5,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -3,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@4"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -5,
+            "z": 4,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -3,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@4"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "qmd:beamline@2"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@4"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -4,
+            "z": 4,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -2,
+            "z": [4,5,6],
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -4,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 8,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -4,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "chisel:iron@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 5,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "chisel:gold@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 5,
+            "elements": [
+                "chisel:iron@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "chisel:iron@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 5,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -4,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -2,
+            "z": [4,5,6],
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "qmd:beamline@2"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -4,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -2,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration0@4"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -4,
+            "z": 4,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": [2,3,4,5,6,7,8],
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -3,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -3,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 8,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 5,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 6,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 5,
+            "elements": [
+                "chisel:iron@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 6,
+            "elements": [
+                "chisel:iron@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 5,
+            "elements": [
+                "chisel:gold@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 6,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -5,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 5,
+            "elements": [
+                "chisel:iron@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -5,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:metal_decoration0@3"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 5,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -5,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 6,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -3,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": [2,3,4,5,6,7,8],
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -3,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": 6,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "modularmachinery:blockinputbus"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "qmd:beamline@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "qmd:beamline@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "chisel:energizedvoidstone@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 7,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "chisel:gold@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 6,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "minecraft:beacon"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 4,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "chisel:gold@11"
+            ]
+        },
+        {
+            "x": [-1,0,1],
+            "y": -4,
+            "z": 3,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "chisel:energizedvoidstone@6"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "qmd:beamline@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "qmd:beamline@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 6,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "modularmachinery:blockoutputbus"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -2,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 7,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "chisel:iron@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "rockhounding_chemistry:alloy_blocks_gems@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "chisel:iron@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "chisel:iron@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -5,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -5,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration0@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -5,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "modularmachinery:blockcasing@4"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "qmd:beamline@2"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 2,
+            "z": 5,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 5,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "chisel:iron@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 5,
+            "elements": [
+                "minecraft:stained_glass@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "chisel:gold@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 5,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -4,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "chisel:iron@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -4,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration0@3"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -4,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "z": 5,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "qmd:beamline@2"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 3,
+            "z": 5,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 3,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 5,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 6,
+            "elements": [
+                "chisel:energizedvoidstone@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 6,
+            "elements": [
+                "chisel:energizedvoidstone@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 6,
+            "elements": [
+                "chisel:energizedvoidstone@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "chisel:iron@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": [-1,0,1],
+            "y": -3,
+            "z": 2,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 5,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": [-1,0,1],
+            "y": -5,
+            "z": 1,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 3,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "z": 5,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": 4,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 4,
+            "z": 5,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "qmd:beamline@2"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 5,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "chisel:energizedvoidstone@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 5,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -4,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -4,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration0@3"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 4,
+            "z": 5,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -4,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 4,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "qmd:beamline@2"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": 5,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "chisel:energizedvoidstone@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "minecraft:stained_glass@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "chisel:energizedvoidstone@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "chisel:diamond@3"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": 5,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration0@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration0@5"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "qmd:beamline@2"
+            ]
+        },
+        {
+            "x": [-1,0,1],
+            "y": -2,
+            "z": 1,
+            "nbt": {"onCeiling":"0b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@7"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "chisel:energizedvoidstone@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "chisel:energizedvoidstone@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "chisel:energizedvoidstone@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "libvulpes:coil0@9"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "qmd:beamline@2"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:metal_decoration1@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "nbt": {"onCeiling":"1b"},
+            "elements": [
+                "immersiveengineering:metal_decoration2@8"
+            ]
+        }
+    ]}

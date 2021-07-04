@@ -1,0 +1,63 @@
+{
+    "registryname": "blood_generator_1",
+    "localizedname": "血能发电机",
+    "color": "373737",
+    "requires-blueprint": true,
+    "parts": [
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "bloodmagic:item_routing_node@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_pylon@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "bloodmagic:ritual_stone@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_crystal@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockfluidinputhatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockenergyoutputhatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "modularmagic:blockwillproviderinput"
+            ]
+        }
+    ]}

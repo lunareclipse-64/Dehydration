@@ -1,0 +1,18 @@
+{
+    "machine": "thaum_generator_1",
+    "registryName": "asp_gen1",
+    "recipeTime": 6,
+    "requirements": [
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "aer",
+            "amount" : 2
+        },
+        {
+        	"type": "energy",
+        	"io-type": "output",
+        	"energyPerTick": 128
+        }
+    ]
+}

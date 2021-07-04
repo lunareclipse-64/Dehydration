@@ -1,0 +1,62 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  renderorder = foreground
+}
+
+customization {
+  path = config/fancymenu/textures/back.png
+  action = texturizebackground
+}
+
+customization {
+  identifier = %id=400322%
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/textures/button_hov.png
+  backgroundnormal = config/fancymenu/textures/button_nor.png
+}
+
+customization {
+  identifier = %id=400382%
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/textures/sbutton_hov.png
+  backgroundnormal = config/fancymenu/textures/sbutton_nor.png
+}
+
+customization {
+  identifier = %id=502382%
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/textures/sbutton_hov.png
+  backgroundnormal = config/fancymenu/textures/sbutton_nor.png
+}
+
+customization {
+  identifier = %id=400298%
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/textures/button_hov.png
+  backgroundnormal = config/fancymenu/textures/button_nor.png
+}
+
+customization {
+  identifier = %id=400346%
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/textures/sbutton_hov.png
+  backgroundnormal = config/fancymenu/textures/sbutton_nor.png
+}
+
+customization {
+  identifier = %id=502346%
+  action = setbuttontexture
+  backgroundhovered = config/fancymenu/textures/sbutton_hov.png
+  backgroundnormal = config/fancymenu/textures/sbutton_nor.png
+}
+
+customization {
+  identifier = %id=376382%
+  orientation = bottom-right
+  x = -20
+  action = movebutton
+  y = -20
+}
+

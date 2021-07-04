@@ -1,0 +1,63 @@
+{
+    "registryname": "thaum_generator_1",
+    "localizedname": "源质发电机",
+    "color": "333333",
+    "requires-blueprint": true,
+    "parts": [
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:recharge_pedestal"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "thaumcraft:vis_battery@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "thaumcraft:crystal_ignis"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "thaumcraft:smelter_basic"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "thaumcraft:smelter_vent"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "gugu-utils:aspectinputhatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockenergyoutputhatch"
+            ]
+        }
+    ]}

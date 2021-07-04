@@ -1,0 +1,449 @@
+{
+    "registryname": "solution_electrolytic_pool",
+    "localizedname": "溶液电解槽",
+    "color": "B8B8B8",
+    "parts": [
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "ic2:wall@7",
+                "modularmachinery:blockfluidoutputhatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "nbt": {"cableType":"0b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 3,
+            "nbt": {"cableType":"0b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "ic2:wall@7",
+                "modularmachinery:blockfluidoutputhatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 0,
+            "nbt": {"slabType":"0"},
+            "elements": [
+                "immersiveengineering:stone_decoration_slab@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockoutputbus"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "nbt": {"slabType":"0"},
+            "elements": [
+                "immersiveengineering:stone_decoration_slab@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "nbt": {"slabType":"0"},
+            "elements": [
+                "immersiveengineering:stone_decoration_slab@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 2,
+            "nbt": {"slabType":"0"},
+            "elements": [
+                "immersiveengineering:stone_decoration_slab@6"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "nbt": {"slabType":"0"},
+            "elements": [
+                "immersiveengineering:stone_decoration_slab@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "nbt": {"slabType":"0"},
+            "elements": [
+                "immersiveengineering:stone_decoration_slab@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "nbt": {"slabType":"0"},
+            "elements": [
+                "immersiveengineering:stone_decoration_slab@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 0,
+            "nbt": {"slabType":"0"},
+            "elements": [
+                "immersiveengineering:stone_decoration_slab@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "minecraft:hopper"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "nbt": {"slabType":"0"},
+            "elements": [
+                "immersiveengineering:stone_decoration_slab@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 2,
+            "nbt": {"slabType":"0"},
+            "elements": [
+                "immersiveengineering:stone_decoration_slab@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "ic2:wall@7",
+                "modularmachinery:blockfluidinputhatch",
+                "modularmachinery:blockfluidoutputhatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "nbt": {"cableType":"0b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "nbt": {"cableType":"0b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "ic2:distilled_water"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "ic2:distilled_water"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "nbt": {"cableType":"0b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "ic2:distilled_water"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "ic2:wall@7",
+                "modularmachinery:blockfluidoutputhatch",
+                "modularmachinery:blockfluidinputhatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "modularmachinery:blockenergyinputhatch"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 1,
+            "nbt": {"slabType":"0"},
+            "elements": [
+                "immersiveengineering:stone_decoration_slab@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "nbt": {"facing":"1b","id":"ic2:lv_transformer"},
+            "elements": [
+                "ic2:te@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "modularmachinery:blockinputbus"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "nbt": {"facing":"1b","id":"ic2:lv_transformer"},
+            "elements": [
+                "ic2:te@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 3,
+            "nbt": {"cableType":"0b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 1,
+            "nbt": {"slabType":"0"},
+            "elements": [
+                "immersiveengineering:stone_decoration_slab@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "ic2:wall@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "nbt": {"cableType":"0b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        }
+    ]}

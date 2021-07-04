@@ -1,0 +1,34 @@
+{
+    "name": "space_shard_ore",
+    "target-item": "rftools:dimensional_shard_ore",
+    "target-count": 4,
+    
+    "duration": 100,
+
+    "catalyst": "thaumcraft:crystal_essence",
+    "catalyst-nbt":"{Aspects: [{amount: 1, key: \"Spatio\"}]}",
+
+    "input-types": {
+        "s": { "id": "minecraft:stone" },
+        "sh": { "id": "jaopca:block_blockdimensionalshard"}
+    },
+    
+    "symmetrical": true,
+    "shape": [
+        [
+            ["s","s","s"],
+            ["s","s","s"],
+            ["s","s","s"]
+        ],
+        [
+            ["s","s","s"],
+            ["s","sh","s"],
+            ["s","s","s"]
+        ],
+        [
+            ["s","s","s"],
+            ["s","s","s"],
+            ["s","s","s"]
+        ]
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "machine": "orbital_transceiver",
+    "registryName": "extractwand",
+    "recipeTime": 200,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 20
+        },
+        {
+            "type": "grid",
+            "io-type": "input",
+            "power" : 8
+        },
+		{
+            "type": "item",
+            "io-type": "input",
+            "item": "astralsorcery:itemarchitectwand"
+        },
+        {
+        	"type": "item",
+        	"io-type": "output",
+        	"item": "contenttweaker:memento_extractor"
+        }
+    ]
+}

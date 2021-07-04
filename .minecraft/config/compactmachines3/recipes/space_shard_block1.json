@@ -1,0 +1,21 @@
+{
+    "name": "space_shard_block1",
+    "target-item": "jaopca:block_blockdimensionalshard",
+    "target-count": 1,
+
+    "duration": 600,
+
+    "catalyst": "minecraft:ender_pearl",
+
+    "input-types": {
+        "a": {"id": "minecraft:diamond_block"}
+    },
+    "symmetrical": true,
+    "shape": [
+        [
+            [
+                "a"
+            ]
+        ]
+    ]
+}

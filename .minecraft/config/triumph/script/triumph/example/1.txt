@@ -1,0 +1,8 @@
+setIcon(<immersiveengineering:metal:1>)
+setTitle("斯科特之殇")
+setDescription("低温相变能要人命")
+addParent("triumph:example/t")
+setPos(0,25)
+hideLines()
+criteria = addCriteria("impossible", "minecraft:impossible")
+setFrameType("CHALLENGE")

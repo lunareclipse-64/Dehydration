@@ -1,0 +1,55 @@
+{
+    "registryname": "astral_generator_1",
+    "localizedname": "星能发电机",
+    "color": "FFFFFF",
+    "requires-blueprint": true,
+    "parts": [
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "astralsorcery:blockmachine@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockenergyoutputhatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": [-1,0],
+            "z": 2,
+            "elements": [
+                "astralsorcery:blockinfusedwood@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "astralsorcery:blockwell"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockfluidinputhatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "astralsorcery:blockcollectorcrystal"
+            ]
+        }
+    ]}

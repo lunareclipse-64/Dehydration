@@ -1,0 +1,24 @@
+{
+    "machine": "blood_generator_1",
+    "registryName": "blood_1",
+    "recipeTime": 20,
+    "requirements": [
+        {
+            "type": "will",
+            "io-type": "input",
+            "willamount": 2,
+            "will-type" : "raw"
+        },
+		{
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "lifeessence",
+			"amount": 20
+        },
+        {
+        	"type": "energy",
+        	"io-type": "output",
+        	"energyPerTick": 128
+        }
+    ]
+}

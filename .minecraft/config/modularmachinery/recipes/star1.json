@@ -1,0 +1,30 @@
+{
+    "machine": "astral_generator_2",
+    "registryName": "star_gen_1",
+    "recipeTime": 20,
+    "requirements": [
+		{
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "astralsorcery.liquidstarlight",
+			"amount": 100
+        },
+		{
+            "type": "constellation",
+            "io-type": "input",
+            "constellation": "fornax"
+        },
+		{
+            "type": "daytime",
+            "io-type": "input",
+            "start": 6500,
+            "stop": 15000,
+            "modulo": 16000
+        },
+        {
+        	"type": "energy",
+        	"io-type": "output",
+        	"energyPerTick": 512
+        }
+    ]
+}

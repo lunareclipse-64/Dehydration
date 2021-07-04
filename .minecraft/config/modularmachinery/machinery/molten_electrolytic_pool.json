@@ -1,0 +1,1554 @@
+{
+    "registryname": "molten_electrolytic_pool",
+    "localizedname": "熔融电解池",
+    "color": "454545",
+    "requires-blueprint": true,
+    "parts": [
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 2, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 2, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 1, 
+            "elements": [
+                "modularmachinery:blockcasing@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 0, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 0, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 0, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 0, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 0, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": 0, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 2,
+            "z": 0, 
+            "elements": [
+                "modularmachinery:blockcasing@1"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 0, 
+            "elements": [
+                "modularmachinery:blockcasing@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0, 
+            "elements": [
+                "modularmachinery:blockcasing@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 0, 
+            "elements": [
+                "modularmachinery:blockcasing@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "z": 0, 
+            "elements": [
+                "modularmachinery:blockcasing@1"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 5, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 5, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 5, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "modularmachinery:blockenergyinputhatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 5, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 5, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 5, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": 4, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 4, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 4, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 4, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 4, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 4, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 5, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 4, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 4, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 4, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 4,
+            "nbt": {"id":"ic2:mv_transformer"},
+            "elements": [
+                "ic2:te@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 5, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": 3, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": [-4,-3,-2,-1,0,1,2,3,4],
+            "y": -1,
+            "z": [1,2,3],
+            "nbt": {"id":"immersiveengineering:ieslab","slabType":"1"},
+            "elements": [
+                "immersiveengineering:stone_decoration_slab@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "modularmachinery:blockoutputbus"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 5, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": 3, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 2,
+            "z": 4, 
+            "elements": [
+                "modularmachinery:blockcasing@1"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 4, 
+            "elements": [
+                "modularmachinery:blockcasing@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 4, 
+            "elements": [
+                "modularmachinery:blockcasing@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 5, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 4, 
+            "elements": [
+                "modularmachinery:blockcasing@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 2,
+            "z": 4, 
+            "elements": [
+                "modularmachinery:blockcasing@1"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": 2, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": 2, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": 3, 
+            "elements": [
+                "modularmachinery:blockcasing@1"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 4, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 3, 
+            "elements": [
+                "modularmachinery:blockcasing@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": 1, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": 1, 
+            "elements": [
+                "modularmachinery:blockcasing@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockfluidoutputhatch",
+                "modularmachinery:blockinputbus"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 3, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockfluidoutputhatch",
+                "modularmachinery:blockinputbus"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "nuclearcraft:ingot_block@8"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:stone_decoration@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 2,
+            "nbt": {"facing":"1b","id":"ic2:mv_transformer"},
+            "elements": [
+                "ic2:te@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "nbt": {"facing":"1b","id":"ic2:mv_transformer"},
+            "elements": [
+                "ic2:te@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "nbt": {"facing":"1b","id":"ic2:mv_transformer"},
+            "elements": [
+                "ic2:te@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 2,
+            "nbt": {"facing":"1b","id":"ic2:mv_transformer"},
+            "elements": [
+                "ic2:te@1"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:sheetmetal@8"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "immersivetech:stone_decoration"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": 1, 
+            "elements": [
+                "modularmachinery:blockcasing@1"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": 2, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 2, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2, 
+            "nbt": {"cableType":"3b","id":"ic2:cable","insulation":"1b"},
+            "elements": [
+                "ic2:te@10"
+            ]
+        }
+    ]}

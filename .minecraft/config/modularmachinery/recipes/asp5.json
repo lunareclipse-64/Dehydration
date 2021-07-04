@@ -1,0 +1,18 @@
+{
+    "machine": "thaum_generator_1",
+    "registryName": "asp_gen5",
+    "recipeTime": 14,
+    "requirements": [
+        {
+            "type": "aspect",
+            "io-type": "input",
+            "aspect": "alkimia",
+            "amount" : 2
+        },
+        {
+        	"type": "energy",
+        	"io-type": "output",
+        	"energyPerTick": 128
+        }
+    ]
+}
