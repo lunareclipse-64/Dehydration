@@ -1,12 +1,12 @@
-item.contenttweaker.memento1.name=Memento Exploration
-item.contenttweaker.memento2.name=Memento Hypothesis
-item.contenttweaker.memento3.name=Memento Yours
-item.contenttweaker.memento4.name=Memento Discovery
-item.contenttweaker.memento5.name=Memento Renaissance
-item.contenttweaker.memento6.name=Memento Automation
-item.contenttweaker.memento7.name=Memento Transmission
-item.contenttweaker.memento8.name=Memento It
-item.contenttweaker.memento9.name=Memento Outspace
+item.contenttweaker.memento1.name=Memory Exploration
+item.contenttweaker.memento2.name=Memory Hypothesis
+item.contenttweaker.memento3.name=Memory Yours
+item.contenttweaker.memento4.name=Memory Discovery
+item.contenttweaker.memento5.name=Memory Renaissance
+item.contenttweaker.memento6.name=Memory Automation
+item.contenttweaker.memento7.name=Memory Transmission
+item.contenttweaker.memento8.name=Memory It
+item.contenttweaker.memento9.name=Memory Outspace
 item.contenttweaker.technology1.name=Technology Space Control
 item.contenttweaker.technology2.name=Technology Substance Transform
 item.contenttweaker.technology3.name=Technology Energy Migrate
@@ -67,6 +67,8 @@ item.contenttweaker.speed_gel.name=Speeding Gel
 item.contenttweaker.instheal_gel.name=Instant Health Gel
 item.contenttweaker.kaolinite.name=Kaolinite Shard
 item.contenttweaker.above_note.name=Mysterious Plate
+item.contenttweaker.combustion_chamber.name=Combustion Chamber
+item.contenttweaker.igniter.name=Igniter
 
 
 fluid.titanium_tetrachloride=Titanium Tetrachloride

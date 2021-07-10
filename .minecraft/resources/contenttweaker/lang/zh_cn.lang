@@ -67,6 +67,8 @@ item.contenttweaker.silicon_seed.name=硅籽晶
 item.contenttweaker.sodium_cyanide.name=氰化钠
 item.contenttweaker.kaolinite.name=高岭石碎片
 item.contenttweaker.above_note.name=神秘的信息板
+item.contenttweaker.combustion_chamber.name=燃烧室
+item.contenttweaker.igniter.name=点火器
 
 fluid.titanium_tetrachloride=四氯化钛
 fluid.floatation_agent=浮选剂
