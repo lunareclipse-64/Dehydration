@@ -5,7 +5,7 @@ import mods.jei.JEI.hideCategory;
 
 recipes.removeShaped(<minecraft:flint>, [[null, <minecraft:gravel>], [<minecraft:gravel>, null]]);
 recipes.removeShaped(<minecraft:flint>, [[<minecraft:gravel>, <minecraft:gravel>], [<minecraft:gravel>, null]]);
-val rmr as IIngredient[]=[
+val removeByOutput as IIngredient[]=[
 	<actuallyadditions:block_greenhouse_glass>,
 	<actuallyadditions:block_misc:5>,
 	<appliedenergistics2:grindstone>,
@@ -222,8 +222,7 @@ val rmr as IIngredient[]=[
 	<thermalfoundation:tool.shovel_copper>,
 	<thermalfoundation:tool.sword_copper>
 ];
-for item in rmr{
-recipes.remove(item);}
+for item in removeByOutput{recipes.remove(item);}
 
 for item in loadedMods["harvestcraft"].items{if(item.definition.id has "sapling"){recipes.remove(item);}}
 
@@ -231,6 +230,8 @@ recipes.remove(<ore:dirt>);
 recipes.remove(<ore:sand>);
 recipes.remove(<ore:plateIron>);
 recipes.remove(<ore:plateCopper>);
+recipes.removeShaped(<minecraft:ice>, [[<toughasnails:ice_cube>, <toughasnails:ice_cube>], [<toughasnails:ice_cube>, <toughasnails:ice_cube>]]);
+recipes.removeShaped(<minecraft:rail> * 16, [[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, <ore:stickWood>, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
 recipes.removeShaped(<immersiveengineering:stone_decoration:2>, [[<ore:plateSteel>], [<immersiveengineering:stone_decoration:1>]]);
 recipes.removeShaped(<immersiveengineering:stone_decoration:10> * 2, [[<ore:sandstone>, <minecraft:brick>], [<minecraft:brick>, <ore:sandstone>]]);
 recipes.removeShaped(<thaumcraft:plate:3> * 3, [[<thaumcraft:ingot:1>, <thaumcraft:ingot:1>, <thaumcraft:ingot:1>]]);
@@ -280,7 +281,16 @@ recipes.removeShapeless(<bigreactors:dustmetals>, [<ore:oreYellorium>,<immersive
 recipes.removeShapeless(<primal:sharp_bone>, [<minecraft:bone>, <ore:rock>]);
 recipes.removeShapeless(<immersiveengineering:metal:29> * 9, [<ore:ingotIron>]);
 recipes.removeShapeless(<libvulpes:productdust:7>, [<ore:oreTitanium>], true);
-val rmf as IIngredient[] = [
+
+val removeByName as string[] = [
+	"qmd:tile.qmd.accelerator_casing",
+	"qmd:tile.qmd.containment_casing",
+	"qmd:tile.qmd.particle_chamber_casing"
+];
+for name in removeByName{recipes.removeByRecipeName(name);}
+
+
+val removeFurnace as IIngredient[] = [
 	<ore:ingotSodium>,
 	<ore:ingotCalcium>,
 	<ore:ingotOsmium>,
@@ -332,20 +342,18 @@ val rmf as IIngredient[] = [
 	<logisticspipes:chip_fpga>,
 	<nuclearcraft:ingot:8>
 ];
-for item in rmf{
-furnace.remove(item);}
-var rmfio = {
+for item in removeFurnace{furnace.remove(item);}
+
+var removeFurnaceByIO = {
     <nuclearcraft:ingot:14>:<nuclearcraft:ingot:11>,
 	<ore:oreCopper>:<ore:ingotCopper>,
 	<ore:oreTin>:<ore:ingotTin>,
 	<thaumcraft:cluster:6>:<thaumcraft:quicksilver>,
 	<ore:oreUranium>:<ore:ingotUranium>
 } as IIngredient[IIngredient];
-for dust in rmfio{
+for dust in removeFurnaceByIO{
     furnace.remove(rmfio[dust], dust);
 }
-
-recipes.removeShaped(<minecraft:rail> * 16, [[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, <ore:stickWood>, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
 
 hideCategory("Painter");
 hideCategory("Avatitia.Extreme");
@@ -359,7 +367,6 @@ hideCategory("ic2.scrapbox");
 hideCategory("zmaster587.AR.arcFurnace");
 hideCategory("zmaster587.AR.centrifuge");
 
-recipes.removeShaped(<minecraft:ice>, [[<toughasnails:ice_cube>, <toughasnails:ice_cube>], [<toughasnails:ice_cube>, <toughasnails:ice_cube>]]);
 <toughasnails:purified_water_bottle>.maxStackSize = 16;
 <minecraft:potion>.withTag({Potion: "minecraft:water"}).maxStackSize = 16;
 recipes.addHiddenShaped("e_egg1", <contenttweaker:fbucket>, [[<ore:ingotTin>, null, <ore:ingotTin>], [null, <ore:ingotTin>, null]]);

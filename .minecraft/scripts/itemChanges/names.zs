@@ -40,6 +40,7 @@ import mods.jei.JEI.addDescription as info;
 <nuclearcraft:part:8>.displayName="钢外壳电动马达";
 <rockhounding_chemistry:ingot_pattern>.displayName="铸锭模具";
 <thaumcraft:flesh_block>.displayName="血肉方块";
+<nuclearcraft:alloy:2>.displayName="临界碳锭";
 
 <minecraft:dirt>.addTooltip("家乡的感觉");
 <contenttweaker:speed_gel>.addTooltip("速度 II (1:40)");

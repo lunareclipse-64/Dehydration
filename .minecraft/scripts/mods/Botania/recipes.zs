@@ -137,7 +137,6 @@ ManaInfusion.addInfusion(<minecraft:sapling>,<biomesoplenty:sapling_0:5>,10000);
 ManaInfusion.addInfusion(<contenttweaker:mana_crystal>,<contenttweaker:mesh_lump>,10000);
 ManaInfusion.addInfusion(<botania:manaresource>,<thaumcraft:ingot>,3846);
 
-ManaInfusion.addAlchemy(<minecraft:prismarine_shard>, <rftools:dimensional_shard>, 16498);
 
 //符文祭坛
 RuneAltar.addRecipe(<botania:rune>*2,

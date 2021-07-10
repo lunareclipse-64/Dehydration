@@ -41,7 +41,7 @@ recipes.addShapeless(<astralsorcery:itemcraftingcomponent:2>, [<primal:iron_gall
 
 addTransmutation(<astralsorcery:blockcustomore>,<astralsorcery:blockcustomore:1>,200);
 addTransmutation(<thaumcraft:sapling_greatwood>,<thaumcraft:sapling_silverwood>,1000);
-addTransmutation(<rockhounding_chemistry:fluid.virgin_water>,<contenttweaker:chlorine>,1000);
+addTransmutation(<rockhounding_chemistry:fluid.virgin_water>,<contenttweaker:normal_saline>,1000);
 addTransmutation(<biomesoplenty:dirt:2>,<minecraft:dirt>,200);
 addTransmutation(<appliedenergistics2:quartz_glass>,<advancedrocketry:blocklens>,5000);
 
@@ -120,6 +120,7 @@ addDiscoveryAltarRecipe("astralsorcery:shaped/minecraft:glowstone_dust",<minecra
 	<astralsorcery:itemusabledust>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}),<astralsorcery:itemusabledust>,
 	null,<astralsorcery:itemusabledust>,null]);
 
+//星辉祭坛
 addAttunmentAltarRecipe("astralsorcery:shaped/internal/altar/blockcustomore",<astralsorcery:blockcustomore>,1200,300,[
     <minecraft:stone>,<contenttweaker:charged_mesh>,<minecraft:stone>,
 	<geolosys:cluster>,<contenttweaker:crystal_nucleus>,<geolosys:cluster>,
@@ -150,7 +151,7 @@ addAttunmentAltarRecipe("astralsorcery:shaped/botania:brewery",<botania:brewery>
 	<astralsorcery:itemcraftingcomponent:2>,<botania:rune:8>,<botania:manaresource:23>,
 	<contenttweaker:empty_manarune>,<contenttweaker:empty_manarune>,<contenttweaker:empty_manarune>,<contenttweaker:empty_manarune>]);
 
-
+//天辉祭坛
 addConstellationAltarRecipe("astralsorcery:shaped/thaumcraft:smelter_thaumium",<thaumcraft:smelter_thaumium>,2000,300,[
 	<planarartifice:alkimium_plate>,<thaumcraft:filter>,<planarartifice:alkimium_plate>,
 	<thaumcraft:jar_brace>,<thaumcraft:smelter_basic>,<thaumcraft:jar_brace>,
@@ -232,7 +233,7 @@ addConstellationAltarRecipe("astralsorcery:shaped/internal/altar/blockaltar:3",<
 	<bloodmagic:blood_rune>,<bloodmagic:blood_rune>,<astralsorcery:blockblackmarble:4>,<astralsorcery:blockblackmarble:4>
 ]);
 
-
+//五彩祭坛
 addTraitAltarRecipe("astralsorcery:shaped/bloodmagic:ritual_controller",<bloodmagic:ritual_controller>, 4500, 600, [
     <liquid:lifeessence>, <botania:lens:14>, <liquid:lifeessence>,
 	<thaumcraft:crystal_vitium>, <thaumcraft:infusion_matrix>, <astralsorcery:itemperkgem:1>, 
@@ -376,6 +377,7 @@ addTraitAltarRecipe("astralsorcery:shaped/nuclearcraft:decay_generator",<nuclear
     null, <rockhounding_chemistry:misc_items:11>, null,
 	<thaumcraft:ingot:1>, <nuclearcraft:part:10>, <extrautils2:ingredients>, 
 	null, <bloodmagic:component:18>, null, 
+    null, null, null, null,
     null, null, null, null,
     null, null, null, null,
     null, null, null, null

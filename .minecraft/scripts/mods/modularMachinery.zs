@@ -652,7 +652,7 @@ irontreeCreate.addEnergyPerTickInput(30)
     .addItemInput(<contenttweaker:technology4>)
     .addFluidInput(<liquid:binnie.dna.raw>*10)
     .addFluidInput(<liquid:water>*1000)
-    .addItemOutput(<minecraft:sapling:5>)
+    .addItemOutput(<primal:sapling>)
     .addStarlightInput(4200, "aevitas")
     .build();
 

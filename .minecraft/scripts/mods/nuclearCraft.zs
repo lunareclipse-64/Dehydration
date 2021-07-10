@@ -7,6 +7,7 @@ import mods.nuclearcraft.ChanceFluidIngredient;
 import mods.nuclearcraft.Infuser;
 import mods.nuclearcraft.AlloyFurnace;
 import mods.nuclearcraft.Assembler;
+import mods.nuclearcraft.IngotFormer;
 
 recipes.addShaped(<qmd:part:10>, 
 [[<appliedenergistics2:material:23>, <ore:plateHastelloy>, null],
@@ -33,7 +34,6 @@ recipes.addShaped(<nuclearcraft:alloy_furnace>,
 [<ic2:crafting:5>, <nuclearcraft:part:12>, <ic2:crafting:5>], 
 [<nuclearcraft:part>, <ceramics:channel>, <nuclearcraft:part>]]);
 
-
 recipes.addShaped(<nuclearcraft:melter>, 
 [[<nuclearcraft:part:1>, <rockhounding_chemistry:misc_items:35>, <nuclearcraft:part:1>],
 [<ic2:crafting:5>, <nuclearcraft:part:10>, <ic2:crafting:5>], 
@@ -54,26 +54,44 @@ recipes.addShaped(<nuclearcraft:turbine_rotor_shaft> * 4,
 [<ore:ingotOsmiridium>, <ore:ingotOsmiridium>, <ore:ingotOsmiridium>], 
 [<ore:ingotHSLASteel>, <ore:ingotHSLASteel>, <ore:ingotHSLASteel>]]);
 
+recipes.addShaped(<nuclearcraft:fission_casing> * 8, 
+[[null, <ore:plateBasic>, null],
+[<ore:plateBasic>, <nuclearcraft:part:12>, <ore:plateBasic>], 
+[null, <nuclearcraft:alloy:2>, null]]);
+
+recipes.addShaped(<qmd:containment_casing> * 8, 
+[[<ore:plateTitaniumAluminide>, <ore:plateAdvanced>, <ore:plateTitaniumAluminide>],
+[<ore:ingotStainlessSteel>, <nuclearcraft:part:12>, <ore:ingotStainlessSteel>], 
+[<ore:plateTitaniumAluminide>, <nuclearcraft:alloy:2>, <ore:plateTitaniumAluminide>]]);
+
+recipes.addShaped(<qmd:particle_chamber_casing> * 8, 
+[[<rockhounding_chemistry:alloy_parts:43>, <nuclearcraft:part:1>, <rockhounding_chemistry:alloy_parts:43>],
+[<nuclearcraft:part>, <nuclearcraft:part:12>, <nuclearcraft:part>], 
+[<rockhounding_chemistry:alloy_parts:43>, <nuclearcraft:alloy:2>, <rockhounding_chemistry:alloy_parts:43>]]);
+
+recipes.addShaped(<qmd:accelerator_casing>, 
+[[<nuclearcraft:part>, <nuclearcraft:alloy:9>, <nuclearcraft:part>],
+[<nuclearcraft:alloy:15>, <nuclearcraft:part:12>, <nuclearcraft:alloy:15>], 
+[<nuclearcraft:part>, <nuclearcraft:alloy:9>, <nuclearcraft:part>]]);
+
 
 Crystallizer.removeRecipeWithInput(<liquid:silicon>*1296);
 
 
-ChemicalReactor.addRecipe(<liquid:hydrogen>*2000, <liquid:oxygen>*1000, <liquid:water>*2000, null, 0.1, 0.1, 1.0);
-ChemicalReactor.addRecipe(<liquid:hydrogen>*1000, <liquid:chlorine>*1000, <liquid:hydrochloric_acid>*2000, null, 0.1, 0.1, 1.0);
 ChemicalReactor.removeRecipeWithInput(<liquid:hydrogen>*1500, <liquid:boron>*72);
 ChemicalReactor.removeRecipeWithInput(<liquid:hydrogen>*500, <liquid:oxygen>*250);
 ChemicalReactor.removeRecipeWithInput(<liquid:hydrogen>*1000, <liquid:chlorine>*1000);
+
+ChemicalReactor.addRecipe(<liquid:hydrogen>*2000, <liquid:oxygen>*1000, <liquid:water>*2000, null, 0.1, 0.1, 1.0);
+ChemicalReactor.addRecipe(<liquid:hydrogen>*1000, <liquid:chlorine>*1000, <liquid:hydrochloric_acid>*2000, null, 0.1, 0.1, 1.0);
 
 
 Electrolyzer.addRecipe(<liquid:water>*1000, <liquid:hydrogen>*2000, <liquid:oxygen>*1000, null, null);
 Electrolyzer.removeRecipeWithInput(<liquid:water>*250);
 
 
-Melter.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <liquid:nd_yag>*1000);
-Melter.addRecipe(<ore:ingotYellorium>, <liquid:yellorium>*144);
-Melter.addRecipe(<ore:dustYellorium>, <liquid:yellorium>*144);
-
 Melter.removeRecipeWithInput(<ore:oreLithium>);
+Melter.removeRecipeWithInput(<ore:ingotHardCarbon>);
 Melter.removeRecipeWithInput(<ore:oreBoron>);
 Melter.removeRecipeWithInput(<ore:oreMagnesium>);
 Melter.removeRecipeWithInput(<ore:oreAluminium>);
@@ -91,16 +109,28 @@ Melter.removeRecipeWithInput(<ore:oreYellorium>);
 Melter.removeRecipeWithInput(<ore:ingotYellorium>);
 Melter.removeRecipeWithInput(<bigreactors:dustmetals>);
 
+Melter.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <liquid:nd_yag>*1000);
+Melter.addRecipe(<ore:ingotYellorium>, <liquid:yellorium>*144);
+Melter.addRecipe(<ore:dustYellorium>, <liquid:yellorium>*144);
+
+
 
 Infuser.addRecipe(<qmd:discharge_lamp>, <liquid:krypton>*250, <contenttweaker:kryptonlight>);
 
 
+AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:7>*4);
+AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:15>*16);
+AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:2>*2);
+
 AlloyFurnace.addRecipe(<ore:plateDenseLead>, <ore:ingotStainlessSteel>, <nuclearcraft:part:1>*6);
 AlloyFurnace.addRecipe(<botania:quartz:2>*4, <astralsorcery:itemcoloredlens:2>, <actuallyadditions:block_greenhouse_glass>*3);
 AlloyFurnace.addRecipe(<ore:dustLead>*3, <ore:dustHafnium>, <nuclearcraft:part:3>);
-AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:7>*4);
-AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:15>*16);
+AlloyFurnace.addRecipe(<minecraft:diamond>, <rftools:dimensional_shard>, <nuclearcraft:alloy:2>*2);
 
+
+Assembler.removeRecipeWithOutput(<qmd:semiconductor:4>);
+Assembler.removeRecipeWithOutput(<qmd:semiconductor:5>);
+Assembler.removeRecipeWithOutput(<qmd:semiconductor:6>);
 
 Assembler.addRecipe(<appliedenergistics2:material:18>, <appliedenergistics2:material:20>, <jaopca:item_dustsmallcopper>, <rockhounding_chemistry:misc_items:3>, <appliedenergistics2:material:22>);
 Assembler.addRecipe(<appliedenergistics2:material:16>, <appliedenergistics2:material:20>, <jaopca:item_dustsmallcopper>, <rockhounding_chemistry:misc_items:3>, <appliedenergistics2:material:23>);
@@ -111,6 +141,5 @@ Assembler.addRecipe(<ore:dustGraphite>, <ore:gearEmerald>, <ore:plateAlkimium>, 
 Assembler.addRecipe(<rockhounding_chemistry:misc_items:14>, <ore:gearInvar>, <thermalfoundation:material:352>, <ore:ingotStainlessSteel>, <genetics:misc>);
 Assembler.addRecipe(<immersiveengineering:material:27>, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}), <forestry:thermionic_tubes>, null, <forestry:chipsets:1>.withTag({T: 1 as short}));
 
-Assembler.removeRecipeWithOutput(<qmd:semiconductor:4>);
-Assembler.removeRecipeWithOutput(<qmd:semiconductor:5>);
-Assembler.removeRecipeWithOutput(<qmd:semiconductor:6>);
+
+IngotFormer.removeRecipeWithOutput(<nuclearcraft:alloy:2>);
