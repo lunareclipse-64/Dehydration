@@ -46,6 +46,13 @@ recipes.addShaped(<botania:prism>,
 [<minecraft:glass_pane>, <contenttweaker:effulgent_crystal>, <minecraft:glass_pane>], 
 [<minecraft:glass_pane>, <botania:platform:1>, <minecraft:glass_pane>]]);
 
+recipes.addShaped(<botania:starfield>, [
+    [<botania:manaresource:7>, <astralsorcery:itemcraftingcomponent:2>, <botania:manaresource:7>], 
+    [<botania:manaresource:7>, <thaumcraft:plate:3>, <botania:manaresource:7>]]);
+
+recipes.addShapeless(<contenttweaker:memento_extractor>, 
+[<contenttweaker:memento_extractor>.onlyDamaged(),<botania:manaresource:5>,<botania:manaresource:5>]);
+
 //花药台
 Apothecary.addRecipe("endoflame",
 [<botania:petal:12>,<botania:petal:12>,<botania:petal:4>,<astralsorcery:itemcraftingcomponent:2>,<botania:rune:1>,<ore:dustCoal>,<botania:rune:3>]);

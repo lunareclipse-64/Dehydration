@@ -33,3 +33,8 @@ recipes.addShaped(<libvulpes:coil0:4>,
 [[<immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>],
 [<immersiveengineering:wirecoil>, <ore:ingotIron>, <immersiveengineering:wirecoil>], 
 [<immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>]]);
+
+recipes.addShaped(<contenttweaker:combustion_chamber>, 
+[[<rockhounding_chemistry:misc_items:5>, <rockhounding_chemistry:misc_items:5>, <rockhounding_chemistry:misc_items:5>],
+[<contenttweaker:igniter>, null, <minecraft:brick>], 
+[<ic2:casing:5>, <minecraft:brick>, <ic2:casing:5>]]);

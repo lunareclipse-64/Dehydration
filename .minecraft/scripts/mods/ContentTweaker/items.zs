@@ -50,7 +50,9 @@ var items as string[] = [
 	"zerconia",
 	"carbon_sulfur_mixture",
 	"silicon_seed",
-    "kaolinite"
+    "kaolinite",
+    "combustion_chamber",
+    "igniter"
 ];
 for name in items{
 	val item = VanillaFactory.createItem(name);
@@ -133,14 +135,19 @@ var memo as string[] = [
 	"memento6",
 	"memento7",
 	"memento8",
-	"memento9",
-	"memento_extractor"
+	"memento9"
 ];
 for name in memo{
 	val item = VanillaFactory.createItem(name);
 	item.creativeTab = <creativetab:materials.base>;
 	item.register();
 }
+
+val memoryWand = VanillaFactory.createItem("memento_extractor");
+memoryWand.creativeTab = <creativetab:materials.base>;
+memoryWand.maxDamage = 9;
+memoryWand.maxStackSize = 1;
+memoryWand.register();
 
 var technology as string[] = [
     "technology1",

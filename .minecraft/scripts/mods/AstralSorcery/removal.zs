@@ -37,7 +37,8 @@ val rem_tier1 as IItemStack[] = [
 ];
 val rem_tier2 as IItemStack[] = [
 	<astralsorcery:blockaltar:2>,
-	<astralsorcery:blockattunementaltar>
+	<astralsorcery:blockattunementaltar>,
+	<astralsorcery:blockcelestialgateway>
 ];
 val rem_tier3 as IItemStack[] = [
 	<astralsorcery:blockaltar:3>,

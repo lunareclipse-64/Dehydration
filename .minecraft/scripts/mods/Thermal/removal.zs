@@ -15,9 +15,28 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
     var l = event.world.getBlock(r.blockPos);
 	var h = item.definition.id;
 	var meta = item.metadata;
-	if(!isNull(event.item)&&(h == p.mainHandHeldItem.definition.id)&&(meta == p.mainHandHeldItem.metadata))
+	if(!isNull(item)&&(h == p.mainHandHeldItem.definition.id)&&(meta == p.mainHandHeldItem.metadata))
 	{
-		var tg1 = item.tag.asString();
+		if(item.hasTag)
+		{
+			var tg1 = item.tag.asString();
+			if((h has "caster") && (tg1 has "focus") && ((tg1 has "阿瓦达索命")|(tg1 has "Avada Kedavra")) && (tg1 has "thaumcraft.EARTH") && (tg1 has "thaumcraft.BOLT"))
+			{
+				Commands.call("advancement grant @s only triumph:example/3", p, p.world, false, true);
+			}
+			if(h has "akashictome:tome")
+			{	
+				if((tg1 has "银河百科全书")&&(tg1 has "rftoolscontrol:rftoolscontrol_manual")&&(tg1 has "tetra:journal")&&(tg1 has "astralsorcery:itemjournal")&&
+				(tg1 has "immersiveengineering")&&(tg1 has "geolosys:field_manual")&&(tg1 has "chembook.xml")&&(tg1 has "thermalfoundation:tome_experience")&&
+				(tg1 has "rftools:rftools_manual")&&(tg1 has "animania:animania_manual")&&(tg1 has "rftoolsdim:rftoolsdim_manual")&&(tg1 has "knowledge.alfheim")&&(tg1 has "knowledge.relic")&&
+				(tg1 has "guideapi:bloodmagic-guide")&&(tg1 has "thaumcraft:thaumonomicon")&&(tg1 has "bloodmagic:sanguine_book")&&(tg1 has "extrautils2:book")&&
+				(tg1 has "thermalfoundation:tome_lexicon")&&(tg1 has "logisticspipes:guide_book")&&(tg1 has "actuallyadditions:item_booklet")&&(tg1 has "bloodmagic:experience_tome")&&
+				(tg1 has "hammercore:manual")&&(tg1 has "forestry:book_forester")&&(tg1 has "Damage: 1 as short")&&(tg1 has "Damage: 2 as short")&&(tg1 has "cookingforblockheads2"))
+				{
+					Commands.call("advancement grant @s only triumph:example/2", p, p.world, false, true);
+				}
+			}
+		}
 		if((h=="minecraft:glass_bottle") && (l.definition.id == "minecraft:water"))
 		{
 			event.cancel();
@@ -33,22 +52,6 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 				p.setItemToSlot(mainHand, null);
 			}
 			p.give(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:chloridizing_furnace"}));
-		}
-		if((h has "caster") && (tg1 has "focus") && ((tg1 has "阿瓦达索命")|(tg1 has "Avada Kedavra")) && (tg1 has "thaumcraft.EARTH") && (tg1 has "thaumcraft.BOLT"))
-		{
-			Commands.call("advancement grant @s only triumph:example/3", p, p.world, false, true);
-		}
-		if(h has "akashictome:tome")
-		{	
-			if((tg1 has "银河百科全书")&&(tg1 has "rftoolscontrol:rftoolscontrol_manual")&&(tg1 has "tetra:journal")&&(tg1 has "astralsorcery:itemjournal")&&
-			(tg1 has "immersiveengineering")&&(tg1 has "geolosys:field_manual")&&(tg1 has "chembook.xml")&&(tg1 has "thermalfoundation:tome_experience")&&
-			(tg1 has "rftools:rftools_manual")&&(tg1 has "animania:animania_manual")&&(tg1 has "rftoolsdim:rftoolsdim_manual")&&(tg1 has "knowledge.alfheim")&&(tg1 has "knowledge.relic")&&
-			(tg1 has "guideapi:bloodmagic-guide")&&(tg1 has "thaumcraft:thaumonomicon")&&(tg1 has "bloodmagic:sanguine_book")&&(tg1 has "extrautils2:book")&&
-			(tg1 has "thermalfoundation:tome_lexicon")&&(tg1 has "logisticspipes:guide_book")&&(tg1 has "actuallyadditions:item_booklet")&&(tg1 has "bloodmagic:experience_tome")&&
-			(tg1 has "hammercore:manual")&&(tg1 has "forestry:book_forester")&&(tg1 has "Damage: 1 as short")&&(tg1 has "Damage: 2 as short")&&(tg1 has "cookingforblockheads2"))
-			{
-				Commands.call("advancement grant @s only triumph:example/2", p, p.world, false, true);
-			}
 		}
 	}
 });
@@ -70,7 +73,6 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
 	{
 		var item = event.item;
 		var h = item.definition.id;
-		var tg1 = item.tag.asString();
 		var meta = item.metadata;
 		if(!isNull(event.block)&&(h == p.mainHandHeldItem.definition.id)&&(meta == p.mainHandHeldItem.metadata))
 		{
@@ -78,11 +80,15 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
 			var BlockMeta = event.block.meta;
 			if(h has "contenttweaker:memento_extractor")
 			{
-				if(BlockID == "minecraft:dirt"){p.give(<contenttweaker:memento1>);event.world.destroyBlock(event.position, false);}
-				if(BlockID has "bookshelf"){p.give(<contenttweaker:memento2>);event.world.destroyBlock(event.position, false);}
-				if(BlockID has "blood_rune"){p.give(<contenttweaker:memento3>);event.world.destroyBlock(event.position, false);}
-				if(BlockID == "ic2:resource")&&(BlockMeta == 12){p.give(<contenttweaker:memento4>);event.world.destroyBlock(event.position, false);}
-				if(BlockID == "qmd:beamline"){p.give(<contenttweaker:memento5>);event.world.destroyBlock(event.position, false);}
+				if(BlockID == "minecraft:dirt")
+				{
+					p.give(<contenttweaker:memento1>);
+				    event.world.destroyBlock(event.position, false);
+				    event.damageItem(1);}
+				if(BlockID has "bookshelf"){p.give(<contenttweaker:memento2>);event.world.destroyBlock(event.position, false);event.damageItem(1);}
+				if(BlockID has "blood_rune"){p.give(<contenttweaker:memento3>);event.world.destroyBlock(event.position, false);event.damageItem(1);}
+				if(BlockID == "ic2:resource")&&(BlockMeta == 12){p.give(<contenttweaker:memento4>);event.world.destroyBlock(event.position, false);event.damageItem(1);}
+				if(BlockID == "qmd:beamline"){p.give(<contenttweaker:memento5>);event.world.destroyBlock(event.position, false);event.damageItem(1);}
 			}
 			if((h has "extrautils2:ingredients") && (meta == 0) && (BlockID == "bloodmagic:output_routing_node") && p.isSneaking)
 			{

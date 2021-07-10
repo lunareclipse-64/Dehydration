@@ -252,6 +252,14 @@ for item in redirectS4{
     mods.recipestages.Recipes.setRecipeStage("discovery", item);
 }
 
+var redirectS5 as IIngredient[] = [
+    <astralsorcery:blockcelestialgateway>,
+];
+for item in redirectS5{
+    mods.ItemStages.removeItemStage(item);
+    mods.ItemStages.addItemStage("renaissance", item);
+    mods.recipestages.Recipes.setRecipeStage("renaissance", item);
+}
 //JEI合成区阶段化
 var catS1 as string[] = [
     "minecraft.smelting",
@@ -440,6 +448,7 @@ var banneditem as IIngredient[] = [
 	<jaopca:item_clusteruranium>,
 	<jaopca:item_clusteryellorium>,
 	<jaopca:item_clusterzinc>,
+    <libvulpes:coalgenerator>,
 	<libvulpes:ore0>,
 	<libvulpes:ore0:4>,
 	<libvulpes:ore0:5>,
@@ -454,11 +463,13 @@ var banneditem as IIngredient[] = [
 	<libvulpes:productingot:7>,
 	<libvulpes:productingot:9>,
 	<libvulpes:productingot:10>,
+    <libvulpes:productfan:6>,
     <logisticspipes:chip_basic_raw>,
     <logisticspipes:chip_advanced_raw>,
     <logisticspipes:chip_fpga_raw>,
     <minecraft:diamond_ore>,
     <minecraft:emerald_ore>,
+    <minecraft:furnace_minecart>,
     <minecraft:gold_ore>,
     <minecraft:iron_ore>,
     <minecraft:lapis_ore>,
