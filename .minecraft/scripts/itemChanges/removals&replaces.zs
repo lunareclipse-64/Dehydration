@@ -2,9 +2,9 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.jei.JEI.hideCategory;
+import mods.jei.JEI;
 
-recipes.removeShaped(<minecraft:flint>, [[null, <minecraft:gravel>], [<minecraft:gravel>, null]]);
-recipes.removeShaped(<minecraft:flint>, [[<minecraft:gravel>, <minecraft:gravel>], [<minecraft:gravel>, null]]);
+//移除合成
 val removeByOutput as IIngredient[]=[
 	<actuallyadditions:block_greenhouse_glass>,
 	<actuallyadditions:block_misc:5>,
@@ -165,13 +165,20 @@ val removeByOutput as IIngredient[]=[
 	<nuclearcraft:part>,
 	<nuclearcraft:part:1>,
 	<nuclearcraft:part:3>,
+	<nuclearcraft:part:7>,
 	<nuclearcraft:part:8>,
+	<nuclearcraft:part:9>,
 	<nuclearcraft:part:10>,
 	<nuclearcraft:part:12>,
 	<nuclearcraft:rad_shielding:*>,
 	<nuclearcraft:solid_fission_controller>,
+	<nuclearcraft:supercooler>,
 	<nuclearcraft:turbine_controller>,
 	<nuclearcraft:turbine_rotor_shaft>,
+	<ore:dirt>,
+	<ore:plateCopper>,
+	<ore:plateIron>,
+	<ore:sand>,
 	<planarartifice:alkimium_plate>,
 	<primal:barrel:*>,
 	<primal:cauldron>,
@@ -197,6 +204,7 @@ val removeByOutput as IIngredient[]=[
 	<rockhounding_chemistry:machines_a:2>,
 	<rockhounding_chemistry:machines_a:11>,
 	<rockhounding_chemistry:machines_a:13>,
+	<rockhounding_chemistry:machines_c>,
 	<rockhounding_chemistry:machines_d:11>,
 	<rockhounding_chemistry:misc_items:1>,
 	<rockhounding_chemistry:misc_items:10>,
@@ -214,6 +222,8 @@ val removeByOutput as IIngredient[]=[
 	<thaumcraft:thaumium_helm>,
 	<thaumcraft:thaumium_legs>,
 	<thermalfoundation:material:33>,
+	<thermalfoundation:material:101>,
+	<thermalfoundation:material:1025>,
 	<thermalfoundation:storage_alloy>,
 	<thermalfoundation:storage_resource>,
 	<thermalfoundation:tool.axe_copper>,
@@ -226,9 +236,6 @@ for item in removeByOutput{recipes.remove(item);}
 
 for item in loadedMods["harvestcraft"].items{if(item.definition.id has "sapling"){recipes.remove(item);}}
 
-recipes.remove(<ore:dirt>);
-recipes.remove(<ore:sand>);
-recipes.remove(<ore:plateIron>);
 recipes.remove(<ore:plateCopper>);
 recipes.removeShaped(<minecraft:ice>, [[<toughasnails:ice_cube>, <toughasnails:ice_cube>], [<toughasnails:ice_cube>, <toughasnails:ice_cube>]]);
 recipes.removeShaped(<minecraft:rail> * 16, [[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, <ore:stickWood>, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
@@ -240,6 +247,8 @@ recipes.removeShaped(<minecraft:stone_slab:3> * 6, [[<minecraft:cobblestone>, <m
 recipes.removeShaped(<minecraft:iron_ingot>, [[<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>], [<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>], [<ore:nuggetIron>, <ore:nuggetIron>, <ore:nuggetIron>]]);
 recipes.removeShaped(<minecraft:crafting_table>, [[<ore:plankOak>, <ore:plankOak>], [<ore:plankOak>, <ore:plankOak>]]);
 recipes.removeShaped(<primal_tech:work_stump>, [[<ore:slabWoodOak>], [<ore:logWood>]]);
+recipes.removeShaped(<minecraft:flint>, [[null, <minecraft:gravel>], [<minecraft:gravel>, null]]);
+recipes.removeShaped(<minecraft:flint>, [[<minecraft:gravel>, <minecraft:gravel>], [<minecraft:gravel>, null]]);
 recipes.removeShapeless(<primal_tech:fire_sticks>, [<ore:stickWood>, <primal_tech:bone_knife>]);
 recipes.removeShapeless(<minecraft:dye:15> * 3, [<ore:bone>]);
 recipes.removeShapeless(<minecraft:flint_and_steel>, [<minecraft:iron_ingot>, <minecraft:flint>]);
@@ -283,14 +292,16 @@ recipes.removeShapeless(<immersiveengineering:metal:29> * 9, [<ore:ingotIron>]);
 recipes.removeShapeless(<libvulpes:productdust:7>, [<ore:oreTitanium>], true);
 
 val removeByName as string[] = [
+	"nuclearcraft:tile.nuclearcraft.fission_casing",
 	"qmd:tile.qmd.accelerator_casing",
 	"qmd:tile.qmd.containment_casing",
 	"qmd:tile.qmd.particle_chamber_casing"
 ];
 for name in removeByName{recipes.removeByRecipeName(name);}
 
-
+//移除熔炼
 val removeFurnace as IIngredient[] = [
+	<primal:diamond_plate>,
 	<ore:ingotSodium>,
 	<ore:ingotCalcium>,
 	<ore:ingotOsmium>,
@@ -352,9 +363,10 @@ var removeFurnaceByIO = {
 	<ore:oreUranium>:<ore:ingotUranium>
 } as IIngredient[IIngredient];
 for dust in removeFurnaceByIO{
-    furnace.remove(rmfio[dust], dust);
+    furnace.remove(removeFurnaceByIO[dust], dust);
 }
 
+//隐藏界面
 hideCategory("Painter");
 hideCategory("Avatitia.Extreme");
 hideCategory("Avatitia.Compressor");
@@ -367,12 +379,22 @@ hideCategory("ic2.scrapbox");
 hideCategory("zmaster587.AR.arcFurnace");
 hideCategory("zmaster587.AR.centrifuge");
 
-<toughasnails:purified_water_bottle>.maxStackSize = 16;
-<minecraft:potion>.withTag({Potion: "minecraft:water"}).maxStackSize = 16;
+//隐藏物品
+JEI.hide(<contenttweaker:zerconia>);
+
+//隐藏合成
 recipes.addHiddenShaped("e_egg1", <contenttweaker:fbucket>, [[<ore:ingotTin>, null, <ore:ingotTin>], [null, <ore:ingotTin>, null]]);
 
+//堆叠数量
+<toughasnails:purified_water_bottle>.maxStackSize = 16;
+<minecraft:potion>.withTag({Potion: "minecraft:water"}).maxStackSize = 16;
+
+//合成替换
 recipes.replaceAllOccurences(<advancedrocketry:wafer>, <qmd:semiconductor:3>);
 recipes.replaceAllOccurences(<immersiveengineering:metal_decoration0>, <ore:coilCopper>);
 recipes.replaceAllOccurences(<nuclearcraft:part:4>, <ic2:crafting:5>);
 recipes.replaceAllOccurences(<libvulpes:productfan:6>, <rockhounding_chemistry:misc_items:20>);
 recipes.replaceAllOccurences(<minecraft:furnace>, <contenttweaker:combustion_chamber>);
+recipes.replaceAllOccurences(<qmd:semiconductor:4>, <appliedenergistics2:material:22>);
+recipes.replaceAllOccurences(<qmd:semiconductor:5>, <appliedenergistics2:material:23>);
+recipes.replaceAllOccurences(<qmd:semiconductor:6>, <appliedenergistics2:material:24>);

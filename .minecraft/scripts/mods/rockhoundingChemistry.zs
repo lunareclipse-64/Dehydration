@@ -39,6 +39,11 @@ recipes.addShaped(<rockhounding_chemistry:misc_items:35>,
 recipes.addShapeless(<gbook:guidebook>.withTag({Book: "rockhounding_chemistry:xml/chembook.xml"}), 
 [<rockhounding_chemistry:uninspected_mineral>.reuse(), <minecraft:book>, <ore:dyeBlack>]);
 
+recipes.addShaped(<rockhounding_chemistry:machines_c>, 
+[[<rockhounding_chemistry:misc_blocks_a>, <rockhounding_chemistry:misc_items:5>, <rockhounding_chemistry:misc_blocks_a>],
+[<rockhounding_chemistry:misc_items:7>, <rockhounding_chemistry:misc_items:10>, <rockhounding_chemistry:misc_items:7>], 
+[<rockhounding_chemistry:misc_items:5>, <contenttweaker:magnetic_refrigerator>, <rockhounding_chemistry:misc_items:5>]]);
+
 var dustCraft = {
     <ore:dustTitanium>:<rockhounding_chemistry:metal_items:4>,
     <ore:dustVanadium>:<rockhounding_chemistry:metal_items>,

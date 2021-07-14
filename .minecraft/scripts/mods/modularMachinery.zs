@@ -353,6 +353,18 @@ SiHeatRedu.addEnergyPerTickInput(850)
     .addItemOutput(<contenttweaker:silicon_seed>*6)
     .addFluidOutput(<liquid:hydrochloric_acid>*4000)
     .build();
+val nitrogenFromCa = newBuilder("N2_from_Ca", "reducing_furnace", 1000);
+nitrogenFromCa.addEnergyPerTickInput(10)
+    .addItemInput(<ore:dustCalcium>)
+    .addFluidOutput(<liquid:nitrogen>*4000)
+    .addItemOutput(<primal:carbonate_slack>*2)
+    .build();
+val nitrogenFromMg = newBuilder("N2_from_Mg", "reducing_furnace", 1000);
+nitrogenFromMg.addEnergyPerTickInput(10)
+    .addItemInput(<ore:dustMagnesium>)
+    .addFluidOutput(<liquid:nitrogen>*4000)
+    .addItemOutput(<jaopca:item_crushedpurifiedmagnesium>)
+    .build();
 //氯化炉
 val TiChloridize = newBuilder("TiCl4_chlo", "chloridizing_furnace", 200);
 TiChloridize.addEnergyPerTickInput(500)
@@ -373,7 +385,7 @@ BChloridize.addEnergyPerTickInput(500)
 val MgChloridize = newBuilder("MgCl2_chlo", "chloridizing_furnace", 200);
 MgChloridize.addEnergyPerTickInput(500)
     .addFluidInput(<liquid:chlorine>*2000)
-    .addItemInput(<jaopca:item_crushedpurifiedmagnesium>*2)
+    .addItemInput(<jaopca:item_crushedpurifiedmagnesium>)
     .addItemOutput(<contenttweaker:magnesium_chloride>*2)
     .build();
 

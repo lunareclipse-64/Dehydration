@@ -38,3 +38,8 @@ recipes.addShaped(<contenttweaker:combustion_chamber>,
 [[<rockhounding_chemistry:misc_items:5>, <rockhounding_chemistry:misc_items:5>, <rockhounding_chemistry:misc_items:5>],
 [<contenttweaker:igniter>, null, <minecraft:brick>], 
 [<ic2:casing:5>, <minecraft:brick>, <ic2:casing:5>]]);
+
+recipes.addShaped(<contenttweaker:magnetic_refrigerator>, 
+[[<ore:ingotStainlessSteel>, <ore:servo>, <ore:ingotStainlessSteel>],
+[<ore:ingotNib>, <ore:dustGadolinium>, <ore:ingotNib>], 
+[<ore:ingotStainlessSteel>, <toughasnails:temperature_coil>, <ore:ingotStainlessSteel>]]);

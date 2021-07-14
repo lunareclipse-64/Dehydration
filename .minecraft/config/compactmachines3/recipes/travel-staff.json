@@ -1,0 +1,23 @@
+{
+    "name": "travel_staff",
+    "target-item": "enderio:item_travel_staff",
+    
+    "duration": 200,
+
+    "catalyst": "minecraft:ender_pearl",
+    "input-types": {
+        "a": {"id": "actuallyadditions:block_testifi_bucks_green_fence"},
+        "b": {"id": "immersiveengineering:metal_decoration1"}
+    },
+    "shape": [
+        [
+            ["a"]
+        ],
+        [
+            ["b"]
+        ],
+        [
+            ["b"]
+        ]
+    ]
+}

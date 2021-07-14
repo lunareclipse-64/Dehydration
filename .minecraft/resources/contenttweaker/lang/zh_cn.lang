@@ -69,6 +69,7 @@ item.contenttweaker.kaolinite.name=高岭石碎片
 item.contenttweaker.above_note.name=神秘的信息板
 item.contenttweaker.combustion_chamber.name=燃烧室
 item.contenttweaker.igniter.name=点火器
+item.contenttweaker.magnetic_refrigerator.name=磁制冷机
 
 fluid.titanium_tetrachloride=四氯化钛
 fluid.floatation_agent=浮选剂

@@ -65,7 +65,7 @@ ArcFurnace.removeRecipe(<ic2:ingot:6>);
 ArcFurnace.removeRecipe(<qmd:ingot:3>);
 ArcFurnace.removeRecipe(<ic2:misc_resource:1>);
 ArcFurnace.removeRecipe(<libvulpes:productingot:3>);
-ArcFurnace.removeRecipe(<libvulpes:productingot:3>);
+ArcFurnace.removeRecipe(<enderio:item_alloy_ingot:1>);
 
 var dustMelt = {
     <ore:dustNickel>:<thermalfoundation:material:133>,
@@ -116,9 +116,12 @@ AlloySmelter.addRecipe(<contenttweaker:silicon_seed>*3, <nuclearcraft:gem:6>, <t
 
 Blueprint.addRecipe("components", <tetra:vent_plate>*3 , [<minecraft:iron_bars>,<primal:iron_mesh>]);
 Blueprint.addRecipe("components", <nuclearcraft:part:6>*2, [<minecraft:potato>]);
+Blueprint.addRecipe("components", <nuclearcraft:part:9>*2, [<ore:plateSteel>, <ore:piston>, <ic2:crafting:30>, <immersiveengineering:material:20>, <logisticspipes:chip_basic>]);
+Blueprint.addRecipe("components", <nuclearcraft:part:7>*2, [<logisticspipes:chip_basic>, <ore:plateInvar>, <ore:stickSteel>, <immersiveengineering:material:20>, <ore:gearSteel>]);
 Blueprint.addRecipe("components", <contenttweaker:igniter>, [<rockhounding_chemistry:misc_items:1>, <ore:plateSteel>, <ore:stickSteel>, <rockhounding_chemistry:alloy_items_deco:2>, <minecraft:iron_nugget>, <ic2:crafting:6>]);
 Blueprint.addRecipe("components", <extrautils2:passivegenerator>*2, [<ore:plateInvar>, <logisticspipes:chip_basic>, <extrautils2:ingredients>, <thaumcraft:mirrored_glass>]);
 Blueprint.addRecipe("electronics", <logisticspipes:chip_basic>, [<ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte})*2, <nuclearcraft:part:6>]);
+Blueprint.addRecipe("electronics", <logisticspipes:chip_basic>, [<immersiveengineering:material:20>*2, <nuclearcraft:part:6>]);
 Blueprint.addRecipe("electronics", <contenttweaker:igniter>, [<rockhounding_chemistry:misc_items:1>, <ore:plateSteel>, <ore:stickSteel>, <minecraft:quartz>, <immersiveengineering:wirecoil>, <nuclearcraft:part:7>]);
 Blueprint.addRecipe("electronics", <logisticspipes:chip_advanced>, [<ore:dustSmallDiamond>, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte})*2, <appliedenergistics2:material:20>, <nuclearcraft:part:6>]);
 Blueprint.addRecipe("electronics", <rockhounding_chemistry:misc_items:1>*2, [<logisticspipes:chip_basic>, <appliedenergistics2:material:18>,<rockhounding_chemistry:misc_items:3>*2,<ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte})*2]);

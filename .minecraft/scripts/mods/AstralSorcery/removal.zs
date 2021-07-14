@@ -1,10 +1,7 @@
 #priority 999
 import crafttweaker.item.IItemStack;
 import mods.astralsorcery.LightTransmutation;
-import mods.astralsorcery.Altar.addDiscoveryAltarRecipe;
-import mods.astralsorcery.Altar.addAttunmentAltarRecipe;
-import mods.astralsorcery.Altar.addConstellationAltarRecipe;
-import mods.astralsorcery.Altar.addTraitAltarRecipe;
+import mods.astralsorcery.Altar;
 import mods.astralsorcery.StarlightInfusion;
 
 
@@ -24,30 +21,17 @@ LightTransmutation.removeTransmutation(<minecraft:cake>,false);
 LightTransmutation.removeTransmutation(<astralsorcery:blockcustomore:1>,false);
 LightTransmutation.removeTransmutation(<minecraft:clay>,false);
 
-val rem_tier1 as IItemStack[] = [
-	<astralsorcery:itemwand>,
-    <astralsorcery:itemusabledust:1>,
-	<astralsorcery:itemskyresonator>,
-	<astralsorcery:itemhandtelescope>,
-	<astralsorcery:blockattunementrelay>,
-	<astralsorcery:itemcraftingcomponent:3>,
-	<astralsorcery:blockaltar:1>,
-	<astralsorcery:itemjournal>,
-	<astralsorcery:blockworldilluminator>
+val removeShapedAltarRecipes as string[] = [
+	"tool_basicwand",
+	"illuminationpowder",
+	"journal",
+	"gateway",
+	"bore_core"
 ];
-val rem_tier2 as IItemStack[] = [
-	<astralsorcery:blockaltar:2>,
-	<astralsorcery:blockattunementaltar>,
-	<astralsorcery:blockcelestialgateway>
-];
-val rem_tier3 as IItemStack[] = [
-	<astralsorcery:blockaltar:3>,
-	<astralsorcery:blockstarlightinfuser>
-];
-val rem_tier4 as IItemStack[] = [
-	<astralsorcery:blockobservatory>,
-	<astralsorcery:blockbore>
-];
+for id in removeShapedAltarRecipes{
+    Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/" + id);
+}
+
 val rem_mac as IItemStack[] = [
 	<ic2:dust:7>,
 	<ic2:dust:8>,
@@ -65,18 +49,6 @@ val rem_mac as IItemStack[] = [
 	<libvulpes:productdust:7>,
 	<rockhounding_chemistry:chemical_dusts:25>
 ];
-for item in rem_tier1{
-    mods.astralsorcery.Altar.removeAltarRecipe(item,0);
-}
-for item in rem_tier2{
-    mods.astralsorcery.Altar.removeAltarRecipe(item,1);
-}
-for item in rem_tier3{
-    mods.astralsorcery.Altar.removeAltarRecipe(item,2);
-}
-for item in rem_tier4{
-    mods.astralsorcery.Altar.removeAltarRecipe(item,3);
-}
 for item in rem_mac{
     mods.astralsorcery.Grindstone.removeRecipe(item);
 }

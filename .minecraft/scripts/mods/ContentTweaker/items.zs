@@ -52,7 +52,8 @@ var items as string[] = [
 	"silicon_seed",
     "kaolinite",
     "combustion_chamber",
-    "igniter"
+    "igniter",
+    "magnetic_refrigerator"
 ];
 for name in items{
 	val item = VanillaFactory.createItem(name);

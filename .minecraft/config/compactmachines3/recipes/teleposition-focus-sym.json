@@ -1,0 +1,22 @@
+{
+    "name": "teleposition-focus-sym",
+    "target-item": "bloodmagic:teleposition_focus",
+    
+    "duration": 200,
+
+    "catalyst": "rftools:dimensional_shard",
+
+    "input-types": {
+        "a": {"id": "chisel:blockgold","meta": 4},
+        "b": {"id": "bloodmagic:demon_extras","meta": 12},
+        "c": {"id": "actuallyadditions:block_misc","meta": 6}
+    },
+    "symmetrical": true,
+    "shape": [
+        [
+            ["b","a","_"],
+            ["a","c","a"],
+            ["_","a","b"]
+        ]
+    ]
+}

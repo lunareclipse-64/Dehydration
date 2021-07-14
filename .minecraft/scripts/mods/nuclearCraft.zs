@@ -8,6 +8,11 @@ import mods.nuclearcraft.Infuser;
 import mods.nuclearcraft.AlloyFurnace;
 import mods.nuclearcraft.Assembler;
 import mods.nuclearcraft.IngotFormer;
+import mods.nuclearcraft.Supercooler;
+import mods.nuclearcraft.FissionIrradiator;
+import mods.nuclearcraft.Radiation.setMaterialRadiationLevel;
+import mods.nuclearcraft.RadiationScrubber;
+import mods.nuclearcraft.SaltMixer;
 
 recipes.addShaped(<qmd:part:10>, 
 [[<appliedenergistics2:material:23>, <ore:plateHastelloy>, null],
@@ -69,10 +74,15 @@ recipes.addShaped(<qmd:particle_chamber_casing> * 8,
 [<nuclearcraft:part>, <nuclearcraft:part:12>, <nuclearcraft:part>], 
 [<rockhounding_chemistry:alloy_parts:43>, <nuclearcraft:alloy:2>, <rockhounding_chemistry:alloy_parts:43>]]);
 
-recipes.addShaped(<qmd:accelerator_casing>, 
+recipes.addShaped(<qmd:accelerator_casing> * 8, 
 [[<nuclearcraft:part>, <nuclearcraft:alloy:9>, <nuclearcraft:part>],
 [<nuclearcraft:alloy:15>, <nuclearcraft:part:12>, <nuclearcraft:alloy:15>], 
 [<nuclearcraft:part>, <nuclearcraft:alloy:9>, <nuclearcraft:part>]]);
+
+recipes.addShaped(<nuclearcraft:supercooler>, 
+[[<ore:plateSteel>, <nuclearcraft:alloy:2>, <ore:plateSteel>],
+[<ore:ingotStainlessSteel>, <nuclearcraft:part:10>, <ore:ingotStainlessSteel>], 
+[<ore:plateSteel>, <contenttweaker:magnetic_refrigerator>, <ore:plateSteel>]]);
 
 
 Crystallizer.removeRecipeWithInput(<liquid:silicon>*1296);
@@ -112,20 +122,29 @@ Melter.removeRecipeWithInput(<bigreactors:dustmetals>);
 Melter.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <liquid:nd_yag>*1000);
 Melter.addRecipe(<ore:ingotYellorium>, <liquid:yellorium>*144);
 Melter.addRecipe(<ore:dustYellorium>, <liquid:yellorium>*144);
+Melter.addRecipe(<ore:ingotTough>, <liquid:tough>*144);
 
 
-
+Infuser.removeRecipeWithOutput(<thermalfoundation:material:165>);
+Infuser.removeRecipeWithOutput(<thermalfoundation:material:101>);
 Infuser.addRecipe(<qmd:discharge_lamp>, <liquid:krypton>*250, <contenttweaker:kryptonlight>);
 
 
 AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:7>*4);
 AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:15>*16);
+AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:1>*2);
 AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:2>*2);
+AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:11>*2);
+AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:1>);
+AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:2>);
+AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:5>);
 
 AlloyFurnace.addRecipe(<ore:plateDenseLead>, <ore:ingotStainlessSteel>, <nuclearcraft:part:1>*6);
 AlloyFurnace.addRecipe(<botania:quartz:2>*4, <astralsorcery:itemcoloredlens:2>, <actuallyadditions:block_greenhouse_glass>*3);
 AlloyFurnace.addRecipe(<ore:dustLead>*3, <ore:dustHafnium>, <nuclearcraft:part:3>);
 AlloyFurnace.addRecipe(<minecraft:diamond>, <rftools:dimensional_shard>, <nuclearcraft:alloy:2>*2);
+AlloyFurnace.addRecipe(<rockhounding_chemistry:alloy_items_tech:1>, <nuclearcraft:alloy:10>, <nuclearcraft:alloy:11>*2);
+AlloyFurnace.addRecipe(<ore:ingotTitanium>*3, <rockhounding_chemistry:alloy_items_tech:43>, <nuclearcraft:alloy:1>*4, 4.5D, 2.0D);
 
 
 Assembler.removeRecipeWithOutput(<qmd:semiconductor:4>);
@@ -143,3 +162,21 @@ Assembler.addRecipe(<immersiveengineering:material:27>, <ic2:cable>.withTag({typ
 
 
 IngotFormer.removeRecipeWithOutput(<nuclearcraft:alloy:2>);
+
+
+Supercooler.addRecipe(<liquid:ice>*1000, <liquid:cryotheum>*500, 5.0D, 2.5D);
+
+
+SaltMixer.removeRecipeWithOutput(<liquid:tough>*144);
+
+//辐射相关
+FissionIrradiator.addRecipe(<ore:ingotBronze>, <enderio:item_alloy_ingot:1>, 314000, 0, 0.2D, 0.000000314D);
+
+
+setMaterialRadiationLevel("EnergeticAlloy", 0.00000314D);
+setMaterialRadiationLevel("PulsatingIron", 0.00000000272D);
+setMaterialRadiationLevel("Signalum", 0.00000256D);
+
+
+RadiationScrubber.addRecipe(<ore:ingotConductiveIron>, null, <enderio:item_alloy_ingot:5>, null, 100, 40, 0.6D);
+RadiationScrubber.addRecipe(<ore:ingotShibuichi>, <liquid:redstone>*200, <thermalfoundation:material:165>, null, 200, 60, 0.6D);
