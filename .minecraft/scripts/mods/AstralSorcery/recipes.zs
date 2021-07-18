@@ -41,7 +41,6 @@ recipes.addShapeless(<astralsorcery:itemcraftingcomponent:2>, [<primal:iron_gall
 
 addTransmutation(<astralsorcery:blockcustomore>,<astralsorcery:blockcustomore:1>,200);
 addTransmutation(<thaumcraft:sapling_greatwood>,<thaumcraft:sapling_silverwood>,1000);
-addTransmutation(<rockhounding_chemistry:fluid.virgin_water>,<contenttweaker:normal_saline>,1000);
 addTransmutation(<biomesoplenty:dirt:2>,<minecraft:dirt>,200);
 addTransmutation(<appliedenergistics2:quartz_glass>,<advancedrocketry:blocklens>,5000);
 

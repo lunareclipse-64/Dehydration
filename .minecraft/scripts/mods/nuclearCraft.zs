@@ -13,6 +13,8 @@ import mods.nuclearcraft.FissionIrradiator;
 import mods.nuclearcraft.Radiation.setMaterialRadiationLevel;
 import mods.nuclearcraft.RadiationScrubber;
 import mods.nuclearcraft.SaltMixer;
+import mods.nuclearcraft.Enricher;
+import mods.qmd.beam_dump;
 
 recipes.addShaped(<qmd:part:10>, 
 [[<appliedenergistics2:material:23>, <ore:plateHastelloy>, null],
@@ -41,8 +43,8 @@ recipes.addShaped(<nuclearcraft:alloy_furnace>,
 
 recipes.addShaped(<nuclearcraft:melter>, 
 [[<nuclearcraft:part:1>, <rockhounding_chemistry:misc_items:35>, <nuclearcraft:part:1>],
-[<ic2:crafting:5>, <nuclearcraft:part:10>, <ic2:crafting:5>], 
-[<nuclearcraft:part:1>, <nuclearcraft:part:7>, <nuclearcraft:part:1>]]);
+[<immersiveengineering:graphite_electrode>, <nuclearcraft:part:10>, <immersiveengineering:graphite_electrode>], 
+[<ic2:crafting:5>, <nuclearcraft:part:7>, <ic2:crafting:5>]]);
 
 recipes.addShaped(<nuclearcraft:solid_fission_controller>, 
 [[<ore:plateAdvanced>, <ore:plateAdvancedAlloy>, <ore:plateAdvanced>],
@@ -84,6 +86,11 @@ recipes.addShaped(<nuclearcraft:supercooler>,
 [<ore:ingotStainlessSteel>, <nuclearcraft:part:10>, <ore:ingotStainlessSteel>], 
 [<ore:plateSteel>, <contenttweaker:magnetic_refrigerator>, <ore:plateSteel>]]);
 
+recipes.addShaped(<nuclearcraft:assembler>, 
+[[<nuclearcraft:part>, <rockhounding_chemistry:alloy_parts:28>, <nuclearcraft:part>],
+[<nuclearcraft:part:9>, <nuclearcraft:part:10>, <nuclearcraft:part:9>], 
+[<nuclearcraft:part>, <rockhounding_chemistry:misc_items:10>, <nuclearcraft:part>]]);
+
 
 Crystallizer.removeRecipeWithInput(<liquid:silicon>*1296);
 
@@ -92,8 +99,8 @@ ChemicalReactor.removeRecipeWithInput(<liquid:hydrogen>*1500, <liquid:boron>*72)
 ChemicalReactor.removeRecipeWithInput(<liquid:hydrogen>*500, <liquid:oxygen>*250);
 ChemicalReactor.removeRecipeWithInput(<liquid:hydrogen>*1000, <liquid:chlorine>*1000);
 
-ChemicalReactor.addRecipe(<liquid:hydrogen>*2000, <liquid:oxygen>*1000, <liquid:water>*2000, null, 0.1, 0.1, 1.0);
-ChemicalReactor.addRecipe(<liquid:hydrogen>*1000, <liquid:chlorine>*1000, <liquid:hydrochloric_acid>*2000, null, 0.1, 0.1, 1.0);
+ChemicalReactor.addRecipe(<liquid:hydrogen>*2000, <liquid:oxygen>*1000, <liquid:water>*2000, null, 0.1, 0.1);
+ChemicalReactor.addRecipe(<liquid:hydrogen>*1000, <liquid:chlorine>*1000, <liquid:hydrochloric_acid>*2000, null, 0.1, 0.1);
 
 
 Electrolyzer.addRecipe(<liquid:water>*1000, <liquid:hydrogen>*2000, <liquid:oxygen>*1000, null, null);
@@ -123,11 +130,20 @@ Melter.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <liquid:nd_yag>*10
 Melter.addRecipe(<ore:ingotYellorium>, <liquid:yellorium>*144);
 Melter.addRecipe(<ore:dustYellorium>, <liquid:yellorium>*144);
 Melter.addRecipe(<ore:ingotTough>, <liquid:tough>*144);
+Melter.addRecipe(<ore:ingotGraphite>|<ore:dustGraphite>, <liquid:pyrotheum>*250, 2.0D, 10.0D);
+Melter.addRecipe(<ore:dustCarbon>, <liquid:pyrotheum>*250, 2.2D, 10.0D);
 
 
 Infuser.removeRecipeWithOutput(<thermalfoundation:material:165>);
 Infuser.removeRecipeWithOutput(<thermalfoundation:material:101>);
+Infuser.removeRecipeWithOutput(<immersiveengineering:treated_wood>);
 Infuser.addRecipe(<qmd:discharge_lamp>, <liquid:krypton>*250, <contenttweaker:kryptonlight>);
+Infuser.addRecipe(<minecraft:blaze_powder>, <liquid:pyrotheum>*1000, <thermalfoundation:material:1024>*4);
+Infuser.addRecipe(<toughasnails:ice_cube>, <liquid:cryotheum>*1000, <thermalfoundation:material:1025>*4);
+Infuser.addRecipe(<primal:planks:2>, <liquid:creosote>*125, <immersiveengineering:treated_wood>);
+
+
+Enricher.addRecipe(<forestry:pollen:1>, <liquid:water>*1000, <liquid:ice>*1000, 2.3D, 0.5D);
 
 
 AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:7>*4);
@@ -143,8 +159,9 @@ AlloyFurnace.addRecipe(<ore:plateDenseLead>, <ore:ingotStainlessSteel>, <nuclear
 AlloyFurnace.addRecipe(<botania:quartz:2>*4, <astralsorcery:itemcoloredlens:2>, <actuallyadditions:block_greenhouse_glass>*3);
 AlloyFurnace.addRecipe(<ore:dustLead>*3, <ore:dustHafnium>, <nuclearcraft:part:3>);
 AlloyFurnace.addRecipe(<minecraft:diamond>, <rftools:dimensional_shard>, <nuclearcraft:alloy:2>*2);
-AlloyFurnace.addRecipe(<rockhounding_chemistry:alloy_items_tech:1>, <nuclearcraft:alloy:10>, <nuclearcraft:alloy:11>*2);
-AlloyFurnace.addRecipe(<ore:ingotTitanium>*3, <rockhounding_chemistry:alloy_items_tech:43>, <nuclearcraft:alloy:1>*4, 4.5D, 2.0D);
+AlloyFurnace.addRecipe(<rockhounding_chemistry:alloy_items_tech:1>, <nuclearcraft:alloy:2>, <nuclearcraft:alloy:11>*2);
+AlloyFurnace.addRecipe(<ore:ingotTitanium>*3, <rockhounding_chemistry:alloy_items_tech:43>, <nuclearcraft:alloy:1>*4, 2.5D, 2.0D);
+AlloyFurnace.addRecipe(<ore:ingotTough>*4, <ore:dustDiamond>, <thermalfoundation:material:656>, 2.5D, 1.5D);
 
 
 Assembler.removeRecipeWithOutput(<qmd:semiconductor:4>);
@@ -164,6 +181,8 @@ Assembler.addRecipe(<immersiveengineering:material:27>, <ic2:cable>.withTag({typ
 IngotFormer.removeRecipeWithOutput(<nuclearcraft:alloy:2>);
 
 
+Supercooler.removeRecipeWithOutput(<liquid:ice>*250);
+
 Supercooler.addRecipe(<liquid:ice>*1000, <liquid:cryotheum>*500, 5.0D, 2.5D);
 
 
@@ -173,10 +192,14 @@ SaltMixer.removeRecipeWithOutput(<liquid:tough>*144);
 FissionIrradiator.addRecipe(<ore:ingotBronze>, <enderio:item_alloy_ingot:1>, 314000, 0, 0.2D, 0.000000314D);
 
 
-setMaterialRadiationLevel("EnergeticAlloy", 0.00000314D);
+setMaterialRadiationLevel("EnergeticAlloy", 0.0000000314D);
 setMaterialRadiationLevel("PulsatingIron", 0.00000000272D);
-setMaterialRadiationLevel("Signalum", 0.00000256D);
+setMaterialRadiationLevel("Signalum", 0.000000256D);
+setMaterialRadiationLevel("DimensionalShard", 0.0000000042D);
 
 
 RadiationScrubber.addRecipe(<ore:ingotConductiveIron>, null, <enderio:item_alloy_ingot:5>, null, 100, 40, 0.6D);
 RadiationScrubber.addRecipe(<ore:ingotShibuichi>, <liquid:redstone>*200, <thermalfoundation:material:165>, null, 200, 60, 0.6D);
+
+//QMD
+beam_dump.addRecipe(<particle:neutron> * 600000, <liquid:ic2uu_matter>*1);

@@ -42,6 +42,10 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:6>*2,
 [null, <ore:coilCopper>, null], 
 [<ore:plateSteel>, null, <ore:plateSteel>]]);
 
+recipes.addShaped(<immersiveengineering:metal_device1:7>, 
+[[<ore:scaffoldingSteel>, <ic2:crafting:30>, <ore:scaffoldingSteel>],
+[<ore:scaffoldingSteel>, <nuclearcraft:part:8>, <ore:scaffoldingSteel>], 
+[<immersiveengineering:metal_decoration0:4>, <thermalfoundation:material:656>, <immersiveengineering:metal_decoration0:4>]]);
 
 ArcFurnace.removeRecipe(<nuclearcraft:ingot:6>);
 ArcFurnace.removeRecipe(<thermalfoundation:material:132>);
@@ -116,7 +120,9 @@ AlloySmelter.addRecipe(<contenttweaker:silicon_seed>*3, <nuclearcraft:gem:6>, <t
 
 Blueprint.addRecipe("components", <tetra:vent_plate>*3 , [<minecraft:iron_bars>,<primal:iron_mesh>]);
 Blueprint.addRecipe("components", <nuclearcraft:part:6>*2, [<minecraft:potato>]);
-Blueprint.addRecipe("components", <nuclearcraft:part:9>*2, [<ore:plateSteel>, <ore:piston>, <ic2:crafting:30>, <immersiveengineering:material:20>, <logisticspipes:chip_basic>]);
+Blueprint.addRecipe("pipes", <thermaldynamics:duct_32>*2 , [<logisticspipes:pipe_transport_basic>,<thaumcraft:nugget:5>]);
+Blueprint.addRecipe("components", <enderio:item_material:65>*4, [<extrautils2:powertransmitter>, <thermalfoundation:material:32>]);
+Blueprint.addRecipe("components", <nuclearcraft:part:9>*2, [<ore:plateSteel>, <immersiveengineering:material:8>, <ic2:crafting:30>, <immersiveengineering:material:20>, <logisticspipes:chip_basic>]);
 Blueprint.addRecipe("components", <nuclearcraft:part:7>*2, [<logisticspipes:chip_basic>, <ore:plateInvar>, <ore:stickSteel>, <immersiveengineering:material:20>, <ore:gearSteel>]);
 Blueprint.addRecipe("components", <contenttweaker:igniter>, [<rockhounding_chemistry:misc_items:1>, <ore:plateSteel>, <ore:stickSteel>, <rockhounding_chemistry:alloy_items_deco:2>, <minecraft:iron_nugget>, <ic2:crafting:6>]);
 Blueprint.addRecipe("components", <extrautils2:passivegenerator>*2, [<ore:plateInvar>, <logisticspipes:chip_basic>, <extrautils2:ingredients>, <thaumcraft:mirrored_glass>]);

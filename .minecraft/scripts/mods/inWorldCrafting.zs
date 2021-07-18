@@ -12,3 +12,5 @@ FluidToItem.transform(<modularmachinery:itemmodularium>*3, <liquid:astralsorcery
 FluidToItem.transform(<ic2:misc_resource:4>, <liquid:water>, [<primal:bark_jungle>,<forestry:propolis:1>],false);
 FluidToItem.transform(<forestry:loam>, <liquid:water>, [<forestry:fertilizer_bio>,<minecraft:clay>],false);
 FluidToItem.transform(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:flotation_cell"}), <liquid:floatation_agent>, [<enderio:item_material:77>,<thermalfoundation:material:23>],false);
+FluidToItem.transform(<thermalfoundation:material:1024>*4, <liquid:pyrotheum>, [<ore:dustBlaze>],true);
+FluidToItem.transform(<thermalfoundation:material:1025>*4, <liquid:cryotheum>, [<toughasnails:ice_cube>],true);

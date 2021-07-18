@@ -1,5 +1,6 @@
 #priority 11
 import mods.jei.JEI.addDescription as info;
+import crafttweaker.game.IGame;
 <avaritia:resource:5>.displayName="万物信息数据压缩集成包";
 <avaritia:resource:2>.displayName="数据碎片";
 <avaritia:resource:3>.displayName="数据包";

@@ -66,6 +66,9 @@ val removeByOutput as IIngredient[]=[
 	<compactmachines3:fieldprojector>,
 	<compactmachines3:psd>,
 	<cookingforblockheads:sink>,
+	<enderio:block_enhanced_wireless_charger>,
+	<enderio:block_wireless_charger_extension>,
+	<enderio:item_material:65>,
 	<enderio:item_soul_vial>,
 	<enderio:item_travel_staff>,
 	<extrautils2:glasscutter>,
@@ -73,7 +76,20 @@ val removeByOutput as IIngredient[]=[
 	<extrautils2:powerbattery>,
 	<extrautils2:powertransmitter>,
 	<extrautils2:wateringcan:1000>,
+	<forestry:alveary.fan>,
+	<forestry:alveary.heater>,
+	<forestry:alveary.hygro>,
+	<forestry:alveary.plain>,
+	<forestry:alveary.sieve>,
+	<forestry:alveary.stabiliser>,
+	<forestry:carpenter>,
+	<forestry:centrifuge>,
+	<forestry:fabricator>,
+	<forestry:fermenter>,
 	<forestry:loam>,
+	<forestry:moistener>,
+	<forestry:squeezer>,
+	<forestry:still>,
 	<forestry:sturdy_machine>,
 	<gbook:guidebook>.withTag({Book: "rockhounding_chemistry:xml/chembook.xml"}),
 	<gbook:guidebook>.withTag({Book: "rockhounding_chemistry:xml/chemquest.xml"}),
@@ -108,6 +124,7 @@ val removeByOutput as IIngredient[]=[
 	<ic2:te:78>,
 	<ic2:treetap>,
 	<immersiveengineering:blueprint>.withTag({blueprint: "components"}),
+	<immersiveengineering:material:1>,
 	<immersiveengineering:metal:9>,
 	<immersiveengineering:metal:18>,
 	<immersiveengineering:metal:29>,
@@ -115,7 +132,7 @@ val removeByOutput as IIngredient[]=[
 	<immersiveengineering:metal_decoration0:4>,
 	<immersiveengineering:metal_decoration0:5>,
 	<immersiveengineering:metal_decoration0:6>,
-	<immersiveengineering:material:1>,
+	<immersiveengineering:metal_device1:7>,
 	<immersiveengineering:stone_decoration>,
 	<immersiveengineering:treated_wood>,
 	<immersivetech:stone_decoration>,
@@ -158,6 +175,7 @@ val removeByOutput as IIngredient[]=[
 	<modularmachinery:blockinputbus>,
 	<modularmachinery:itemmodularium>,
 	<nuclearcraft:alloy_furnace>,
+	<nuclearcraft:assembler>,
 	<nuclearcraft:crystallizer>,
 	<nuclearcraft:decay_generator>,
 	<nuclearcraft:ingot_block:8>,
@@ -223,6 +241,8 @@ val removeByOutput as IIngredient[]=[
 	<thaumcraft:thaumium_legs>,
 	<thermalfoundation:material:33>,
 	<thermalfoundation:material:101>,
+	<thermalfoundation:material:656>,
+	<thermalfoundation:material:1024>,
 	<thermalfoundation:material:1025>,
 	<thermalfoundation:storage_alloy>,
 	<thermalfoundation:storage_resource>,
@@ -295,7 +315,11 @@ val removeByName as string[] = [
 	"nuclearcraft:tile.nuclearcraft.fission_casing",
 	"qmd:tile.qmd.accelerator_casing",
 	"qmd:tile.qmd.containment_casing",
-	"qmd:tile.qmd.particle_chamber_casing"
+	"qmd:tile.qmd.particle_chamber_casing",
+	"thermaldynamics:duct_32",
+	"thermaldynamics:duct_32_1",
+	"thaumcraft:salismundus",
+	"planarartifice:transmutation_redstone"
 ];
 for name in removeByName{recipes.removeByRecipeName(name);}
 
@@ -351,7 +375,8 @@ val removeFurnace as IIngredient[] = [
 	<logisticspipes:chip_basic>,
 	<logisticspipes:chip_advanced>,
 	<logisticspipes:chip_fpga>,
-	<nuclearcraft:ingot:8>
+	<nuclearcraft:ingot:8>,
+	<immersiveengineering:material:19>
 ];
 for item in removeFurnace{furnace.remove(item);}
 

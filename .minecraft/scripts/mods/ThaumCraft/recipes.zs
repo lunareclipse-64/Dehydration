@@ -79,10 +79,10 @@ Infusion.removeRecipe(<planarartifice:dimensional_singularity>);
 
 
 //工作台
-recipes.addShaped(<thaumcraft:salis_mundus>*2, 
-[[<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}), <astralsorcery:itemcraftingcomponent:2>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]})], 
-[<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}), <botania:pestleandmortar>.reuse(), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]})], 
-[<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}), <botania:manaresource:23>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})]]);
+recipes.addShapeless(<thaumcraft:salis_mundus>*2, 
+[<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}), <astralsorcery:itemcraftingcomponent:2>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "terra"}]}), 
+<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}), <botania:pestleandmortar>.reuse(), <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}), 
+<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}), <botania:manaresource:23>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})]);
 
 recipes.addShapeless(<thaumcraft:plate>, 
 [<primal:iron_gallagher>.anyDamage().transformDamage(3), <primal:brass_ingot>|<thaumcraft:ingot:2>]);

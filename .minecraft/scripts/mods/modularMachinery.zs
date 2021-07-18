@@ -16,7 +16,8 @@ recipes.addShaped(<modularmachinery:blockfluidinputhatch>,
 [<minecraft:bucket>]]);
 
 recipes.addShapeless(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:solution_electrolytic_pool"}), 
-[<ic2:crafting:25>, <liquid:ic2distilled_water>*1000, <enderio:item_material:77>, <modularmachinery:itemmodularium>, <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte})]);
+[<ic2:crafting:25>, <liquid:ic2distilled_water>*1000, <enderio:item_material:77>, 
+<modularmachinery:itemmodularium>, <ic2:cable>.withTag({type: 0 as byte, insulation: 1 as byte})]);
 
 //溶液电解池
 val invarElec = newBuilder("Invar_elec", "solution_electrolytic_pool", 180);
@@ -545,6 +546,7 @@ ultiGenerator2.addEnergyPerTickOutput(2048)
 //轨道收发器
 val blueprint = {
     <contenttweaker:technology1>:<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:tech_space"}),
+    <contenttweaker:technology3>:<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:tech_energy"}),
     <contenttweaker:technology4>:<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:tech_life"})
 }as IItemStack[IItemStack];
 
@@ -602,6 +604,12 @@ botaniaPylonGaia.addEnergyPerTickInput(100)
     .addItemInput(<botania:pylon>*4)
     .addItemInput(<botania:rune:8>*4)
     .addItemOutput(<botania:pylon:2>*4)
+    .build();
+val ic2Casing = newBuilder("ic2_casing", "tech_space", 80);
+ic2Casing.addEnergyPerTickInput(20)
+    .addItemInput(<ore:plateIron>,6)
+    .addItemInput(<thaumcraft:mechanism_complex>)
+    .addItemOutput(<ic2:resource:12>)
     .build();
 //生命创造器 需要在guguutils更新后修改
 val beeCreate = {} as IItemStack[IItemStack];

@@ -17,7 +17,7 @@
   "Foliage Color": "Not set. Check in-game.",
   "Water Color": "16777215",
   "Temperature": 0.8,
-  "Humidity": -5.0,
+  "Humidity": 0.25,
   "Water Tint": 16777215,
   "Enable Rain": false,
   "Enable Snow": false,
@@ -167,7 +167,14 @@
       "Max Group Count": 1
     }
   ],
-  "Spawnable Water Creatures": [],
+  "Spawnable Water Creatures": [
+    {
+      "Entity Class": "net.minecraft.entity.passive.EntitySquid",
+      "Weight": 10,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    }
+  ],
   "Spawnable Cave Creatures": [],
   "Spawn Biome": true,
   "Tweaked": true,

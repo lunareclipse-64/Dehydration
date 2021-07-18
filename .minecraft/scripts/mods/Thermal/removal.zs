@@ -6,6 +6,7 @@ import crafttweaker.events.IEventManager;
 import mods.contenttweaker.Commands;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.player.IPlayer;
+import crafttweaker.world.IFacing;
 
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent)
 {
@@ -259,5 +260,19 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
 	{
 		val player as IPlayer = event.damageSource.trueSource;
 		Commands.call("tc warp @s add -18", player, player.world, false, true);
+	}
+});
+
+events.onPlayerAttackEntity(function(event as crafttweaker.event.PlayerAttackEntityEvent)
+{
+	var entity = event.target;
+	if((entity.definition.id has "shulker_bullet"))
+	{
+		val position = entity.position3f.asBlockPos();
+		val block = entity.world.getBlock(position.getX(), position.getY(), position.getZ());
+		if((block.definition.id has "water") && (block.meta == 0))
+		{
+            entity.world.setBlockState(<blockstate:forestry:fluid.ice>, position.getOffset(IFacing.north(), 1).getOffset(IFacing.west(), 1));
+		}
 	}
 });

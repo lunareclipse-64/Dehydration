@@ -62,7 +62,7 @@ Cauldron.addRecipe(
     "astral_starlight_produce",
 	4,
 	<liquid:purified_water>*1000,
-	<liquid:astralsorcery.liquidstarlight>*1000,
+	<liquid:astralsorcery.liquidstarlight>*2000,
 	[<botania:manaresource:23>*2,<astralsorcery:itemusabledust:1>*4],
 	[]
 );
