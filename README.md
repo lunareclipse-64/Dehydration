@@ -1,5 +1,5 @@
 # Dehydration
-A Minecraft 1.12.2 modpack (WIP) ,with 11 quest lines, two appendixes and one fantastic story.
+
 深度魔改，许多物品被完全重定义，以服务科技线。
 
 
