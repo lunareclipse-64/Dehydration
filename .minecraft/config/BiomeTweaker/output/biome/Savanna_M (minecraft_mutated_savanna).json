@@ -22,12 +22,12 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "SAVANNA",
-    "HOT",
+    "SPARSE",
     "MOUNTAIN",
-    "DRY",
     "RARE",
-    "SPARSE"
+    "HOT",
+    "DRY",
+    "SAVANNA"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
@@ -68,112 +68,16 @@
       "Max Group Count": 1
     },
     {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.EntityFerretGrey",
-      "Weight": 8,
-      "Min Group Count": 1,
-      "Max Group Count": 3
-    },
-    {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.EntityFerretWhite",
-      "Weight": 8,
-      "Min Group Count": 1,
-      "Max Group Count": 3
-    },
-    {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.rabbits.RabbitChinchilla$EntityRabbitDoeChinchilla",
-      "Weight": 8,
+      "Entity Class": "com.animania.addons.catsdogs.common.entity.canids.DogWolf$EntityFemaleWolf",
+      "Weight": 5,
       "Min Group Count": 2,
       "Max Group Count": 2
     },
     {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.rabbits.RabbitHavana$EntityRabbitDoeHavana",
-      "Weight": 8,
+      "Entity Class": "com.animania.addons.catsdogs.common.entity.felids.CatOcelot$EntityQueenOcelot",
+      "Weight": 20,
       "Min Group Count": 2,
       "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.rabbits.RabbitJack$EntityRabbitDoeJack",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.rabbits.RabbitRex$EntityRabbitDoeRex",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.horses.HorseDraft$EntityMareDraftHorse",
-      "Weight": 8,
-      "Min Group Count": 1,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.pigs.PigHampshire$EntitySowHampshire",
-      "Weight": 9,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.chickens.ChickenPlymouthRock$EntityHenPlymouthRock",
-      "Weight": 9,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.cows.CowHereford$EntityCowHereford",
-      "Weight": 9,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.cows.CowHighland$EntityCowHighland",
-      "Weight": 9,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.cows.CowLonghorn$EntityCowLonghorn",
-      "Weight": 9,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.goats.GoatAlpine$EntityDoeAlpine",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.goats.GoatKiko$EntityDoeKiko",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.goats.GoatKinder$EntityDoeKinder",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.goats.GoatPygmy$EntityDoePygmy",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.sheep.SheepSuffolk$EntityEweSuffolk",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 3
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.sheep.SheepDorper$EntityEweDorper",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 3
     },
     {
       "Entity Class": "nmd.primal.core.common.entities.living.EntityCanisCampestris",

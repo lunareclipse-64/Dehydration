@@ -84,7 +84,7 @@ addDiscoveryAltarRecipe("internal/altar/nocturnalpowder",<astralsorcery:itemusab
 	<ore:dustCoal>,<astralsorcery:itemusabledust>,<ore:dustCoal>,
 	null,<ore:dyeBlue>,null]);
 
-addDiscoveryAltarRecipe("internal/altar/upgrage_tier2",<astralsorcery:blockaltar:1>,700,300,[
+addDiscoveryAltarRecipe("internal/altar/upgrade_tier2",<astralsorcery:blockaltar:1>,700,300,[
     <botania:rune>,<astralsorcery:blockattunementrelay>,<botania:rune:1>,
 	<astralsorcery:itemusabledust>,<contenttweaker:corner_upgrade>,<astralsorcery:itemusabledust:1>,
 	<botania:rune:3>,<astralsorcery:blockmarble:4>,<botania:rune:2>]);
@@ -132,7 +132,7 @@ addAttunementAltarRecipe("botania:pool",<botania:pool>,1200,100,[
 	<botania:livingrock:4>,<botania:pool:2>,<botania:livingrock:4>,
 	<botania:rune:2>,<botania:rune:3>,<botania:manaresource:23>,<botania:manaresource:23>]);
 
-addAttunementAltarRecipe("internal/altar/upgrage_tier3",<astralsorcery:blockaltar:2>,1800,600,[
+addAttunementAltarRecipe("internal/altar/upgrade_tier3",<astralsorcery:blockaltar:2>,1800,600,[
     <astralsorcery:blockmarble:4>,<contenttweaker:magical_projector>,<astralsorcery:blockmarble:4>,
 	<astralsorcery:itemcraftingcomponent:1>,<contenttweaker:wing_upgrade>,<astralsorcery:itemcraftingcomponent:1>,
 	<astralsorcery:itemcraftingcomponent>,<planarartifice:alchemical_alkimium_construct>,<astralsorcery:itemcraftingcomponent>,
@@ -223,7 +223,7 @@ addConstellationAltarRecipe("botania:terraplate",<botania:terraplate>,2500,500,[
 	<bloodmagic:slate:1>,<bloodmagic:slate:1>,null,null
 ]);
 
-addConstellationAltarRecipe("internal/altar/upgrage_tier4",<astralsorcery:blockaltar:3>,3800,1200,[
+addConstellationAltarRecipe("internal/altar/upgrade_tier4",<astralsorcery:blockaltar:3>,3800,1200,[
 	<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "Tinctura"}]}),<contenttweaker:effulgent_crystal>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "Tinctura"}]}),
 	<botania:manaresource:4>,<contenttweaker:edge_upgrade>,<thaumcraft:ingot:1>,
 	<astralsorcery:itemcelestialcrystal>,<astralsorcery:itemcraftingcomponent:4>,<astralsorcery:itemcelestialcrystal>,

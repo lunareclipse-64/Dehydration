@@ -1,8 +1,9 @@
 #priority 5
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import mods.recipestages.Recipes;
 
-recipes.addShapeless(<contenttweaker:vivid_crystal> * 4, [<contenttweaker:vivid_crystal_block>]);
+Recipes.addShapeless("renaissance",<contenttweaker:vivid_crystal> * 4, [<contenttweaker:vivid_crystal_block>]);
 val square2Com = {
     <contenttweaker:energy_crystal_block>:<contenttweaker:mana_crystal>,
     <contenttweaker:infused_crystal_block>:<contenttweaker:infused_crystal>,
@@ -12,8 +13,11 @@ val square2Com = {
 } as IItemStack[IItemStack];
 
 for compressed in square2Com{
-    recipes.addShaped(compressed, 
+    Recipes.addShaped("renaissance",compressed, 
     [[square2Com[compressed], square2Com[compressed]],
     [square2Com[compressed], square2Com[compressed]]]);
-    recipes.addShapeless(square2Com[compressed] * 4,[compressed]);
+    Recipes.addShapeless("renaissance",square2Com[compressed] * 4,[compressed]);
 }
+
+Recipes.addShapeless("renaissance",<actuallyadditions:block_laser_relay_fluids>,[<actuallyadditions:block_laser_relay_item_whitelist>]);
+Recipes.addShapeless("renaissance",<actuallyadditions:block_laser_relay_item_whitelist>,[<actuallyadditions:block_laser_relay_fluids>]);

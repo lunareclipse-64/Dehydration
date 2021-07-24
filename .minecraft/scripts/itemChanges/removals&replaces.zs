@@ -6,9 +6,16 @@ import mods.jei.JEI;
 
 //移除合成
 val removeByOutput as IIngredient[]=[
+	<actuallyadditions:block_display_stand>,
 	<actuallyadditions:block_greenhouse_glass>,
+	<actuallyadditions:block_laser_relay>,
+	<actuallyadditions:block_laser_relay_item_whitelist>,
 	<actuallyadditions:block_misc:5>,
+	<appliedenergistics2:controller>,
 	<appliedenergistics2:grindstone>,
+	<appliedenergistics2:inscriber>,
+	<appliedenergistics2:material:43>,
+	<appliedenergistics2:material:44>,
 	<astralsorcery:blockaltar>,
 	<astralsorcery:blockblackmarble>,
 	<astralsorcery:blockinfusedwood:2>,
@@ -16,7 +23,7 @@ val removeByOutput as IIngredient[]=[
 	<astralsorcery:itemwand>,
 	<backpack:stick>,
 	<backpack:stick:1>,
-	<bigreactors:blockmetals:5>,
+	<bigreactors:blockgraphite>,
 	<bigreactors:turbinehousing>,
 	<bigreactors:turbinebearing>,
 	<bigreactors:turbinerotorblade>,
@@ -38,6 +45,7 @@ val removeByOutput as IIngredient[]=[
 	<botania:altar>,
 	<botania:brewery>,
 	<botania:conjurationcatalyst>,
+	<botania:corporeaspark:*>,
 	<botania:felpumpkin>,
 	<botania:fertilizer>,
 	<botania:grassseeds:4>,
@@ -97,7 +105,7 @@ val removeByOutput as IIngredient[]=[
 	<genetics:misc>,
 	<guideapi:bloodmagic-guide>,
 	<harvestcraft:juiceritem>,
-	<ic2:advanced_re_battery:26>,
+	<ic2:advanced_re_battery>,
 	<ic2:crafting:1>,
 	<ic2:crafting:5>,
 	<ic2:crafting:6>,
@@ -176,6 +184,7 @@ val removeByOutput as IIngredient[]=[
 	<modularmachinery:itemmodularium>,
 	<nuclearcraft:alloy_furnace>,
 	<nuclearcraft:assembler>,
+	<nuclearcraft:compound:2>,
 	<nuclearcraft:crystallizer>,
 	<nuclearcraft:decay_generator>,
 	<nuclearcraft:ingot_block:8>,
@@ -297,8 +306,8 @@ recipes.removeShapeless(<immersiveengineering:metal:19>, [<ore:oreGold>,<immersi
 recipes.removeShapeless(<thermalfoundation:material:133>, [<ore:oreNickel>], true);
 recipes.removeShapeless(<thermalfoundation:material:69>, [<ore:oreNickel>], true);
 recipes.removeShapeless(<immersiveengineering:metal:13>, [<ore:oreNickel>], true);
-recipes.removeShapeless(<bigreactors:ingotmetals>, [<ore:oreYellorium>], true);
-recipes.removeShapeless(<bigreactors:dustmetals>, [<ore:oreYellorium>], true);
+recipes.removeShapeless(<bigreactors:ingotyellorium>, [<ore:oreYellorium>], true);
+recipes.removeShapeless(<bigreactors:dustyellorium>, [<ore:oreYellorium>], true);
 recipes.removeShapeless(<thermalfoundation:material:132>, [<ore:oreAluminum>], true);
 recipes.removeShapeless(<immersiveengineering:metal:10>, [<ore:oreAluminum>], true);
 recipes.removeShapeless(<thermalfoundation:material:68>, [<ore:oreAluminum>], true);
@@ -306,7 +315,7 @@ recipes.removeShapeless(<thermalfoundation:material:132>, [<ore:oreAluminium>], 
 recipes.removeShapeless(<immersiveengineering:metal:10>, [<ore:oreAluminium>], true);
 recipes.removeShapeless(<thermalfoundation:material:68>, [<ore:oreAluminium>], true);
 recipes.removeShapeless(<thermalfoundation:material:70>, [<ore:orePlatinum>,<immersiveengineering:tool>], true);
-recipes.removeShapeless(<bigreactors:dustmetals>, [<ore:oreYellorium>,<immersiveengineering:tool>], true);
+recipes.removeShapeless(<bigreactors:dustyellorium>, [<ore:oreYellorium>,<immersiveengineering:tool>], true);
 recipes.removeShapeless(<primal:sharp_bone>, [<minecraft:bone>, <ore:rock>]);
 recipes.removeShapeless(<immersiveengineering:metal:29> * 9, [<ore:ingotIron>]);
 recipes.removeShapeless(<libvulpes:productdust:7>, [<ore:oreTitanium>], true);
@@ -319,7 +328,9 @@ val removeByName as string[] = [
 	"thermaldynamics:duct_32",
 	"thermaldynamics:duct_32_1",
 	"thaumcraft:salismundus",
-	"planarartifice:transmutation_redstone"
+	"planarartifice:transmutation_redstone",
+	"genetics:dna_dye",
+	"binniecore:glass_container"
 ];
 for name in removeByName{recipes.removeByRecipeName(name);}
 
@@ -344,7 +355,6 @@ val removeFurnace as IIngredient[] = [
 	<ore:ingotIridium>,
 	<ore:ingotOsmium>,
     <minecraft:glass>,
-	<appliedenergistics2:material:5>,
 	<thermalfoundation:material:128>,
 	<thermalfoundation:material:129>,
 	<minecraft:iron_ingot>,

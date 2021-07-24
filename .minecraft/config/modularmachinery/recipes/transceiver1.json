@@ -26,7 +26,7 @@
         	"io-type": "output",
         	"item": "immersiveengineering:blueprint",
             "nbt": {
-                "blueprint": "GPChannels"
+                "blueprint": "channels"
             }
         }
     ]

@@ -2,6 +2,11 @@
 import mods.appliedenergistics2.Inscriber;
 import mods.appliedenergistics2.Grinder;
 
+recipes.addShaped(<appliedenergistics2:inscriber>, 
+[[<ore:plateSteel>, <ore:piston>, <ore:plateSteel>],
+[<ore:blockStoneHardened>, <contenttweaker:mana_crystal>, <ore:blockStoneHardened>], 
+[<ore:plateSteel>, <ore:piston>, <ore:plateSteel>]]);
+
 Inscriber.removeRecipe(<appliedenergistics2:material:17>);
 Inscriber.removeRecipe(<appliedenergistics2:material:18>);
 Inscriber.removeRecipe(<appliedenergistics2:material:20>);

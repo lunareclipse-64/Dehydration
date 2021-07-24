@@ -3,6 +3,12 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.recipestages.Recipes;
+import mods.ItemStages.stageModItems;
+import mods.ItemStages.removeItemStage;
+import mods.ItemStages.addItemStage;
+import mods.recipestages.Recipes.setRecipeStage;
+import mods.recipestages.Recipes.setRecipeStageByMod;
+
 var allStages as string[] = [
 	"desperation",
 	"exploration",
@@ -17,100 +23,6 @@ var allStages as string[] = [
     "default"
 ];
 Recipes.setPackageStage("appeng", allStages);
-//mod阶段化
-mods.recipestages.Recipes.setPrintContainers(true);
-var modsS0 as string[] = [
-	"biomesoplenty",
-	"toughasnails"
-];
-
-for mod in modsS0{
-	mods.ItemStages.stageModItems("desperation", mod);
-}
-
-
-var modsS1 as string[] = [
-    "primal",
-    "botania",
-    "botania_tweaks",
-    "botanicadds",
-	"forge",
-	"astralsorcery",
-    "primal_tech",
-    "tetra",
-    "geolosys",
-    "harvestcraft",
-    "cookingforblockheads",
-    "ceramics",
-    "jaffa",
-    "ironchest",
-    "wopper",
-    "contenttweaker",
-    "chisel"
-];
-
-for mod in modsS1{
-	mods.ItemStages.stageModItems("exploration", mod);
-}
-
-
-var modsS2 as string[] = [
-    "thaumcraft",
-    "planarartifice",
-    "jaopca",
-    "chisel",
-    "backpack"
-];
-
-for mod in modsS2{
-	mods.ItemStages.stageModItems("hypothesis", mod);
-}
-mods.ItemStages.stageModItems("hypothesis", "thaumcraft");
-
-var modsS3 as string[] = [
-    "bloodmagic",
-    "modularmachinery",
-    "modulardiversity",
-    "modularmagic"
-];
-
-for mod in modsS3{
-	mods.ItemStages.stageModItems("yours", mod);
-}
-
-
-var modsS4 as string[] = [
-    "ic2",
-    "immersiveengineering",
-    "rockhounding_core",
-    "rockhounding_chemistry",
-    "gbook",
-    "thermalfoundation",
-    "nuclearcraft"
-];
-
-for mod in modsS4{
-	mods.ItemStages.stageModItems("discovery", mod);
-}
-
-
-var modsS5 as string[] = [
-    "forestry",
-    "extrautils2",
-    "rftools",
-    "binniecore",
-    "extrabees",
-    "extratrees",
-    "botany",
-    "genetics",
-    "compactmachines3",
-    "rftoolscontrol"
-];
-
-for mod in modsS5{
-	mods.ItemStages.stageModItems("renaissance", mod);
-}
-
 //重定向物品阶段
 var redirectS0 as IIngredient[] = [
     <forestry:resources>,
@@ -124,9 +36,7 @@ var redirectS0 as IIngredient[] = [
     <primal_tech:rock>
 ];
 for item in redirectS0{
-    mods.ItemStages.removeItemStage(item);
-    mods.ItemStages.addItemStage("desperation", item);
-    mods.recipestages.Recipes.setRecipeStage("desperation", item);
+    setRecipeStage("desperation", item);
 }
 
 var redirectS1 as IIngredient[] = [
@@ -175,9 +85,7 @@ var redirectS1 as IIngredient[] = [
     <thermalfoundation:storage_resource>
 ];
 for item in redirectS1{
-    mods.ItemStages.removeItemStage(item);
-    mods.ItemStages.addItemStage("exploration", item);
-    mods.recipestages.Recipes.setRecipeStage("exploration", item);
+    setRecipeStage("exploration", item);
 }
 
 var redirectS2 as IIngredient[] = [
@@ -201,9 +109,7 @@ var redirectS2 as IIngredient[] = [
     <thermalfoundation:material:866>
 ];
 for item in redirectS2{
-    mods.ItemStages.removeItemStage(item);
-    mods.ItemStages.addItemStage("hypothesis", item);
-    mods.recipestages.Recipes.setRecipeStage("hypothesis", item);
+    setRecipeStage("hypothesis", item);
 }
 
 var redirectS3 as IIngredient[] = [
@@ -220,14 +126,49 @@ var redirectS3 as IIngredient[] = [
     <minecraft:slime_ball>
 ];
 for item in redirectS3{
-    mods.ItemStages.removeItemStage(item);
-    mods.ItemStages.addItemStage("yours", item);
-    mods.recipestages.Recipes.setRecipeStage("yours", item);
+    setRecipeStage("yours", item);
 }
 
 var redirectS4 as IIngredient[] = [
     <appliedenergistics2:quartz_ore>,
-	<bigreactors:blockmetals:5>,
+    <appliedenergistics2:quartz_glass>,
+    <appliedenergistics2:quartz_vibrant_glass>,
+    <appliedenergistics2:quartz_block>,
+    <appliedenergistics2:quartz_pillar>,
+    <appliedenergistics2:chiseled_quartz_block>,
+    <appliedenergistics2:material:19>,
+    <appliedenergistics2:material:15>,
+    <appliedenergistics2:material:13>,
+    <appliedenergistics2:material:14>,
+    <appliedenergistics2:fluix_block>,
+    <appliedenergistics2:material:23>,
+    <appliedenergistics2:material:22>,
+    <appliedenergistics2:material:24>,
+    <appliedenergistics2:material:20>,
+    <appliedenergistics2:inscriber>,
+    <appliedenergistics2:grindstone>,
+    <appliedenergistics2:crank>,
+    <appliedenergistics2:material:16>,
+    <appliedenergistics2:material:18>,
+    <appliedenergistics2:material:17>,
+    <appliedenergistics2:material>,
+    <appliedenergistics2:material:1>,
+    <appliedenergistics2:material:2>,
+    <appliedenergistics2:material:8>,
+    <appliedenergistics2:material:7>,
+    <appliedenergistics2:material:12>,
+    <appliedenergistics2:material:10>,
+    <appliedenergistics2:material:3>,
+    <appliedenergistics2:material:11>,
+    <appliedenergistics2:fluix_stairs>,
+    <appliedenergistics2:fluix_slab>,
+    <appliedenergistics2:quartz_stairs>,
+    <appliedenergistics2:quartz_slab>,
+    <appliedenergistics2:chiseled_quartz_stairs>,
+    <appliedenergistics2:chiseled_quartz_slab>,
+    <appliedenergistics2:quartz_pillar_stairs>,
+    <appliedenergistics2:quartz_pillar_slab>,
+	<bigreactors:blockgraphite>,
 	<bigreactors:turbinehousing>,
 	<bigreactors:turbinebearing>,
 	<bigreactors:turbinerotorblade>,
@@ -247,18 +188,150 @@ var redirectS4 as IIngredient[] = [
     <nuclearcraft:part:6>
 ];
 for item in redirectS4{
-    mods.ItemStages.removeItemStage(item);
-    mods.ItemStages.addItemStage("discovery", item);
-    mods.recipestages.Recipes.setRecipeStage("discovery", item);
+    setRecipeStage("discovery", item);
 }
 
 var redirectS5 as IIngredient[] = [
     <astralsorcery:blockcelestialgateway>,
+    <appliedenergistics2:controller>,
+    <appliedenergistics2:material:43>,
+    <appliedenergistics2:material:44>
 ];
 for item in redirectS5{
-    mods.ItemStages.removeItemStage(item);
-    mods.ItemStages.addItemStage("renaissance", item);
-    mods.recipestages.Recipes.setRecipeStage("renaissance", item);
+    setRecipeStage("renaissance", item);
+}
+//mod阶段化
+mods.recipestages.Recipes.setPrintContainers(true);
+var modsS0 as string[] = [
+	"biomesoplenty",
+	"toughasnails"
+];
+
+for mod in modsS0{
+	stageModItems("desperation", mod);
+    setRecipeStageByMod("desperation", mod);
+}
+
+
+var modsS1 as string[] = [
+    "primal",
+    "botania",
+    "botania_tweaks",
+    "botanicadds",
+	"forge",
+	"astralsorcery",
+    "primal_tech",
+    "tetra",
+    "geolosys",
+    "harvestcraft",
+    "cookingforblockheads",
+    "ceramics",
+    "jaffa",
+    "ironchest",
+    "wopper",
+    "contenttweaker",
+    "chisel"
+];
+
+for mod in modsS1{
+	stageModItems("exploration", mod);
+    setRecipeStageByMod("exploration", mod);
+}
+
+
+var modsS2 as string[] = [
+    "thaumcraft",
+    "planarartifice",
+    "jaopca",
+    "chisel",
+    "backpack"
+];
+
+for mod in modsS2{
+	stageModItems("hypothesis", mod);
+    setRecipeStageByMod("hypothesis", mod);
+}
+
+var modsS3 as string[] = [
+    "bloodmagic",
+    "modularmachinery",
+    "modulardiversity",
+    "modularmagic"
+];
+
+for mod in modsS3{
+	stageModItems("yours", mod);
+    setRecipeStageByMod("yours", mod);
+}
+
+
+var modsS4 as string[] = [
+    "ic2",
+    "immersiveengineering",
+    "rockhounding_core",
+    "rockhounding_chemistry",
+    "gbook",
+    "thermalfoundation",
+    "nuclearcraft"
+];
+
+for mod in modsS4{
+	stageModItems("discovery", mod);
+    setRecipeStageByMod("discovery", mod);
+}
+
+
+var modsS5 as string[] = [
+    "forestry",
+    "extrautils2",
+    "rftools",
+    "binniecore",
+    "extrabees",
+    "extratrees",
+    "botany",
+    "genetics",
+    "compactmachines3",
+    "rftoolscontrol"
+];
+
+for mod in modsS5{
+	stageModItems("renaissance", mod);
+    setRecipeStageByMod("renaissance", mod);
+}
+
+var modsS6 as string[] = [
+    "appliedenergistics2",
+    "extracells"
+];
+
+for mod in modsS6{
+	stageModItems("automation", mod);
+    setRecipeStageByMod("automation", mod);
+}
+//物品重定向
+for item in redirectS0{
+    removeItemStage(item);
+    addItemStage("desperation", item);
+}
+for item in redirectS1{
+    removeItemStage(item);
+    addItemStage("exploration", item);
+}
+for item in redirectS2{
+    removeItemStage(item);
+    addItemStage("hypothesis", item);
+}
+for item in redirectS3{
+    removeItemStage(item);
+    addItemStage("yours", item);
+}
+for item in redirectS4{
+    removeItemStage(item);
+    addItemStage("discovery", item);
+}
+for item in redirectS5{
+    removeItemStage(item);
+    addItemStage("renaissance", item);
 }
 //JEI合成区阶段化
 var catS1 as string[] = [
@@ -348,35 +421,36 @@ var recS1 as string[] = [
     "forestry:sand_to_fertilizer"
 ];
 for recipe in recS1{
-    mods.recipestages.Recipes.setRecipeStage("exploration", recipe);
+    setRecipeStage("exploration", recipe);
 }
 
 var recS2 as string[] = [
 ];
 for recipe in recS2{
-    mods.recipestages.Recipes.setRecipeStage("hypothesis", recipe);
+    setRecipeStage("hypothesis", recipe);
 }
 
 var recS3 as string[] = [
 ];
 for recipe in recS3{
-    mods.recipestages.Recipes.setRecipeStage("yours", recipe);
+    setRecipeStage("yours", recipe);
 }
 
 var recS4 as string[] = [
 ];
 for recipe in recS4{
-    mods.recipestages.Recipes.setRecipeStage("discovery", recipe);
+    setRecipeStage("discovery", recipe);
 }
 
 var recS5 as string[] = [
 ];
 for recipe in recS5{
-    mods.recipestages.Recipes.setRecipeStage("automation", recipe);
+    setRecipeStage("automation", recipe);
 }
 
 //删除物品
 var banneditem as IIngredient[] = [
+    <actuallyadditions:block_laser_relay_item>,
     <actuallyadditions:block_misc:3>,
     <advancedrocketry:arcfurnace>,
     <advancedrocketry:centrifuge>, 
@@ -390,8 +464,10 @@ var banneditem as IIngredient[] = [
 	<astralsorcery:itemcrystalpickaxe>,
 	<astralsorcery:itemcrystalshovel>,
 	<astralsorcery:itemcrystalsword>,
-    <bigreactors:brore:*>,
-    <bigreactors:ingotmetals:5>,
+    <bigreactors:oreyellorite>,
+    <bigreactors:oreanglesite>,
+    <bigreactors:orebenitoite>,
+    <bigreactors:ingotgraphite>,
     <botania:floatingspecialflower>.withTag({type: "orechid"}),
 	<botania:specialflower>.withTag({type: "orechid"}),
 	<enderio:block_reservoir>,
@@ -400,7 +476,6 @@ var banneditem as IIngredient[] = [
     <extrautils2:teleporter>,
 	<extrautils2:teleporter:1>,
     <fluid:hard_carbon>,
-    <forestry:apiary>,
     <forestry:bee_house>,
     <forestry:bottler>,
     <forestry:cart.beehouse:1>,
@@ -548,8 +623,8 @@ var banneditem as IIngredient[] = [
 ];
 
 for item in banneditem{
-    mods.ItemStages.removeItemStage(item);
-    mods.ItemStages.addItemStage("impossible", item);
+    removeItemStage(item);
+    addItemStage("impossible", item);
     mods.jei.JEI.removeAndHide(item);
     furnace.remove(item);
 }

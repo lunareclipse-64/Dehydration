@@ -1,4 +1,4 @@
-#priority 1200
+#priority 1300
 #loader contenttweaker
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -53,7 +53,9 @@ var items as string[] = [
     "kaolinite",
     "combustion_chamber",
     "igniter",
-    "magnetic_refrigerator"
+    "magnetic_refrigerator",
+    "levitate_device",
+    "micro_laser_etcher"
 ];
 for name in items{
 	val item = VanillaFactory.createItem(name);

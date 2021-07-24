@@ -1,0 +1,35 @@
+{
+    "name": "micro-laser-etcher",
+    "target-item": "contenttweaker:micro_laser_etcher",
+    
+    "duration": 400,
+    "symmetrical": true,
+
+    "catalyst": "appliedenergistics2:material",
+    "catalyst-meta": 24,
+
+    "input-types": {
+    "a": {"id": "modularmachinery:blockcasing","meta": 4},
+    "b": {"id": "thermalfoundation:glass_alloy","meta": 5},
+    "c": {"id": "compactmachines3:wallbreakable"},
+    "d": {"id": "advancedrocketry:blocklens"},
+    "e": {"id": "astralsorcery:blockstarlightinfuser"}
+    },
+    "shape": [
+        [
+            ["a","b","a"],
+            ["b","d","b"],
+            ["a","b","a"]
+        ],
+        [
+            ["a","c","a"],
+            ["c","e","c"],
+            ["a","c","a"]
+        ],
+        [
+            ["a","c","a"],
+            ["c","c","c"],
+            ["a","c","a"]
+        ]
+    ]
+}

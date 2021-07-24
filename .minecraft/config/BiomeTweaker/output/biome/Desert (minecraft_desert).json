@@ -22,8 +22,8 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "HOT",
     "SANDY",
+    "HOT",
     "DRY"
   ],
   "BiomeManager Entries": {},
@@ -35,20 +35,8 @@
       "Max Group Count": 3
     },
     {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.EntityHamster",
-      "Weight": 8,
-      "Min Group Count": 1,
-      "Max Group Count": 3
-    },
-    {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.rabbits.RabbitJack$EntityRabbitDoeJack",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.goats.GoatNigerianDwarf$EntityDoeNigerianDwarf",
-      "Weight": 8,
+      "Entity Class": "com.animania.addons.catsdogs.common.entity.felids.CatOcelot$EntityQueenOcelot",
+      "Weight": 20,
       "Min Group Count": 2,
       "Max Group Count": 2
     }

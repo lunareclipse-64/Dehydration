@@ -118,9 +118,10 @@ AlloySmelter.addRecipe(<thermalfoundation:material:160>, <minecraft:iron_ingot>,
 AlloySmelter.addRecipe(<contenttweaker:silicon_seed>*3, <nuclearcraft:gem:6>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}), 800);
 
 
+Blueprint.addRecipe("pipes", <thermaldynamics:duct_32>*2 , [<logisticspipes:pipe_transport_basic>,<thaumcraft:nugget:5>]);
 Blueprint.addRecipe("components", <tetra:vent_plate>*3 , [<minecraft:iron_bars>,<primal:iron_mesh>]);
 Blueprint.addRecipe("components", <nuclearcraft:part:6>*2, [<minecraft:potato>]);
-Blueprint.addRecipe("pipes", <thermaldynamics:duct_32>*2 , [<logisticspipes:pipe_transport_basic>,<thaumcraft:nugget:5>]);
+Blueprint.addRecipe("components", <contenttweaker:levitate_device>, [<darkutils:shulker_pearl>,<immersiveengineering:wirecoil:2>,<rockhounding_chemistry:alloy_parts:85>,<appliedenergistics2:material:24>]);
 Blueprint.addRecipe("components", <enderio:item_material:65>*4, [<extrautils2:powertransmitter>, <thermalfoundation:material:32>]);
 Blueprint.addRecipe("components", <nuclearcraft:part:9>*2, [<ore:plateSteel>, <immersiveengineering:material:8>, <ic2:crafting:30>, <immersiveengineering:material:20>, <logisticspipes:chip_basic>]);
 Blueprint.addRecipe("components", <nuclearcraft:part:7>*2, [<logisticspipes:chip_basic>, <ore:plateInvar>, <ore:stickSteel>, <immersiveengineering:material:20>, <ore:gearSteel>]);
@@ -133,5 +134,6 @@ Blueprint.addRecipe("electronics", <logisticspipes:chip_advanced>, [<ore:dustSma
 Blueprint.addRecipe("electronics", <rockhounding_chemistry:misc_items:1>*2, [<logisticspipes:chip_basic>, <appliedenergistics2:material:18>,<rockhounding_chemistry:misc_items:3>*2,<ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte})*2]);
 Blueprint.addRecipe("electronics", <rockhounding_chemistry:misc_items:10>*2, [<logisticspipes:chip_advanced>, <appliedenergistics2:material:16>,<rockhounding_chemistry:misc_items:3>*2,<minecraft:redstone>*2]);
 Blueprint.addRecipe("electronics", <logisticspipes:chip_fpga>, [<ore:dustSmallDiamond>, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}), <ic2:cable:2>.withTag({type: 2 as byte, insulation: 0 as byte}), <ore:dustSmallLapis>, <appliedenergistics2:material:20>, <nuclearcraft:part:6>]);
+Blueprint.addRecipe("channels", <appliedenergistics2:controller>, [<qmd:discharge_lamp:5>,<qmd:semiconductor:6>*2,<appliedenergistics2:material:44>,<appliedenergistics2:material:43>,<nuclearcraft:part:12>,<qmd:ingot_alloy:6>]);
 
 CokeOven.addRecipe(<rockhounding_chemistry:chemical_items:7>, 100, <ore:dustCoal>, 400);

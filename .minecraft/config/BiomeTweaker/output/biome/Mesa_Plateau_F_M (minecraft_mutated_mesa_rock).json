@@ -22,55 +22,19 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "HILLS",
+    "SPARSE",
+    "RARE",
     "HOT",
     "DRY",
-    "RARE",
-    "SPARSE"
+    "HILLS"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
     {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.rabbits.RabbitHavana$EntityRabbitDoeHavana",
-      "Weight": 8,
+      "Entity Class": "com.animania.addons.catsdogs.common.entity.felids.CatOcelot$EntityQueenOcelot",
+      "Weight": 20,
       "Min Group Count": 2,
       "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.pigs.PigHampshire$EntitySowHampshire",
-      "Weight": 9,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.cows.CowHereford$EntityCowHereford",
-      "Weight": 9,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.cows.CowHighland$EntityCowHighland",
-      "Weight": 9,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.goats.GoatAlpine$EntityDoeAlpine",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.goats.GoatKiko$EntityDoeKiko",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.sheep.SheepDorset$EntityEweDorset",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 3
     },
     {
       "Entity Class": "nmd.primal.core.common.entities.living.EntityCanisCampestris",

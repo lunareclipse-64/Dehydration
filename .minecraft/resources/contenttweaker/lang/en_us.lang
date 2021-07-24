@@ -70,6 +70,8 @@ item.contenttweaker.above_note.name=Mysterious Plate
 item.contenttweaker.combustion_chamber.name=Combustion Chamber
 item.contenttweaker.igniter.name=Igniter
 item.contenttweaker.magnetic_refrigerator.name=Magnetic Refrigerator
+item.contenttweaker.levitate_device.name=Levitate Device
+item.contenttweaker.micro_laser_etcher.name=Micro Laser Etcher
 
 
 fluid.titanium_tetrachloride=Titanium Tetrachloride

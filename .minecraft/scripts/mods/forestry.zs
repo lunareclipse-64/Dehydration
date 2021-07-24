@@ -19,7 +19,7 @@ recipes.addShaped(<forestry:centrifuge>,
 
 recipes.addShaped(<forestry:alveary.sieve>, 
 [[<minecraft:string>, null, <minecraft:string>],
-[<primal:iron_mesh>, <forestry:alveary.plain>, <primal:iron_mesh>], 
+[<forestry:crafting_material:3>, <forestry:alveary.plain>, <forestry:crafting_material:3>], 
 [<minecraft:string>, null, <minecraft:string>]]);
 
 recipes.addShaped(<forestry:alveary.fan>, 

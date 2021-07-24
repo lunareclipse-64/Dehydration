@@ -1,4 +1,3 @@
-#ikwid
 #priority 5
 #loader crafttweaker reloadableevents
 import crafttweaker.item.IItemStack;
@@ -81,11 +80,7 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
 			var BlockMeta = event.block.meta;
 			if(h has "contenttweaker:memento_extractor")
 			{
-				if(BlockID == "minecraft:dirt")
-				{
-					p.give(<contenttweaker:memento1>);
-				    event.world.destroyBlock(event.position, false);
-				    event.damageItem(1);}
+				if(BlockID == "minecraft:dirt"){p.give(<contenttweaker:memento1>);event.world.destroyBlock(event.position, false);event.damageItem(1);}
 				if(BlockID has "bookshelf"){p.give(<contenttweaker:memento2>);event.world.destroyBlock(event.position, false);event.damageItem(1);}
 				if(BlockID has "blood_rune"){p.give(<contenttweaker:memento3>);event.world.destroyBlock(event.position, false);event.damageItem(1);}
 				if(BlockID == "ic2:resource")&&(BlockMeta == 12){p.give(<contenttweaker:memento4>);event.world.destroyBlock(event.position, false);event.damageItem(1);}

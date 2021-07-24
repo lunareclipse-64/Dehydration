@@ -559,6 +559,11 @@ for technode in blueprint{
         .build();
 }
 
+val sparkUpgrade = newBuilder("spark_upgrade", "orbital_transceiver", 400);
+sparkUpgrade.addEnergyPerTickInput(10)
+    .addItemInput(<botania:corporeaspark>)
+    .addItemOutput(<botania:corporeaspark:1>)
+    .build();
 //空间操控器
 val projectorSpace = newBuilder("compact_projector_space", "tech_space", 240);
 projectorSpace.addEnergyPerTickInput(20)
@@ -610,6 +615,56 @@ ic2Casing.addEnergyPerTickInput(20)
     .addItemInput(<ore:plateIron>,6)
     .addItemInput(<thaumcraft:mechanism_complex>)
     .addItemOutput(<ic2:resource:12>)
+    .build();
+val botaniaSpark = newBuilder("botania_spark", "tech_space", 120);
+botaniaSpark.addEnergyPerTickInput(60)
+    .addItemInput(<contenttweaker:technology1>)
+    .addItemInput(<minecraft:ender_pearl>)
+    .addItemInput(<botanicadds:gaia_shard>)
+    .addItemInput(<jaopca:item_dustdimensionalshard>)
+    .addItemOutput(<botania:corporeaspark>*2)
+    .build();
+val processorBasic = newBuilder("processor_basic", "tech_space", 120);
+processorBasic.addEnergyPerTickInput(20)
+    .addItemInput(<contenttweaker:micro_laser_etcher>)
+    .addItemInput(<qmd:semiconductor:1>)
+    .addItemInput(<nuclearcraft:compound:2>)
+    .addItemInput(<ic2:dust:19>)
+    .addItemOutput(<qmd:semiconductor:4>)
+    .addItemOutput(<contenttweaker:micro_laser_etcher>)
+    .build();
+val processorAdvanced = newBuilder("processor_advanced", "tech_space", 180);
+processorAdvanced.addEnergyPerTickInput(20)
+    .addItemInput(<contenttweaker:micro_laser_etcher>)
+    .addItemInput(<qmd:semiconductor:1>)
+    .addItemInput(<qmd:semiconductor>)
+    .addItemInput(<nuclearcraft:compound:2>)
+    .addItemInput(<ic2:dust:19>)
+    .addItemOutput(<qmd:semiconductor:5>)
+    .addItemOutput(<contenttweaker:micro_laser_etcher>)
+    .addItemOutput(<rockhounding_chemistry:chemical_dusts:42>).setChance(0.3)
+    .build();
+val processorElite1 = newBuilder("processor_elite1", "tech_space", 300);
+processorElite1.addEnergyPerTickInput(20)
+    .addItemInput(<contenttweaker:micro_laser_etcher>)
+    .addItemInput(<qmd:semiconductor>)
+    .addItemInput(<nuclearcraft:compound:2>)
+    .addItemInput(<qmd:part:4>)
+    .addItemInput(<botania:manaresource:5>)
+    .addItemInput(<extrabees:honey_drop:5>)
+    .addItemOutput(<qmd:semiconductor:6>)
+    .addItemOutput(<contenttweaker:micro_laser_etcher>)
+    .build();
+val processorElite2 = newBuilder("processor_elite2", "tech_space", 360);
+processorElite2.addEnergyPerTickInput(20)
+    .addItemInput(<contenttweaker:micro_laser_etcher>)
+    .addItemInput(<qmd:semiconductor>)
+    .addItemInput(<nuclearcraft:compound:2>)
+    .addItemInput(<qmd:part:4>)
+    .addItemInput(<botania:manaresource:5>)
+    .addItemInput(<thermalfoundation:material:1025>*2)
+    .addItemOutput(<qmd:semiconductor:6>)
+    .addItemOutput(<contenttweaker:micro_laser_etcher>)
     .build();
 //生命创造器 需要在guguutils更新后修改
 val beeCreate = {} as IItemStack[IItemStack];
@@ -668,14 +723,23 @@ darkoaktreeCreate.addEnergyPerTickInput(20)
 val irontreeCreate = newBuilder("iron_tree_create", "tech_life", 140);
 irontreeCreate.addEnergyPerTickInput(30)
     .addItemInput(<minecraft:sapling>)
-    .addItemInput(<minecraft:blaze_powder>)
+    .addItemInput(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}))
     .addItemInput(<contenttweaker:technology4>)
     .addFluidInput(<liquid:binnie.dna.raw>*10)
     .addFluidInput(<liquid:water>*1000)
     .addItemOutput(<primal:sapling>)
     .addStarlightInput(4200, "aevitas")
     .build();
-
+val ironwoodCreate = newBuilder("iron_wood_create", "tech_life", 290);
+ironwoodCreate.addEnergyPerTickInput(60)
+    .addItemInput(<minecraft:sapling>)
+    .addItemInput(<minecraft:blaze_powder>)
+    .addItemInput(<contenttweaker:technology4>)
+    .addFluidInput(<liquid:binnie.dna.raw>*10)
+    .addFluidInput(<liquid:water>*1000)
+    .addItemOutput(<extrautils2:ironwood_sapling>)
+    .addStarlightInput(3500, "aevitas")
+    .build();
 val shulkerCreate = newBuilder("shulker_reate", "tech_life", 300);
 shulkerCreate.addEnergyPerTickInput(200)
     .addItemInput(<enderio:item_soul_vial>)
@@ -686,10 +750,40 @@ shulkerCreate.addEnergyPerTickInput(200)
     .addItemOutput(<enderio:item_soul_vial:1>.withTag({entityId: "minecraft:shulker"}))
     .build();
 
+//能量迁移器
+val praecantatioEnergy = newBuilder("praecantatio_energy", "tech_energy", 20);
+praecantatioEnergy.addEnergyPerTickOutput(128)
+    .addItemInput(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praecantatio"}]}))
+    .addItemOutput(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aer"}]}))
+    .build();
+val instrumentumEnergy = newBuilder("instrumentum_energy", "tech_energy", 20);
+instrumentumEnergy.addEnergyPerTickOutput(128)
+    .addItemInput(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "instrumentum"}]}))
+    .addItemOutput(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "metallum"}]}))
+    .build();
+val manadustCharge = newBuilder("manadust_harge", "tech_energy", 100);
+manadustCharge.addEnergyPerTickInput(83)
+    .addItemInput(<botania:manaresource:23>)
+    .addItemOutput(<nuclearcraft:compound:2>)
+    .build();
+val formerCore = newBuilder("former_core", "tech_energy", 80);
+formerCore.addEnergyPerTickInput(2048)
+    .addItemInput(<appliedenergistics2:material:22>)
+    .addItemInput(<ic2:casing:3>)
+    .addItemInput(<rftools:dimensional_shard>)
+    .addItemOutput(<appliedenergistics2:material:43>)
+    .build();
 //物质转化器
 val prismarineShardTrans = newBuilder("prismarine_shard_trans", "tech_substance", 216);
 prismarineShardTrans.addEnergyPerTickInput(165)
     .addItemInput(<astralsorcery:itemcraftingcomponent>)
     .addItemInput(<primal:rock_granite>)
     .addItemOutput(<minecraft:prismarine_shard>)
+    .build();
+val destructiveCore = newBuilder("destructive_core", "tech_substance", 80);
+destructiveCore.addEnergyPerTickInput(80)
+    .addItemInput(<appliedenergistics2:material:22>)
+    .addItemInput(<ic2:casing:3>)
+    .addItemInput(<jaopca:item_dustdimensionalshard>)
+    .addItemOutput(<appliedenergistics2:material:44>)
     .build();

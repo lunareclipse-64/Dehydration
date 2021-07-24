@@ -48,12 +48,12 @@ recipes.addShaped(<nuclearcraft:melter>,
 
 recipes.addShaped(<nuclearcraft:solid_fission_controller>, 
 [[<ore:plateAdvanced>, <ore:plateAdvancedAlloy>, <ore:plateAdvanced>],
-[<ore:processorElite>, <ore:steelFrame>, <ore:ingotTough>], 
+[<appliedenergistics2:material:24>, <ore:steelFrame>, <ore:ingotTough>], 
 [<ore:plateAdvanced>, <ore:plateAdvancedAlloy>, <ore:plateAdvanced>]]);
 
 recipes.addShaped(<nuclearcraft:turbine_controller>, 
 [[<ore:ingotHSLASteel>, <ore:plateAdvancedAlloy>, <ore:ingotHSLASteel>],
-[<ore:processorAdvanced>, <ore:steelFrame>, <ore:ingotExtreme>], 
+[<appliedenergistics2:material:23>, <ore:steelFrame>, <ore:ingotExtreme>], 
 [<ore:ingotHSLASteel>, <ore:plateAdvancedAlloy>, <ore:ingotHSLASteel>]]);
 
 recipes.addShaped(<nuclearcraft:turbine_rotor_shaft> * 4, 
@@ -124,7 +124,7 @@ Melter.removeRecipeWithInput(<ore:oreLead>);
 Melter.removeRecipeWithInput(<ore:oreUranium>);
 Melter.removeRecipeWithInput(<ore:oreYellorium>);
 Melter.removeRecipeWithInput(<ore:ingotYellorium>);
-Melter.removeRecipeWithInput(<bigreactors:dustmetals>);
+Melter.removeRecipeWithInput(<bigreactors:dustyellorium>);
 
 Melter.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <liquid:nd_yag>*1000);
 Melter.addRecipe(<ore:ingotYellorium>, <liquid:yellorium>*144);
@@ -168,15 +168,38 @@ Assembler.removeRecipeWithOutput(<qmd:semiconductor:4>);
 Assembler.removeRecipeWithOutput(<qmd:semiconductor:5>);
 Assembler.removeRecipeWithOutput(<qmd:semiconductor:6>);
 
-Assembler.addRecipe(<appliedenergistics2:material:18>, <appliedenergistics2:material:20>, <jaopca:item_dustsmallcopper>, <rockhounding_chemistry:misc_items:3>, <appliedenergistics2:material:22>);
-Assembler.addRecipe(<appliedenergistics2:material:16>, <appliedenergistics2:material:20>, <jaopca:item_dustsmallcopper>, <rockhounding_chemistry:misc_items:3>, <appliedenergistics2:material:23>);
-Assembler.addRecipe(<appliedenergistics2:material:17>, <appliedenergistics2:material:20>, <jaopca:item_dustsmallcopper>, <rockhounding_chemistry:misc_items:3>, <appliedenergistics2:material:24>);
-Assembler.addRecipe(<ore:plateConstantan>, <ore:gearBronze>, <ore:plateBronze>, <ore:ingotBronze>, <forestry:sturdy_machine>);
-Assembler.addRecipe(<ore:plateDiamond>, <ore:gearDiamond>, <ore:plateScal>, <ore:ingotOsmiridium>, <forestry:hardened_machine>);
-Assembler.addRecipe(<ore:dustGraphite>, <ore:gearEmerald>, <ore:plateAlkimium>, <minecraft:slime_ball>, <forestry:flexible_casing>);
-Assembler.addRecipe(<rockhounding_chemistry:misc_items:14>, <ore:gearInvar>, <thermalfoundation:material:352>, <ore:ingotStainlessSteel>, <genetics:misc>);
-Assembler.addRecipe(<immersiveengineering:material:27>, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}), <forestry:thermionic_tubes>, null, <forestry:chipsets:1>.withTag({T: 1 as short}));
+Assembler.addRecipe(<appliedenergistics2:material:18>, <appliedenergistics2:material:20>, <jaopca:item_dustsmallcopper>, <rockhounding_chemistry:misc_items:3>, 
+<appliedenergistics2:material:22>);
 
+Assembler.addRecipe(<appliedenergistics2:material:16>, <appliedenergistics2:material:20>, <jaopca:item_dustsmallcopper>, <rockhounding_chemistry:misc_items:3>, 
+<appliedenergistics2:material:23>);
+
+Assembler.addRecipe(<appliedenergistics2:material:17>, <appliedenergistics2:material:20>, <jaopca:item_dustsmallcopper>, <rockhounding_chemistry:misc_items:3>, 
+<appliedenergistics2:material:24>);
+
+Assembler.addRecipe(<ore:plateConstantan>, <ore:gearBronze>, <ore:plateBronze>, <ore:ingotBronze>, 
+<forestry:sturdy_machine>);
+
+Assembler.addRecipe(<ore:plateDiamond>, <ore:gearDiamond>, <ore:plateScal>, <ore:ingotOsmiridium>, 
+<forestry:hardened_machine>);
+
+Assembler.addRecipe(<ore:dustGraphite>, <ore:gearEmerald>, <ore:plateAlkimium>, <minecraft:slime_ball>, 
+<forestry:flexible_casing>);
+
+Assembler.addRecipe(<rockhounding_chemistry:misc_items:14>, <ore:gearInvar>, <thermalfoundation:material:352>, <ore:ingotStainlessSteel>, 
+<genetics:misc>);
+
+Assembler.addRecipe(<immersiveengineering:material:27>, <ic2:cable>.withTag({type: 0 as byte, insulation: 0 as byte}), <forestry:thermionic_tubes>, null, 
+<forestry:chipsets:1>.withTag({T: 1 as short}));
+
+Assembler.addRecipe(<botania:corporeaspark>, <ore:plateSteel>, <rockhounding_chemistry:misc_items:10>, <qmd:part:10>,
+<actuallyadditions:block_laser_relay_item_whitelist>);
+
+Assembler.addRecipe(<extrautils2:powertransmitter>, <extrautils2:ingredients>, <qmd:part:10>, null,
+<actuallyadditions:block_laser_relay> * 4);
+
+Assembler.addRecipe(<qmd:part:4>*4, <ore:slabSteelScaffolding>, <rockhounding_chemistry:alloy_parts:46>*2, <contenttweaker:levitate_device>,
+<actuallyadditions:block_display_stand>);
 
 IngotFormer.removeRecipeWithOutput(<nuclearcraft:alloy:2>);
 

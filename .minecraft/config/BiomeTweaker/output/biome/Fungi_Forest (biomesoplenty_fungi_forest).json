@@ -22,22 +22,16 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "HOT",
-    "MUSHROOM",
+    "DENSE",
     "NETHER",
-    "DENSE"
+    "MUSHROOM",
+    "HOT"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
     {
-      "Entity Class": "com.animania.addons.farm.common.entity.pigs.PigLargeBlack$EntitySowLargeBlack",
-      "Weight": 9,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.cows.CowMooshroom$EntityCowMooshroom",
-      "Weight": 9,
+      "Entity Class": "com.animania.addons.catsdogs.common.entity.felids.CatOcelot$EntityQueenOcelot",
+      "Weight": 20,
       "Min Group Count": 2,
       "Max Group Count": 2
     },

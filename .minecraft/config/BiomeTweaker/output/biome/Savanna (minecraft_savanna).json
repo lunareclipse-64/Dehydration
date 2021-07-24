@@ -22,10 +22,10 @@
   "Enable Rain": false,
   "Enable Snow": false,
   "Dictionary Types": [
-    "SAVANNA",
+    "SPARSE",
     "HOT",
     "PLAINS",
-    "SPARSE"
+    "SAVANNA"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [
@@ -66,124 +66,10 @@
       "Max Group Count": 1
     },
     {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.EntityFerretGrey",
-      "Weight": 8,
-      "Min Group Count": 1,
-      "Max Group Count": 3
-    },
-    {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.EntityFerretWhite",
-      "Weight": 8,
-      "Min Group Count": 1,
-      "Max Group Count": 3
-    },
-    {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.rabbits.RabbitChinchilla$EntityRabbitDoeChinchilla",
-      "Weight": 8,
+      "Entity Class": "com.animania.addons.catsdogs.common.entity.felids.CatOcelot$EntityQueenOcelot",
+      "Weight": 20,
       "Min Group Count": 2,
       "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.rabbits.RabbitDutch$EntityRabbitDoeDutch",
-      "Weight": 4,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.rabbits.RabbitJack$EntityRabbitDoeJack",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.rabbits.RabbitRex$EntityRabbitDoeRex",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.extra.common.entity.rodents.rabbits.RabbitLop$EntityRabbitDoeLop",
-      "Weight": 4,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.horses.HorseDraft$EntityMareDraftHorse",
-      "Weight": 8,
-      "Min Group Count": 1,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.pigs.PigYorkshire$EntitySowYorkshire",
-      "Weight": 4,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.chickens.ChickenLeghorn$EntityHenLeghorn",
-      "Weight": 9,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.cows.CowFriesian$EntityCowFriesian",
-      "Weight": 9,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.cows.CowLonghorn$EntityCowLonghorn",
-      "Weight": 9,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.goats.GoatAngora$EntityDoeAngora",
-      "Weight": 4,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.goats.GoatFainting$EntityDoeFainting",
-      "Weight": 4,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.goats.GoatKinder$EntityDoeKinder",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.goats.GoatPygmy$EntityDoePygmy",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.sheep.SheepFriesian$EntityEweFriesian",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 3
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.sheep.SheepMerino$EntityEweMerino",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 3
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.sheep.SheepSuffolk$EntityEweSuffolk",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 3
-    },
-    {
-      "Entity Class": "com.animania.addons.farm.common.entity.sheep.SheepDorper$EntityEweDorper",
-      "Weight": 8,
-      "Min Group Count": 2,
-      "Max Group Count": 3
     }
   ],
   "Spawnable Monsters": [

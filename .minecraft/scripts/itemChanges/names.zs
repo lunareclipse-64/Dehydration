@@ -1,6 +1,9 @@
 #priority 11
 import mods.jei.JEI.addDescription as info;
 import crafttweaker.game.IGame;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+
 <avaritia:resource:5>.displayName="万物信息数据压缩集成包";
 <avaritia:resource:2>.displayName="数据碎片";
 <avaritia:resource:3>.displayName="数据包";
@@ -63,6 +66,12 @@ import crafttweaker.game.IGame;
 <contenttweaker:zerconia>.addShiftTooltip("§b可以用于商业骗局或自欺欺人");
 <contenttweaker:above_note>.addTooltip("右键以阅读其上内容");
 
-info(<advancedrocketry:blocklens>, "星魔蚀刻机组成方块", "无精准采集挖掘不掉落", "建议利用蚀刻机的透镜就地制作", "§7或用玻璃刀采集");
-info(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:chloridizing_furnace"}), "主手持黑纸右键§2氯气流体方块§r获得");
-info(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:orbital_transceiver"}), "将黑纸丢到激活的信标上获得");
+val addInfo = {
+    <advancedrocketry:blocklens>:"可使用玻璃刀采集",
+    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:chloridizing_furnace"}) : "主手持黑纸右键§2氯气流体方块§r获得",
+    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:orbital_transceiver"}) : "将黑纸丢到激活的信标上获得",
+    <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:tech_substance"}) : "顶部的物品展示台内需要放入一个高级火箭的透镜",
+    <extrautils2:passivegenerator> : "用§5精灵青金石§r右键切换为月光面板",
+    <extrautils2:passivegenerator:1> : "用§3魔力青金石§r右键切换为太阳能面板"
+} as string[IItemStack];
+for item in addInfo{info(item,addInfo[item]);}
