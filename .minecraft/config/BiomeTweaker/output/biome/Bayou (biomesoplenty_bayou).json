@@ -23,9 +23,9 @@
   "Enable Snow": false,
   "Dictionary Types": [
     "SWAMP",
+    "WET",
     "DENSE",
-    "HOT",
-    "WET"
+    "HOT"
   ],
   "BiomeManager Entries": {},
   "Spawnable Creatures": [

@@ -24,10 +24,10 @@
   "Dictionary Types": [
     "SPARSE",
     "DEAD",
-    "HOT",
     "DRY",
     "WASTELAND",
     "PLAINS",
+    "HOT",
     "SAVANNA"
   ],
   "BiomeManager Entries": {

@@ -118,12 +118,11 @@ Macerator.addRecipe(<ic2:dust:15>, <ore:stoneCommon>);
 Macerator.addRecipe(<nuclearcraft:compound:7>, <rockhounding_chemistry:borate_shards>);
 Macerator.addRecipe(<rockhounding_chemistry:chemical_dusts:42>, <ore:itemSilicon>);
 
-Extractor.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
-
 MetalFormer.addRollingRecipe(<thermalfoundation:material:354>, <thermalfoundation:material:162>);
 MetalFormer.addRollingRecipe(<rockhounding_chemistry:ingot_pattern>, <immersiveengineering:sheetmetal_slab:9>);
 
 MetalFormer.addExtrudingRecipe(<immersiveengineering:material:19>, <nuclearcraft:part:15> * 6);
+MetalFormer.addExtrudingRecipe(<contenttweaker:silicon_seed>*4, <qmd:semiconductor:2>);
 
 BlockCutter.addRecipe(<minecraft:glass_pane>*3, <minecraft:glass>, 8);
 BlockCutter.addRecipe(<qmd:semiconductor:3>*4, <qmd:semiconductor:2>, 9);

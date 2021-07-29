@@ -16,7 +16,7 @@ import mods.contenttweaker.ActionResult;
 import mods.contenttweaker.CreativeTab;
 import mods.contenttweaker.ItemFood;
 //材料
-var items as string[] = [
+var normalItems as string[] = [
 	"dry_rush_stem",
 	"light_sand_dust",
 	"unc_wand",
@@ -57,16 +57,27 @@ var items as string[] = [
     "levitate_device",
     "micro_laser_etcher"
 ];
-for name in items{
+for name in normalItems{
 	val item = VanillaFactory.createItem(name);
 	item.creativeTab = <creativetab:materials.base>;
 	item.register();
 }
 
-val res = VanillaFactory.createItem("empty_celestial_note");
-res.creativeTab = <creativetab:materials.base>;
-res.maxStackSize = 1;
-res.register();
+var unstackableItems as string[] = [
+    "empty_celestial_note",
+    "distill_bottle_leaves",
+    "distill_bottle_flesh",
+    "distill_bottle_water_plant",
+    "distill_bottle_water_flesh",
+    "distill_bottle_poison_flesh",
+    "distill_bottle_empty"
+];
+for name in unstackableItems{
+    val item = VanillaFactory.createItem(name);
+    item.creativeTab = <creativetab:materials.base>;
+    item.maxStackSize = 1;
+    item.register();
+}
 
 val beacon = VanillaFactory.createItem("beacon_emitter");
 beacon.creativeTab = <creativetab:materials.base>;
@@ -395,9 +406,10 @@ egg1.maxDamage = 1;
 egg1.onItemUse = function(player, world, pos, hand, facing, blockHit) {
 	var bl = (world.getBlockState(pos.getOffset(facing, 1))).getBlock();
 	var ulname = bl.definition.unlocalizedName;
-	if(!isNull(bl.fluid)){
+	if(!isNull(bl.fluid) && (!world.isRemote())){
         player.getHeldItem(hand).damage(2, player);
 		player.sendMessage("§4这桶碎了！");
+        player.give(<thermalfoundation:material:65>*3);
 		if((ulname in "oil")|(ulname in "diesel")|(ulname == "gasoline")){
 		    Commands.call("advancement grant @s only triumph:example/1",player,world,false,true);
 		}

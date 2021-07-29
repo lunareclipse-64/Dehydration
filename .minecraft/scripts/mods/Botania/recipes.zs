@@ -91,7 +91,7 @@ Apothecary.addRecipe("dandelifeon",
 [<botania:petal:5>,<botania:petal:5>,<botania:petal:6>,<botania:manaresource:5>,<botania:rune:4>,<minecraft:shulker_shell>,<botania:rune:6>]);
 
 Apothecary.addRecipe(<biomesoplenty:sapling_0:5>,
-[<minecraft:wheat>,<forestry:fertilizer_bio>]);
+[<minecraft:wheat>,<forestry:fertilizer_bio>, <minecraft:stick>]);
 
 Apothecary.addRecipe(<primal:rush_seeds>,
 [<ic2:crafting:20>,<minecraft:tallgrass:1>,<minecraft:wheat>,<minecraft:tallgrass:1>]);

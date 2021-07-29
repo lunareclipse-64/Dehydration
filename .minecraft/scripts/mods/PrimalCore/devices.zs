@@ -23,6 +23,20 @@ DryingRack.addNonRottingRecipe(
 	<contenttweaker:unc_wand>,
     <astralsorcery:itemwand>.withTag({astralsorcery: {}})
 );
+DryingRack.addNonRottingRecipe(
+    "water_distill_leaves",
+    9,
+	<contenttweaker:distill_bottle_leaves>,
+    <contenttweaker:distill_bottle_water_plant>
+);
+DryingRack.addRottingRecipe(
+    "water_distill_flesh",
+    9,
+	90,
+	<contenttweaker:distill_bottle_flesh>,
+    <contenttweaker:distill_bottle_poison_flesh>,
+    <contenttweaker:distill_bottle_water_flesh>
+);
 
 
 Cauldron.addRecipe(

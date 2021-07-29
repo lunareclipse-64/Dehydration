@@ -155,7 +155,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "gugu-utils:environmenthatch",
+                "gugu-utils:starlightinputhatch",
                 "modularmachinery:blockfluidinputhatch"
             ]
         },
@@ -189,7 +189,7 @@
             "z": 0,
             "elements": [
                 "modularmachinery:blockfluidinputhatch",
-                "gugu-utils:environmenthatch"
+                "gugu-utils:starlightinputhatch"
             ]
         },
         {
@@ -197,7 +197,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "gugu-utils:starlightinputhatch"
+                "modularmachinery:blockenergyoutputhatch"
             ]
         },
         {
@@ -205,7 +205,7 @@
             "y": -1,
             "z": 0,
             "elements": [
-                "modularmachinery:blockenergyoutputhatch"
+                "astralsorcery:blockmarble@5"
             ]
         }
     ]}

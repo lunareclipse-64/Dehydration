@@ -72,6 +72,12 @@ item.contenttweaker.igniter.name=点火器
 item.contenttweaker.magnetic_refrigerator.name=磁制冷机
 item.contenttweaker.levitate_device.name=悬浮装置
 item.contenttweaker.micro_laser_etcher.name=微型蚀刻仪
+item.contenttweaker.distill_bottle_leaves.name=装叶子的蒸发设备
+item.contenttweaker.distill_bottle_water_plant.name=装满水的蒸发设备
+item.contenttweaker.distill_bottle_empty.name=空蒸发设备
+item.contenttweaker.distill_bottle_flesh.name=装腐肉的蒸发设备
+item.contenttweaker.distill_bottle_water_flesh.name=装满水的蒸发设备
+item.contenttweaker.distill_bottle_poison_flesh.name=装满水的蒸发设备
 
 fluid.titanium_tetrachloride=四氯化钛
 fluid.floatation_agent=浮选剂

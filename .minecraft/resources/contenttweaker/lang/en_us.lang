@@ -72,6 +72,12 @@ item.contenttweaker.igniter.name=Igniter
 item.contenttweaker.magnetic_refrigerator.name=Magnetic Refrigerator
 item.contenttweaker.levitate_device.name=Levitate Device
 item.contenttweaker.micro_laser_etcher.name=Micro Laser Etcher
+item.contenttweaker.distill_bottle_leaves.name=Leaved Evaporation Device
+item.contenttweaker.distill_bottle_water_plant.name=Watered Evaporation Device
+item.contenttweaker.distill_bottle_empty.name=Empty Evaporation Device
+item.contenttweaker.distill_bottle_flesh.name=Rottenfleshed Evaporation Device
+item.contenttweaker.distill_bottle_water_flesh.name=Watered Evaporation Device
+item.contenttweaker.distill_bottle_poison_flesh.name=Watered Evaporation Device
 
 
 fluid.titanium_tetrachloride=Titanium Tetrachloride

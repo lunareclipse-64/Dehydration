@@ -61,7 +61,8 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
     var p = event.player;
     var r = p.getRayTrace(4,1,true);
     var l = event.world.getBlock(r.blockPos);
-	if((event.block.definition.id has "compactmachines3:machine")&&(event.world.getProvider().getDimensionID() == 144))
+	var w = event.world;
+	if((event.block.definition.id has "compactmachines3:machine")&&(w.getProvider().getDimensionID() == 144))
 	{
 		event.cancel();
 	}
@@ -78,17 +79,23 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
 		{
 			var BlockID = event.block.definition.id;
 			var BlockMeta = event.block.meta;
+			if((!isNull(p.offHandHeldItem)) && (h has "shears") && (p.offHandHeldItem.definition.id == "contenttweaker:distill_bottle_empty") && (BlockID has "leaves"))
+			{
+                item.mutable().damageItem(1, p);
+				p.setItemToSlot(offhand, <contenttweaker:distill_bottle_leaves>);
+				w.destroyBlock(event.position, false);
+			}
 			if(h has "contenttweaker:memento_extractor")
 			{
-				if(BlockID == "minecraft:dirt"){p.give(<contenttweaker:memento1>);event.world.destroyBlock(event.position, false);event.damageItem(1);}
-				if(BlockID has "bookshelf"){p.give(<contenttweaker:memento2>);event.world.destroyBlock(event.position, false);event.damageItem(1);}
-				if(BlockID has "blood_rune"){p.give(<contenttweaker:memento3>);event.world.destroyBlock(event.position, false);event.damageItem(1);}
-				if(BlockID == "ic2:resource")&&(BlockMeta == 12){p.give(<contenttweaker:memento4>);event.world.destroyBlock(event.position, false);event.damageItem(1);}
-				if(BlockID == "qmd:beamline"){p.give(<contenttweaker:memento5>);event.world.destroyBlock(event.position, false);event.damageItem(1);}
+				if(BlockID == "minecraft:dirt"){p.give(<contenttweaker:memento1>);w.destroyBlock(event.position, false);event.damageItem(1);}
+				if(BlockID has "bookshelf"){p.give(<contenttweaker:memento2>);w.destroyBlock(event.position, false);event.damageItem(1);}
+				if(BlockID has "blood_rune"){p.give(<contenttweaker:memento3>);w.destroyBlock(event.position, false);event.damageItem(1);}
+				if((BlockID == "ic2:resource")&&(BlockMeta == 12)){p.give(<contenttweaker:memento4>);w.destroyBlock(event.position, false);event.damageItem(1);}
+				if(BlockID == "qmd:beamline"){p.give(<contenttweaker:memento5>);w.destroyBlock(event.position, false);event.damageItem(1);}
 			}
 			if((h has "extrautils2:ingredients") && (meta == 0) && (BlockID == "bloodmagic:output_routing_node") && p.isSneaking)
 			{
-				event.world.setBlockState(<blockstate:extrautils2:powertransmitter>, event.position);
+				w.setBlockState(<blockstate:extrautils2:powertransmitter>, event.position);
 				if(item.amount != 1)
 				{
 					p.setItemToSlot(mainHand, item.withAmount(item.amount - 1));
@@ -100,11 +107,11 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
 			}
 			if((h has "botanicadds:elven_lapis") && (BlockID == "extrautils2:passivegenerator") & (BlockMeta == 0))
 			{
-				event.world.setBlockState(<blockstate:extrautils2:passivegenerator:generatortype=lunar>, event.position);
+				w.setBlockState(<blockstate:extrautils2:passivegenerator:generatortype=lunar>, event.position);
 			}
 			if((h has "botanicadds:mana_lapis") && (BlockID == "extrautils2:passivegenerator") & (BlockMeta == 1))
 			{
-				event.world.setBlockState(<blockstate:extrautils2:passivegenerator>, event.position);
+				w.setBlockState(<blockstate:extrautils2:passivegenerator>, event.position);
 			}
 		    if((h == "minecraft:bucket") && (BlockID == "minecraft:cauldron"))
 		    {

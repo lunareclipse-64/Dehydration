@@ -41,6 +41,7 @@ for item in redirectS0{
 
 var redirectS1 as IIngredient[] = [
     <actuallyadditions:block_misc:5>,
+    <actuallyadditions:item_misc:21>,
     <backpack:stick:1>,
     <chisel:marble:*>,
     <chisel:marble1:*>,
@@ -240,7 +241,6 @@ for mod in modsS1{
 
 
 var modsS2 as string[] = [
-    "thaumcraft",
     "planarartifice",
     "jaopca",
     "chisel",

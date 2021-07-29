@@ -503,29 +503,37 @@ starGeneratorBasic.addEnergyPerTickOutput(128)
 val starGeneratorLucerna1 = newBuilder("star_gen2", "astral_generator_2", 100);
 starGeneratorLucerna1.addEnergyPerTickOutput(512)
     .addStarlightInput(4000, "lucerna")
-    .setTime(6000, 12000)
     .addFluidInput(<liquid:astralsorcery.liquidstarlight>*500)
     .build();
 
 val starGeneratorLucerna2 = newBuilder("star_gen3", "astral_generator_2", 100);
 starGeneratorLucerna2.addEnergyPerTickOutput(512)
     .addStarlightInput(4000, "lucerna")
-    .setTime(18000, 24000)
     .addFluidInput(<liquid:astralsorcery.liquidstarlight>*500)
     .build();
 
 val starGeneratorFornax1 = newBuilder("star_gen4", "astral_generator_2", 100);
 starGeneratorFornax1.addEnergyPerTickOutput(512)
     .addStarlightInput(4000, "fornax")
-    .setTime(6000, 12000)
     .addFluidInput(<liquid:astralsorcery.liquidstarlight>*500)
     .build();
 
 val starGeneratorFornax2 = newBuilder("star_gen5", "astral_generator_2", 100);
 starGeneratorFornax2.addEnergyPerTickOutput(512)
     .addStarlightInput(4000, "fornax")
-    .setTime(18000, 24000)
     .addFluidInput(<liquid:astralsorcery.liquidstarlight>*500)
+    .build();
+
+val manaGenerator1 = newBuilder("mana_gen1", "bot_generator_1", 100);
+manaGenerator1.addEnergyPerTickOutput(128)
+    .addManaInput(1000)
+    .addFluidInput(<liquid:water>*10)
+    .build();
+
+val manaGenerator2 = newBuilder("mana_gen2", "bot_generator_2", 100);
+manaGenerator2.addEnergyPerTickOutput(512)
+    .addManaPerTickInput(32)
+    .addFluidInput(<liquid:water>*40)
     .build();
 
 val ultiGenerator1 = newBuilder("ult_gen1", "ultimate_generator", 8000);
@@ -740,7 +748,7 @@ ironwoodCreate.addEnergyPerTickInput(60)
     .addItemOutput(<extrautils2:ironwood_sapling>)
     .addStarlightInput(3500, "aevitas")
     .build();
-val shulkerCreate = newBuilder("shulker_reate", "tech_life", 300);
+val shulkerCreate = newBuilder("shulker_create", "tech_life", 300);
 shulkerCreate.addEnergyPerTickInput(200)
     .addItemInput(<enderio:item_soul_vial>)
     .addItemInput(<botania:manaresource:5>*3)
@@ -749,7 +757,15 @@ shulkerCreate.addEnergyPerTickInput(200)
     .addAspectInput("volatus",20)
     .addItemOutput(<enderio:item_soul_vial:1>.withTag({entityId: "minecraft:shulker"}))
     .build();
-
+val sugarcaneCreate = newBuilder("sugarcane_create", "tech_life", 200);
+sugarcaneCreate.addEnergyPerTickInput(20)
+    .addItemInput(<contenttweaker:technology4>)
+    .addItemInput(<minecraft:wheat_seeds>)
+    .addItemInput(<ore:sugar>)
+    .addFluidInput(<liquid:binnie.dna.raw>*10)
+    .addFluidInput(<liquid:water>*250)
+    .addItemOutput(<inspirations:sugar_cane_seeds>)
+    .build();
 //能量迁移器
 val praecantatioEnergy = newBuilder("praecantatio_energy", "tech_energy", 20);
 praecantatioEnergy.addEnergyPerTickOutput(128)

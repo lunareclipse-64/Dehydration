@@ -95,7 +95,7 @@ recipes.addShaped(<nuclearcraft:assembler>,
 Crystallizer.removeRecipeWithInput(<liquid:silicon>*1296);
 
 
-ChemicalReactor.removeRecipeWithInput(<liquid:hydrogen>*1500, <liquid:boron>*72);
+ChemicalReactor.removeRecipeWithInput(<liquid:hydrogen>*1500, <liquid:boron>*144);
 ChemicalReactor.removeRecipeWithInput(<liquid:hydrogen>*500, <liquid:oxygen>*250);
 ChemicalReactor.removeRecipeWithInput(<liquid:hydrogen>*1000, <liquid:chlorine>*1000);
 

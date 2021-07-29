@@ -1,5 +1,9 @@
 #priority 9
 import mods.recipestages.Recipes;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+import crafttweaker.recipes.IRecipeFunction;
+import crafttweaker.recipes.IRecipeAction;
 //生火
 Recipes.addShaped("exploration",<primal_tech:stick_bundle>, 
 [[<ore:stickWood>, <ore:cordageGeneral>, <ore:stickWood>], 
@@ -133,7 +137,38 @@ Recipes.addShaped("exploration",<actuallyadditions:block_misc:5>,
 [<ore:itemCharcoal>, <ore:itemCharcoal>, <ore:itemCharcoal>], 
 [<ore:itemCharcoal>, <ore:itemCharcoal>, <ore:itemCharcoal>]]);
 
+Recipes.addShapeless("exploration",<minecraft:potion>.withTag({Potion: "minecraft:water"}), 
+[<contenttweaker:distill_bottle_water_plant>.transformReplace(<contenttweaker:distill_bottle_empty>),<minecraft:glass_bottle>] as IIngredient[],
+    null,
+    function(out,cInfo,player){
+	    player.give(<botany:misc:5>);
+    } as IRecipeAction
+);
+Recipes.addShapeless("exploration",<minecraft:potion>.withTag({Potion: "minecraft:water"}), 
+[<contenttweaker:distill_bottle_water_flesh>.transformReplace(<contenttweaker:distill_bottle_empty>),<minecraft:glass_bottle>] as IIngredient[],
+    null,
+    function(out,cInfo,player){
+	    player.give(<actuallyadditions:item_misc:21>);
+    } as IRecipeAction
+);
 
+Recipes.addShapeless("exploration",<minecraft:potion>.withTag({Potion: "minecraft:poison"}), 
+[<contenttweaker:distill_bottle_poison_flesh>.transformReplace(<contenttweaker:distill_bottle_empty>),<minecraft:glass_bottle>] as IIngredient[],
+    null,
+    function(out,cInfo,player){
+	    player.give(<actuallyadditions:item_misc:21>);
+    } as IRecipeAction
+);
+
+Recipes.addShapeless("exploration",<contenttweaker:distill_bottle_flesh>, 
+[<contenttweaker:distill_bottle_empty>, <ore:listAllmeatrotten>]);
+
+Recipes.addShapeless("exploration",<minecraft:glass_bottle>*2, 
+[<contenttweaker:distill_bottle_empty>.transformReplace(<primal_tech:plant_fibres>)]);
+
+Recipes.addShaped("exploration",<contenttweaker:distill_bottle_empty>, 
+[[<minecraft:wheat>, null], 
+[<minecraft:glass_bottle>, <minecraft:glass_bottle>]]);
 //flower and dye
 Recipes.addShapeless("exploration",<minecraft:dye:1>, [<primal:flint_point>.reuse(), <minecraft:red_flower>]);
 Recipes.addShapeless("exploration",<minecraft:dye:11>, [<primal:flint_point>.reuse(), <minecraft:yellow_flower>]);
