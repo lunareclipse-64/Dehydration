@@ -82,8 +82,19 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
 			if((!isNull(p.offHandHeldItem)) && (h has "shears") && (p.offHandHeldItem.definition.id == "contenttweaker:distill_bottle_empty") && (BlockID has "leaves"))
 			{
                 item.mutable().damageItem(1, p);
-				p.setItemToSlot(offhand, <contenttweaker:distill_bottle_leaves>);
 				w.destroyBlock(event.position, false);
+				if(w.getRandom().nextInt(61957)%5 == 0)
+				{
+					if(p.offHandHeldItem.amount == 1)
+					{
+				        p.setItemToSlot(offhand, <contenttweaker:distill_bottle_leaves>);
+					}
+					else
+					{
+                        p.setItemToSlot(offhand, <contenttweaker:distill_bottle_empty>.withAmount(p.offHandHeldItem.amount - 1));
+						p.give(<contenttweaker:distill_bottle_leaves>);
+					}
+				}
 			}
 			if(h has "contenttweaker:memento_extractor")
 			{

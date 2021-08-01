@@ -43,6 +43,7 @@ var redirectS1 as IIngredient[] = [
     <actuallyadditions:block_misc:5>,
     <actuallyadditions:item_misc:21>,
     <backpack:stick:1>,
+    <botany:misc:5>,
     <chisel:marble:*>,
     <chisel:marble1:*>,
     <forestry:apatite>,

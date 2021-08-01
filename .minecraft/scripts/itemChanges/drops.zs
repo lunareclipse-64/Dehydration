@@ -3,6 +3,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.dropt.Dropt;
+import mods.dropt.Range;
 
 Dropt.list("list")
     .add(Dropt.rule()
@@ -30,11 +31,6 @@ Dropt.list("list")
     .add(Dropt.rule()
 	    .matchBlocks(["minecraft:sandstone"])
 		.addDrop(Dropt.drop()
-		    .selector(Dropt.weight(70))
-		    .items([<nuclearcraft:gem_dust:11>,<nuclearcraft:gem_dust:11>])
-		)
-		.addDrop(Dropt.drop()
-		    .selector(Dropt.weight(30))
-		    .items([<nuclearcraft:gem_dust:11>,<nuclearcraft:gem_dust:11>,<nuclearcraft:gem_dust:11>])
+		    .items([<nuclearcraft:gem_dust:11>],Dropt.range(3,4))
 		)
 	);

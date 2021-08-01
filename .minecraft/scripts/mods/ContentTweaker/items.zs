@@ -55,7 +55,13 @@ var normalItems as string[] = [
     "igniter",
     "magnetic_refrigerator",
     "levitate_device",
-    "micro_laser_etcher"
+    "micro_laser_etcher",
+    "distill_bottle_leaves",
+    "distill_bottle_flesh",
+    "distill_bottle_water_plant",
+    "distill_bottle_water_flesh",
+    "distill_bottle_poison_flesh",
+    "distill_bottle_empty"
 ];
 for name in normalItems{
 	val item = VanillaFactory.createItem(name);
@@ -64,13 +70,7 @@ for name in normalItems{
 }
 
 var unstackableItems as string[] = [
-    "empty_celestial_note",
-    "distill_bottle_leaves",
-    "distill_bottle_flesh",
-    "distill_bottle_water_plant",
-    "distill_bottle_water_flesh",
-    "distill_bottle_poison_flesh",
-    "distill_bottle_empty"
+    "empty_celestial_note"
 ];
 for name in unstackableItems{
     val item = VanillaFactory.createItem(name);
@@ -409,7 +409,6 @@ egg1.onItemUse = function(player, world, pos, hand, facing, blockHit) {
 	if(!isNull(bl.fluid) && (!world.isRemote())){
         player.getHeldItem(hand).damage(2, player);
 		player.sendMessage("§4这桶碎了！");
-        player.give(<thermalfoundation:material:65>*3);
 		if((ulname in "oil")|(ulname in "diesel")|(ulname == "gasoline")){
 		    Commands.call("advancement grant @s only triumph:example/1",player,world,false,true);
 		}

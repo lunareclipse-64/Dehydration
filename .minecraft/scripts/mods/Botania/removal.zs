@@ -5,6 +5,7 @@ import mods.botania.RuneAltar;
 import mods.botania.Apothecary;
 import mods.botania.ManaInfusion;
 import mods.botania.Brew;
+import mods.botanicadds.GaiaPlate;
 
 ManaInfusion.removeRecipe(<botania:manaresource:23>);
 ManaInfusion.removeRecipe(<ore:ingotManasteel>);
@@ -47,3 +48,5 @@ Brew.removeRecipe("absorption");
 Brew.removeRecipe("haste");
 Brew.removeRecipe("overload");
 Brew.removeRecipe("jumpBoost");
+GaiaPlate.remove(<botania:manaresource:4>);
+GaiaPlate.remove(<botanicadds:gaiasteel_ingot>);

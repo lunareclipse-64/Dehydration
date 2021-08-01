@@ -2,7 +2,7 @@
 import mods.recipestages.Recipes;
 
 Recipes.addShapeless("yours",<botania:manaresource:18> * 6, 
-[<primal:diamond_workblade>.anyDamage().transformDamage(6), <ore:ingotTerrasteel>]);
+[<ore:toolWorkBlade>.transformDamage(6), <ore:ingotTerrasteel>]);
 
 Recipes.addShaped("yours",<contenttweaker:speed_gel>*4, 
 [[<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]}), <minecraft:rotten_flesh>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ordo"}]})], 

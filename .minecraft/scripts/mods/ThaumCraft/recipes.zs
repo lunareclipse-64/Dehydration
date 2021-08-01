@@ -85,13 +85,13 @@ recipes.addShapeless(<thaumcraft:salis_mundus>*2,
 <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "aqua"}]}), <botania:manaresource:23>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "perditio"}]})]);
 
 recipes.addShapeless(<thaumcraft:plate>, 
-[<primal:iron_gallagher>.anyDamage().transformDamage(3), <primal:brass_ingot>|<thaumcraft:ingot:2>]);
+[<ore:toolGallagher>.transformDamage(3), <primal:brass_ingot>|<thaumcraft:ingot:2>]);
 
 recipes.addShapeless(<thaumcraft:plate:2>, 
-[<primal:iron_gallagher>.anyDamage().transformDamage(3), <thaumcraft:ingot>]);
+[<ore:toolGallagher>.transformDamage(3), <thaumcraft:ingot>]);
 
 recipes.addShapeless(<planarartifice:alkimium_plate>, 
-[<primal:iron_gallagher>.anyDamage().transformDamage(3), <planarartifice:alkimium_ingot>]);
+[<ore:toolGallagher>.transformDamage(3), <planarartifice:alkimium_ingot>]);
 
 recipes.addShapeless(<thaumcraft:scribing_tools>, 
 [<thaumcraft:phial>, <contenttweaker:dry_rush_stem>, <ore:dyeBlack>]);
@@ -102,22 +102,22 @@ recipes.addShaped(<thaumcraft:stone_arcane> * 4,
 [null, <botania:livingrock>, null]]);
 
 recipes.addShaped(<thaumcraft:table_stone>, 
-[[<ore:pinIron>, <primal:iron_gallagher>.anyDamage().transformDamage(5), <ore:pinIron>], 
+[[<ore:pinIron>, <ore:toolGallagher>.transformDamage(5), <ore:pinIron>], 
 [<minecraft:stone_slab>, <minecraft:stone_slab>, <minecraft:stone_slab>], 
 [<primal:common_stone:7>, null, <primal:common_stone:7>]]);
 
 recipes.addShaped(<thaumcraft:table_wood>, 
-[[<ore:pinWood>, <primal:stone_gallagher>.anyDamage().transformDamage(5), <ore:pinWood>], 
+[[<ore:pinWood>, <ore:toolGallagher>.transformDamage(5), <ore:pinWood>], 
 [<ore:slabWood>, <ore:slabWood>, <ore:slabWood>], 
 [<ore:plankWood>, null, <ore:plankWood>]]);
 
 recipes.addShaped(<minecraft:cauldron>, 
 [[<primal:crude_iron_plate>|<ore:plateIron>, null, <primal:crude_iron_plate>|<ore:plateIron>], 
-[<primal:crude_iron_plate>|<ore:plateIron>, <primal:stone_gallagher>.anyDamage().transformDamage(4), <primal:crude_iron_plate>|<ore:plateIron>], 
+[<primal:crude_iron_plate>|<ore:plateIron>, <ore:toolGallagher>.transformDamage(4), <primal:crude_iron_plate>|<ore:plateIron>], 
 [<ore:plateCrudeIron>|<ore:plateIron>, <minecraft:iron_ingot>|<primal:crude_iron_ingot>, <primal:crude_iron_plate>|<ore:plateIron>]]);
 
 recipes.addShapeless(<contenttweaker:empty_celestial_note>, 
-[<thaumcraft:thaumometer>.reuse(), <primal:plant_papyrus>|<minecraft:paper>, <thaumcraft:scribing_tools>.anyDamage().transformDamage(1)]);
+[<thaumcraft:thaumometer>.reuse(), <primal:plant_papyrus>|<minecraft:paper>, <thaumcraft:scribing_tools>.transformDamage(1)]);
 
 recipes.addShaped(<thaumcraft:candle_white> * 2, 
 [[<ore:string>], [<thaumcraft:tallow>], [<primal:tallow>]]);
@@ -238,25 +238,25 @@ Infusion.registerRecipe("magical_projector", "DIOPTRA",
 
 Infusion.registerRecipe("botania_rune_spring", "INFUSION", 
 <botania:rune:4>, 4, 
-[<aspect:terra>*15,<aspect:victus>*10,<aspect:herba>*10], 
+[<aspect:terra>*15,<aspect:victus>*10,<aspect:herba>*5], 
 <botania:rune>, 
 [<thaumcraft:nitor_pink>,<ore:treeSapling>,<minecraft:wheat_seeds>,<ore:treeSapling>]);
 
 Infusion.registerRecipe("botania_rune_summer", "INFUSION", 
 <botania:rune:5>, 4, 
-[<aspect:aer>*15,<aspect:lux>*10,<aspect:aversio>*10], 
+[<aspect:aer>*15,<aspect:lux>*10,<aspect:aversio>*5], 
 <botania:rune:1>, 
 [<thaumcraft:nitor_lightblue>,<ore:listAllsmoothie>,<minecraft:blaze_powder>,<ore:listAllsmoothie>]);
 
 Infusion.registerRecipe("botania_rune_autumn", "INFUSION", 
 <botania:rune:6>, 4, 
-[<aspect:ignis>*15,<aspect:permutatio>*10,<aspect:fabrico>*10], 
+[<aspect:ignis>*15,<aspect:permutatio>*10,<aspect:fabrico>*5], 
 <botania:rune:2>, 
 [<thaumcraft:nitor_yellow>,<minecraft:wheat>,<botania:grassseeds:4>,<minecraft:wheat>]);
 
 Infusion.registerRecipe("botania_rune_winter", "INFUSION", 
 <botania:rune:7>, 4, 
-[<aspect:aqua>*15,<aspect:mortuus>*10,<aspect:gelum>*10], 
+[<aspect:aqua>*15,<aspect:mortuus>*10,<aspect:gelum>*5], 
 <botania:rune:3>, 
 [<thaumcraft:nitor_white>,<minecraft:snow>,<astralsorcery:itemcraftingcomponent:2>,<minecraft:snow>]);
 

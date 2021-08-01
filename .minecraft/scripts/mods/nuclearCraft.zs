@@ -14,6 +14,7 @@ import mods.nuclearcraft.Radiation.setMaterialRadiationLevel;
 import mods.nuclearcraft.RadiationScrubber;
 import mods.nuclearcraft.SaltMixer;
 import mods.nuclearcraft.Enricher;
+import mods.nuclearcraft.DecayGenerator;
 import mods.qmd.beam_dump;
 
 recipes.addShaped(<qmd:part:10>, 
@@ -213,6 +214,9 @@ SaltMixer.removeRecipeWithOutput(<liquid:tough>*144);
 
 //辐射相关
 FissionIrradiator.addRecipe(<ore:ingotBronze>, <enderio:item_alloy_ingot:1>, 314000, 0, 0.2D, 0.000000314D);
+
+
+DecayGenerator.addRecipe(<biomesoplenty:mushroom:3>, <minecraft:brown_mushroom>, 800.0D, 1.0D, 0.000000001D);
 
 
 setMaterialRadiationLevel("EnergeticAlloy", 0.0000000314D);

@@ -15,6 +15,7 @@ import mods.rockhounding_chemistry.MetalAlloyer;
 import mods.rockhounding_chemistry.MaterialCabinet;
 import mods.rockhounding_chemistry.LeachingVat;
 import mods.rockhounding_chemistry.ChemicalExtractor;
+import mods.rockhounding_chemistry.ToxicMutation;
 //合成
 recipes.addShaped(<rockhounding_chemistry:machines_a:13>, 
 [[<primal:crude_iron_plate>|<ore:plateIron>, <primal_tech:rock>, <primal:crude_iron_plate>|<ore:plateIron>], 
@@ -138,3 +139,7 @@ val transpose as ILiquidStack[]=[
 for trans in transpose{
     Transposer.add(trans, trans);
 }
+
+//毒物突变
+ToxicMutation.removeByOutput(<minecraft:nether_wart>);
+ToxicMutation.add(<biomesoplenty:mushroom:3>, <minecraft:red_mushroom>);

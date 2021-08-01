@@ -150,6 +150,15 @@ sparkMana.addManaPerTickInput(30)
     .addItemInput(<botania:pool>)
     .addItemOutput(<gugu-utils:sparkmanahatch>)
     .build();
+
+val gaiaPlate = newBuilder("gaiaPlate_etch", "laser_etching", 600);
+gaiaPlate.addManaPerTickInput(40)
+    .addItemInput(<botanicadds:elven_lapis_block>*2)
+    .addItemInput(<botanicadds:mana_lapis>)
+    .addItemInput(<astralsorcery:itemcoloredlens:6>)
+    .addItemInput(<botanicadds:rune_energy>)
+    .addItemOutput(<botanicadds:gaia_plate>)
+    .build();
 //熔融电解池
 val NaFusionElec = newBuilder("NaCl_elec", "molten_electrolytic_pool", 300);
 NaFusionElec.addEnergyPerTickInput(400)
@@ -526,7 +535,7 @@ starGeneratorFornax2.addEnergyPerTickOutput(512)
 
 val manaGenerator1 = newBuilder("mana_gen1", "bot_generator_1", 100);
 manaGenerator1.addEnergyPerTickOutput(128)
-    .addManaInput(1000)
+    .addManaPerTickInput(10)
     .addFluidInput(<liquid:water>*10)
     .build();
 
@@ -567,6 +576,24 @@ for technode in blueprint{
         .build();
 }
 
+val technology = {
+    <contenttweaker:technology1>:<contenttweaker:memento1>,
+    <contenttweaker:technology2>:<contenttweaker:memento2>,
+    <contenttweaker:technology3>:<contenttweaker:memento3>,
+    <contenttweaker:technology4>:<contenttweaker:memento4>,
+    <contenttweaker:technology5>:<contenttweaker:memento5>,
+    <contenttweaker:technology6>:<contenttweaker:memento6>,
+    <contenttweaker:technology7>:<contenttweaker:memento7>,
+    <contenttweaker:technology8>:<contenttweaker:memento8>,
+    <contenttweaker:technology9>:<contenttweaker:memento9>
+}as IItemStack[IItemStack];
+for mem in technology{
+    val print = newBuilder(technology[mem].definition.id + "_to_", "orbital_transceiver", 200);
+    print.addEnergyPerTickInput(20)
+        .addItemInput(technology[mem])
+        .addItemOutput(mem)
+        .build();
+}
 val sparkUpgrade = newBuilder("spark_upgrade", "orbital_transceiver", 400);
 sparkUpgrade.addEnergyPerTickInput(10)
     .addItemInput(<botania:corporeaspark>)

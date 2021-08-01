@@ -1,0 +1,23 @@
+{
+    "machine": "bot_generator_1",
+    "registryName": "mana_gen1",
+    "recipeTime": 100,
+    "requirements": [
+        {
+            "type": "mana",
+            "io-type": "input",
+            "amount": 1000
+        },
+		{
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "water",
+			"amount": 10
+        },
+        {
+        	"type": "energy",
+        	"io-type": "output",
+        	"energyPerTick": 128
+        }
+    ]
+}

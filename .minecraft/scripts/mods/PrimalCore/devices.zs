@@ -4,6 +4,81 @@ import mods.primal.Cauldron;
 import mods.primal.DryingRack;
 import mods.primal.Quern;
 
+//移除
+mods.primal.Quern.removeAll();
+Cauldron.removeRecipe("primal:glass");
+val removeSmeterRecipes as string[] = [
+    "primal:sand",
+    "primal:iron",
+    "primal:ore_good_iron",
+    "primal:ore_fair_iron",
+    "primal:ore_sand_iron",
+    "primal:thaumcraft_cluster_iron",
+    "primal:ore_good_copper",
+    "primal:ore_fair_copper",
+    "primal:ore_sand_copper",
+    "primal:thaumcraft_cluster_copper",
+    "primal:ore_good_lead",
+    "primal:ore_fair_lead",
+    "primal:ore_sand_lead",
+    "primal:thaumcraft_cluster_lead",
+    "primal:ore_good_gold",
+    "primal:ore_fair_gold",
+    "primal:ore_sand_gold",
+    "primal:thaumcraft_cluster_gold",
+    "primal:ore_good_silver",
+    "primal:ore_fair_silver",
+    "primal:ore_sand_silver",
+    "primal:thaumcraft_cluster_silver",
+    "primal:ore_good_zinc",
+    "primal:ore_fair_zinc",
+    "primal:ore_sand_zinc",
+    "primal:thaumcraft_cluster_zinc",
+    "primal:ore_good_tin",
+    "primal:ore_fair_tin",
+    "primal:ore_sand_tin",
+    "primal:ore_good_uranium",
+    "primal:ore_fair_uranium",
+    "primal:ore_sand_uranium",
+    "primal:ore_good_osmium",
+    "primal:ore_fair_osmium",
+    "primal:ore_sand_osmium",
+    "primal:ore_good_thoium",
+    "primal:ore_fair_thoium",
+    "primal:ore_sand_thoium",
+    "primal:ore_good_aluminum",
+    "primal:ore_fair_aluminum",
+    "primal:ore_sand_aluminum",
+    "primal:ore_good_platinum",
+    "primal:ore_fair_platinum",
+    "primal:ore_sand_platinum",
+    "primal:ore_good_thorinum",
+    "primal:ore_fair_thorinum",
+    "primal:ore_sand_thorinum",
+    "primal:ore_good_magnesium",
+    "primal:ore_fair_magnesium",
+    "primal:ore_sand_magnesium",
+    "primal:ore_good_lithium",
+    "primal:ore_fair_lithium",
+    "primal:ore_sand_lithium",
+    "primal:plate_lithium",
+    "primal:dust_lithium",
+    "primal:ore_fair_nickel",
+    "primal:ore_good_nickel",
+    "primal:ore_sand_nickel",
+	"primal:ore_good_boron",
+	"primal:ore_sand_boron",
+	"primal:ore_fair_boron",
+	"primal:zinc_lime_good",
+	"primal:zinc_lime_high",
+	"primal:ore_fair_thorium",
+	"primal:ore_sand_thorium",
+	"primal:ore_good_thorium",
+	"primal:alloy_bronze",
+	"primal:alloy_constantan"
+];
+for item in removeSmeterRecipes{Smelter.removeRecipe(item);}
+
 
 DryingRack.addNonRottingRecipe(
     "dry_rush_stem",
@@ -61,7 +136,7 @@ Cauldron.addRecipe(
 	<liquid:lava>*1000,
 	<liquid:magma_basaltic>*1000,
 	[<toughasnails:ice_cube>],
-	[<thermalfoundation:material:771>*4]
+	[<immersiveengineering:material:25>*4]
 );
 
 Cauldron.addRecipe(
@@ -86,7 +161,7 @@ Cauldron.addRecipe(
 	4,
 	<liquid:astralsorcery.liquidstarlight>*1000,
 	[<astralsorcery:itemcraftingcomponent>*3,<contenttweaker:soda>*2],
-	[<contenttweaker:crystal_nucleus>]
+	[<contenttweaker:crystal_nucleus>*3]
 );
 
 Cauldron.addRecipe(
@@ -131,8 +206,8 @@ Smelter.addRecipe(
 Smelter.addRecipe(
     "vanilla_glass_created",
 	2,
-	[<primal:charcoal_good>,<contenttweaker:soda>,<primal:carbonate_slack>,<contenttweaker:purified_sand>*4],
-	[<minecraft:glass>*2]
+	[<ore:charcoal>,<contenttweaker:soda>,<primal:carbonate_slack>,<contenttweaker:purified_sand>*4],
+	[<minecraft:glass>*3]
 );
 Smelter.addRecipe(
     "crude_iron_from_6nugget",
@@ -149,8 +224,8 @@ Smelter.addRecipe(
 Smelter.addRecipe(
     "glass_pane",
 	2,
-	[<minecraft:glass>*2,<primal_tech:rock>,<primal:charcoal_mote>*2],
-	[<minecraft:glass_pane>*4]
+	[<minecraft:glass>*2,<primal_tech:rock>,<primal:charcoal_mote>],
+	[<minecraft:glass_pane>*4,<primal_tech:rock>]
 );
 
 Smelter.addRecipe(
@@ -358,10 +433,16 @@ Smelter.addRecipe(
 	[<immersiveengineering:metal:6>*2]
 );
 Smelter.addRecipe(
-    "Electrum_alloy",
+    "electrum_alloy",
 	4,
 	[<ore:ingotGold>,<ore:ingotSilver>,<ore:charcoal>],
 	[<immersiveengineering:metal:7>*2]
+);
+Smelter.addRecipe(
+    "star_metal",
+	4,
+	[<jaopca:item_crushedastralstarmetal>,<ore:slackLime>*2,<ore:charcoalMote>],
+	[<astralsorcery:itemcraftingcomponent:1>]
 );
 //磨
 Quern.addRecipe(
@@ -394,78 +475,3 @@ Quern.addRecipe(
     [<minecraft:bone_block>], 
     [<minecraft:dye:15>*9]
 );
-
-//移除
-mods.primal.Quern.removeAll();
-Cauldron.removeRecipe("primal:glass");
-val removeSmeterRecipes as string[] = [
-    "primal:sand",
-    "primal:iron",
-    "primal:ore_good_iron",
-    "primal:ore_fair_iron",
-    "primal:ore_sand_iron",
-    "primal:thaumcraft_cluster_iron",
-    "primal:ore_good_copper",
-    "primal:ore_fair_copper",
-    "primal:ore_sand_copper",
-    "primal:thaumcraft_cluster_copper",
-    "primal:ore_good_lead",
-    "primal:ore_fair_lead",
-    "primal:ore_sand_lead",
-    "primal:thaumcraft_cluster_lead",
-    "primal:ore_good_gold",
-    "primal:ore_fair_gold",
-    "primal:ore_sand_gold",
-    "primal:thaumcraft_cluster_gold",
-    "primal:ore_good_silver",
-    "primal:ore_fair_silver",
-    "primal:ore_sand_silver",
-    "primal:thaumcraft_cluster_silver",
-    "primal:ore_good_zinc",
-    "primal:ore_fair_zinc",
-    "primal:ore_sand_zinc",
-    "primal:thaumcraft_cluster_zinc",
-    "primal:ore_good_tin",
-    "primal:ore_fair_tin",
-    "primal:ore_sand_tin",
-    "primal:ore_good_uranium",
-    "primal:ore_fair_uranium",
-    "primal:ore_sand_uranium",
-    "primal:ore_good_osmium",
-    "primal:ore_fair_osmium",
-    "primal:ore_sand_osmium",
-    "primal:ore_good_thoium",
-    "primal:ore_fair_thoium",
-    "primal:ore_sand_thoium",
-    "primal:ore_good_aluminum",
-    "primal:ore_fair_aluminum",
-    "primal:ore_sand_aluminum",
-    "primal:ore_good_platinum",
-    "primal:ore_fair_platinum",
-    "primal:ore_sand_platinum",
-    "primal:ore_good_thorinum",
-    "primal:ore_fair_thorinum",
-    "primal:ore_sand_thorinum",
-    "primal:ore_good_magnesium",
-    "primal:ore_fair_magnesium",
-    "primal:ore_sand_magnesium",
-    "primal:ore_good_lithium",
-    "primal:ore_fair_lithium",
-    "primal:ore_sand_lithium",
-    "primal:plate_lithium",
-    "primal:dust_lithium",
-    "primal:ore_fair_nickel",
-    "primal:ore_good_nickel",
-    "primal:ore_sand_nickel",
-	"primal:ore_good_boron",
-	"primal:ore_sand_boron",
-	"primal:ore_fair_boron",
-	"primal:zinc_lime_good",
-	"primal:zinc_lime_high",
-	"primal:ore_fair_thorium",
-	"primal:ore_sand_thorium",
-	"primal:ore_good_thorium",
-	"primal:alloy_bronze",
-	"primal:alloy_constantan"
-];
-for item in removeSmeterRecipes{Smelter.removeRecipe(item);}

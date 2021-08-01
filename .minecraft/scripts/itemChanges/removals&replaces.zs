@@ -67,6 +67,8 @@ val removeByOutput as IIngredient[]=[
 	<botania:spreader>,
 	<botania:starfield>,
 	<botania:terraplate>,
+	<botanicadds:elven_altar>,
+	<botanicadds:gaia_plate>,
 	<chisel:block_charcoal2:1>,
 	<chisel:chisel_diamond>,
 	<chisel:chisel_iron>,

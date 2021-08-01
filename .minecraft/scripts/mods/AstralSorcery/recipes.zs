@@ -36,7 +36,7 @@ recipes.addShaped(<astralsorcery:blockaltar>,
 [<astralsorcery:itemusabledust>, <minecraft:crafting_table>, <astralsorcery:itemusabledust>], 
 [<ore:slabWood>, <astralsorcery:itemwand>.reuse(), <ore:slabWood>]]);
 
-recipes.addShapeless(<astralsorcery:itemcraftingcomponent:2>, [<primal:iron_gallagher>.anyDamage().transformDamage(5), <ore:oreAstralStarmetal>]);
+recipes.addShapeless(<jaopca:item_crushedastralstarmetal>*2, [<ore:toolGallagher>.transformDamage(5), <ore:oreAstralStarmetal>]);
 
 
 addTransmutation(<astralsorcery:blockcustomore>,<astralsorcery:blockcustomore:1>,200);
@@ -120,7 +120,7 @@ addDiscoveryAltarRecipe("minecraft:glowstone_dust",<minecraft:glowstone_dust>,10
 	null,<astralsorcery:itemusabledust>,null]);
 
 //星辉祭坛
-addAttunementAltarRecipe("internal/altar/customore",<astralsorcery:blockcustomore>,1200,300,[
+addAttunementAltarRecipe("internal/altar/customore",<astralsorcery:blockcustomore>*2,1200,300,[
     <minecraft:stone>,<contenttweaker:charged_mesh>,<minecraft:stone>,
 	<geolosys:cluster>,<contenttweaker:crystal_nucleus>,<geolosys:cluster>,
 	<minecraft:stone>,<contenttweaker:charged_mesh>,<minecraft:stone>,

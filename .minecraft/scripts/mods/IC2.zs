@@ -59,7 +59,7 @@ recipes.addShaped(<ic2:te:78>,
 
 recipes.addShaped(<ic2:crafting:8>, 
 [[<ic2:casing:1>, <ic2:casing:1>, <ic2:casing:1>], 
-[<ore:plateCopper>, <primal:iron_gallagher>.anyDamage().transformDamage(4), <ore:plateCopper>], 
+[<ore:plateCopper>, <ore:toolGallagher>.transformDamage(4), <ore:plateCopper>], 
 [<ic2:casing:1>, <ic2:casing:1>, <ic2:casing:1>]]);
 
 recipes.addShaped(<ic2:te:33>, 

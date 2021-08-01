@@ -121,6 +121,10 @@ AlloySmelter.addRecipe(<contenttweaker:silicon_seed>*3, <nuclearcraft:gem:6>, <t
 Blueprint.addRecipe("pipes", <thermaldynamics:duct_32>*2 , [<logisticspipes:pipe_transport_basic>,<thaumcraft:nugget:5>]);
 Blueprint.addRecipe("components", <tetra:vent_plate>*3 , [<minecraft:iron_bars>,<primal:iron_mesh>]);
 Blueprint.addRecipe("components", <nuclearcraft:part:6>*2, [<minecraft:potato>]);
+Blueprint.addRecipe("components", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:blood_generator_2"}), [<contenttweaker:vivid_crystal>,<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:blood_generator_1"})]);
+Blueprint.addRecipe("components", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:bot_generator_2"}), [<contenttweaker:mana_crystal>,<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:bot_generator_1"})]);
+Blueprint.addRecipe("components", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:astral_generator_2"}), [<contenttweaker:effulgent_crystal>,<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:astral_generator_1"})]);
+Blueprint.addRecipe("components", <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:thaum_generator_2"}), [<contenttweaker:infused_crystal>,<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:thaum_generator_1"})]);
 Blueprint.addRecipe("components", <contenttweaker:levitate_device>, [<darkutils:shulker_pearl>,<immersiveengineering:wirecoil:2>,<rockhounding_chemistry:alloy_parts:85>,<appliedenergistics2:material:24>]);
 Blueprint.addRecipe("components", <enderio:item_material:65>*4, [<extrautils2:powertransmitter>, <thermalfoundation:material:32>]);
 Blueprint.addRecipe("components", <nuclearcraft:part:9>*2, [<ore:plateSteel>, <immersiveengineering:material:8>, <ic2:crafting:30>, <immersiveengineering:material:20>, <logisticspipes:chip_basic>]);

@@ -7,10 +7,10 @@ Recipes.addShaped("discovery",<appliedenergistics2:grindstone>,
 [<ore:stoneCommon>, <ore:flake>, <ore:stoneCommon>]]);
 
 Recipes.addShapeless("discovery",<immersiveengineering:stone_decoration:2>, 
-[<primal:stone_gallagher>.anyDamage().transformDamage(5), <ore:plateSteel>, <ore:pinIron>, <immersiveengineering:stone_decoration:1>]);
+[<ore:toolGallagher>.transformDamage(5), <ore:plateSteel>, <ore:pinIron>, <immersiveengineering:stone_decoration:1>]);
 
 Recipes.addShapeless("discovery",<immersivetech:stone_decoration>, 
-[<primal:stone_gallagher>.anyDamage().transformDamage(5), <ore:plateSteel>, <ore:pinIron>, <immersiveengineering:stone_decoration>]);
+[<ore:toolGallagher>.transformDamage(5), <ore:plateSteel>, <ore:pinIron>, <immersiveengineering:stone_decoration>]);
 
 Recipes.addShapeless("discovery",<contenttweaker:carbon_sulfur_mixture> * 2, 
 [<ore:dustSulphur>, <ore:dustCharcoal>|<ore:dustCarbon>, <ore:dustSulphur>]);
