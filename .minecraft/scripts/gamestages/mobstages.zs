@@ -1,4 +1,5 @@
 #priority -1
+#loader crafttweaker reloadableevents
 
 mods.MobStages.addStage("impossible", "minecraft:bat");
 mods.MobStages.addStage("impossible", "thermalfoundation:blitz");

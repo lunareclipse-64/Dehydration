@@ -1,4 +1,5 @@
 #priority 100
+#loader crafttweaker reloadableevents
 import mods.nuclearcraft.Crystallizer;
 import mods.nuclearcraft.Melter;
 import mods.nuclearcraft.ChemicalReactor;
@@ -16,6 +17,9 @@ import mods.nuclearcraft.SaltMixer;
 import mods.nuclearcraft.Enricher;
 import mods.nuclearcraft.DecayGenerator;
 import mods.qmd.beam_dump;
+import mods.qmd.ore_leacher;
+import mods.nuclearcraft.RockCrusher;
+import mods.qmd.accelerator_source;
 
 recipes.addShaped(<qmd:part:10>, 
 [[<appliedenergistics2:material:23>, <ore:plateHastelloy>, null],
@@ -126,6 +130,16 @@ Melter.removeRecipeWithInput(<ore:oreUranium>);
 Melter.removeRecipeWithInput(<ore:oreYellorium>);
 Melter.removeRecipeWithInput(<ore:ingotYellorium>);
 Melter.removeRecipeWithInput(<bigreactors:dustyellorium>);
+Melter.removeRecipeWithInput(<ore:oreQuartz>);
+Melter.removeRecipeWithInput(<ore:oreLapis>);
+Melter.removeRecipeWithInput(<ore:oreDiamond>);
+Melter.removeRecipeWithInput(<ore:oreEmerald>);
+Melter.removeRecipeWithInput(<ore:oreIridium>);
+Melter.removeRecipeWithInput(<ore:oreMithril>);
+Melter.removeRecipeWithInput(<ore:oreNickel>);
+Melter.removeRecipeWithInput(<ore:oreOsmium>);
+Melter.removeRecipeWithInput(<ore:oreZinc>);
+Melter.removeRecipeWithInput(<ore:oreTitanium>);
 
 Melter.addRecipe(<rockhounding_chemistry:alloy_items_gems:1>, <liquid:nd_yag>*1000);
 Melter.addRecipe(<ore:ingotYellorium>, <liquid:yellorium>*144);
@@ -155,14 +169,17 @@ AlloyFurnace.removeRecipeWithOutput(<nuclearcraft:alloy:11>*2);
 AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:1>);
 AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:2>);
 AlloyFurnace.removeRecipeWithOutput(<enderio:item_alloy_ingot:5>);
+AlloyFurnace.removeRecipeWithOutput(<enderio:item_material:15>);
 
 AlloyFurnace.addRecipe(<ore:plateDenseLead>, <ore:ingotStainlessSteel>, <nuclearcraft:part:1>*6);
 AlloyFurnace.addRecipe(<botania:quartz:2>*4, <astralsorcery:itemcoloredlens:2>, <actuallyadditions:block_greenhouse_glass>*3);
 AlloyFurnace.addRecipe(<ore:dustLead>*3, <ore:dustHafnium>, <nuclearcraft:part:3>);
 AlloyFurnace.addRecipe(<minecraft:diamond>, <rftools:dimensional_shard>, <nuclearcraft:alloy:2>*2);
+AlloyFurnace.addRecipe(<appliedenergistics2:material:3>*3, null, <appliedenergistics2:quartz_glass>);
 AlloyFurnace.addRecipe(<rockhounding_chemistry:alloy_items_tech:1>, <nuclearcraft:alloy:2>, <nuclearcraft:alloy:11>*2);
 AlloyFurnace.addRecipe(<ore:ingotTitanium>*3, <rockhounding_chemistry:alloy_items_tech:43>, <nuclearcraft:alloy:1>*4, 2.5D, 2.0D);
 AlloyFurnace.addRecipe(<ore:ingotTough>*4, <ore:dustDiamond>, <thermalfoundation:material:656>, 2.5D, 1.5D);
+AlloyFurnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "Tempus"}]}), <enderio:item_alloy_ingot:1>, <enderio:item_alloy_ingot:2>);
 
 
 Assembler.removeRecipeWithOutput(<qmd:semiconductor:4>);
@@ -202,6 +219,30 @@ Assembler.addRecipe(<extrautils2:powertransmitter>, <extrautils2:ingredients>, <
 Assembler.addRecipe(<qmd:part:4>*4, <ore:slabSteelScaffolding>, <rockhounding_chemistry:alloy_parts:46>*2, <contenttweaker:levitate_device>,
 <actuallyadditions:block_display_stand>);
 
+Assembler.addRecipe(<jaopca:item_dusttinydimensionalshard>, <qmd:semiconductor:4>, <extrautils2:ingredients>, <rockhounding_chemistry:misc_items:17>,
+<appliedenergistics2:material:35>);
+
+Assembler.addRecipe(<appliedenergistics2:material:35>*2, <qmd:semiconductor:4>, <appliedenergistics2:part:16>*2, <jaopca:item_dustsmalldimensionalshard>,
+<appliedenergistics2:material:36>);
+
+Assembler.addRecipe(<appliedenergistics2:material:36>*2, <qmd:semiconductor:5>, <qmd:part:6>*2, <rftools:dimensional_shard>,
+<appliedenergistics2:material:37>);
+
+Assembler.addRecipe(<appliedenergistics2:material:37>*2, <qmd:semiconductor:5>, <qmd:part:4>*2, <jaopca:block_blockdimensionalshard>,
+<appliedenergistics2:material:38>);
+
+Assembler.addRecipe(<jaopca:item_dusttinydimensionalshard>, <qmd:semiconductor:4>, <extrautils2:ingredients>, <rockhounding_chemistry:misc_items:29>,
+<appliedenergistics2:material:54>);
+
+Assembler.addRecipe(<appliedenergistics2:material:54>*2, <qmd:semiconductor:4>, <appliedenergistics2:part:16>*2, <jaopca:item_dustsmalldimensionalshard>,
+<appliedenergistics2:material:55>);
+
+Assembler.addRecipe(<appliedenergistics2:material:55>*2, <qmd:semiconductor:5>, <qmd:part:6>*2, <rftools:dimensional_shard>,
+<appliedenergistics2:material:56>);
+
+Assembler.addRecipe(<appliedenergistics2:material:56>*2, <qmd:semiconductor:5>, <qmd:part:4>*2, <jaopca:block_blockdimensionalshard>,
+<appliedenergistics2:material:57>);
+
 IngotFormer.removeRecipeWithOutput(<nuclearcraft:alloy:2>);
 
 
@@ -229,4 +270,10 @@ RadiationScrubber.addRecipe(<ore:ingotConductiveIron>, null, <enderio:item_alloy
 RadiationScrubber.addRecipe(<ore:ingotShibuichi>, <liquid:redstone>*200, <thermalfoundation:material:165>, null, 200, 60, 0.6D);
 
 //QMD
-beam_dump.addRecipe(<particle:neutron> * 600000, <liquid:ic2uu_matter>*1);
+beam_dump.addRecipe(<particle:neutron> * 60000, <liquid:ic2uu_matter>*1);
+
+
+//矿物
+ore_leacher.removeAllRecipes();
+RockCrusher.removeAllRecipes();
+accelerator_source.addRecipe(<minecraft:redstone>, <particle:photon>*10000);

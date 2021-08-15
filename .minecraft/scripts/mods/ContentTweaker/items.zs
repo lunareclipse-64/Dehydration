@@ -61,7 +61,9 @@ var normalItems as string[] = [
     "distill_bottle_water_plant",
     "distill_bottle_water_flesh",
     "distill_bottle_poison_flesh",
-    "distill_bottle_empty"
+    "distill_bottle_empty",
+    "uranium_tetrafluoride",
+    "gallium_dust"
 ];
 for name in normalItems{
 	val item = VanillaFactory.createItem(name);

@@ -1,4 +1,5 @@
 #priority -1
+#loader crafttweaker reloadableevents
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.modularmachinery.RecipePrimer;
@@ -31,14 +32,14 @@ val bronzeElec = newBuilder("Bronze_elec", "solution_electrolytic_pool", 240);
 bronzeElec.addEnergyPerTickInput(60)
     .addItemInput(<thermalfoundation:material:355>*4)
     .addItemOutput(<thermalfoundation:material:321>*1)
-    .addItemOutput(<thermalfoundation:material:64>*3)
+    .addItemOutput(<rockhounding_chemistry:chemical_dusts:26>*3)
     .build();
 
 val constantanElec = newBuilder("Constantan_elec", "solution_electrolytic_pool", 240);
 constantanElec.addEnergyPerTickInput(80)
     .addItemInput(<thermalfoundation:material:356>*4)
     .addItemOutput(<thermalfoundation:material:325>*2)
-    .addItemOutput(<thermalfoundation:material:64>*2)
+    .addItemOutput(<rockhounding_chemistry:chemical_dusts:26>*2)
     .build();
 
 val pressSiElec = newBuilder("Sipress_elec", "solution_electrolytic_pool", 400);
@@ -55,7 +56,7 @@ pressAuElec.addEnergyPerTickInput(120)
     .addItemInput(<minecraft:heavy_weighted_pressure_plate>)
     .addItemInput(<appliedenergistics2:material:18>)
     .addItemOutput(<appliedenergistics2:material:15>)
-    .addItemOutput(<thermalfoundation:material:1>).setChance(0.7)
+    .addItemOutput(<rockhounding_chemistry:chemical_dusts:28>).setChance(0.7)
     .build();
 
 val purifiedCetusElec = newBuilder("purifiedCetus_elec", "solution_electrolytic_pool", 150);
@@ -170,7 +171,7 @@ NaFusionElec.addEnergyPerTickInput(400)
 val AlFusionElec = newBuilder("Al2O3_elec", "molten_electrolytic_pool", 400);
 AlFusionElec.addEnergyPerTickInput(800)
     .addItemInput(<jaopca:item_crushedpurifiedaluminium>*4)
-    .addItemOutput(<thermalfoundation:material:132>*2)
+    .addItemOutput(<rockhounding_chemistry:metal_items:3>*2)
     .addFluidOutput(<liquid:oxygen>*1500)
     .build();
 
@@ -184,75 +185,79 @@ MgFusionElec.addEnergyPerTickInput(400)
 
 //热还原炉
 val KHeatRedu = newBuilder("KCl_redu", "reducing_furnace", 300);
-KHeatRedu.addEnergyPerTickInput(1600)
+KHeatRedu.addEnergyPerTickInput(600)
     .addItemInput(<contenttweaker:potassium_chloride>*4)
     .addItemInput(<ore:dustSodium>,2)
     .addItemOutput(<rockhounding_chemistry:chemical_dusts:41>*2)
     .build();
-
-val UOxideHeatRedu = newBuilder("U3O8_redu", "reducing_furnace", 300);
-UOxideHeatRedu.addEnergyPerTickInput(1400)
-    .addItemInput(<contenttweaker:purified_pitchblende>*4)
-    .addItemInput(<ore:dustMagnesium>,3)
-    .addItemOutput(<immersiveengineering:metal:5>*3)
+val HgHeatRedu = newBuilder("HgS_redu", "reducing_furnace", 120);
+HgHeatRedu.addEnergyPerTickInput(200)
+    .addItemInput(<contenttweaker:purified_cinnabar>*4)
+    .addItemOutput(<thaumcraft:quicksilver>*5)
+    .addItemOutput(<rockhounding_chemistry:chemical_dusts:45>*5)
     .build();
-
-val USaltHeatRedu = newBuilder("Na2U2O7_redu", "reducing_furnace", 300);
-USaltHeatRedu.addEnergyPerTickInput(1400)
-    .addItemInput(<ic2:purified:6>*4)
-    .addItemInput(<ore:dustMagnesium>,3)
-    .addItemOutput(<immersiveengineering:metal:5>*3)
+val UHeatRedu = newBuilder("UF4_redu", "reducing_furnace", 240);
+UHeatRedu.addEnergyPerTickInput(700)
+    .addItemInput(<contenttweaker:uranium_tetrafluoride>)
+    .addItemInput(<ore:dustCalcium>,2)
+    .addItemOutput(<rockhounding_chemistry:chemical_items:5>)
+    .addItemOutput(<immersiveengineering:metal:5>)
     .build();
-
+val MnHeatRedu = newBuilder("MnO_redu", "reducing_furnace", 100);
+MnHeatRedu.addEnergyPerTickInput(400)
+    .addItemInput(<nuclearcraft:dust:14>*4)
+    .addItemOutput(<ore:dustCarbon>,2)
+    .addItemOutput(<nuclearcraft:ingot:11>*4)
+    .build();
 val ThHeatRedu = newBuilder("ThO2_redu", "reducing_furnace", 300);
-ThHeatRedu.addEnergyPerTickInput(1400)
+ThHeatRedu.addEnergyPerTickInput(1100)
     .addItemInput(<jaopca:item_crushedpurifiedthorium>*4)
     .addItemInput(<ore:dustCalcium>,2)
     .addItemOutput(<nuclearcraft:ingot:3>*2)
     .build();
 
 val TiMgHeatRedu = newBuilder("TiCl4_redu_by_mg", "reducing_furnace", 240);
-TiMgHeatRedu.addEnergyPerTickInput(1000)
+TiMgHeatRedu.addEnergyPerTickInput(800)
     .addFluidInput(<liquid:titanium_tetrachloride>*1000)
     .addItemInput(<ore:dustMagnesium>,2)
     .addItemOutput(<rockhounding_chemistry:metal_items:4>)
     .build();
 
 val TiNaHeatRedu = newBuilder("TiCl4_redu_by_na", "reducing_furnace", 280);
-TiNaHeatRedu.addEnergyPerTickInput(1200)
+TiNaHeatRedu.addEnergyPerTickInput(1100)
     .addFluidInput(<liquid:titanium_tetrachloride>*1000)
     .addItemInput(<ore:dustSodium>,4)
     .addItemOutput(<rockhounding_chemistry:metal_items:4>)
     .build();
 
 val OsHeatRedu = newBuilder("OsIr_sepa", "reducing_furnace", 200);
-OsHeatRedu.addEnergyPerTickInput(900)
+OsHeatRedu.addEnergyPerTickInput(700)
     .addFluidInput(<liquid:oxygen>*2000)
     .addFluidInput(<liquid:hydrogen>*4000)
     .addItemInput(<jaopca:item_crushedpurifiedosmium>)
-    .addItemOutput(<qmd:ingot:8>)
+    .addItemOutput(<rockhounding_chemistry:metal_items:2>)
     .addItemOutput(<thermalfoundation:material:199>*2)
     .build();
 
 val BHeatRedu = newBuilder("BCl3_redu", "reducing_furnace", 210);
-BHeatRedu.addEnergyPerTickInput(1000)
+BHeatRedu.addEnergyPerTickInput(800)
     .addFluidInput(<liquid:boron_chloride>*1000)
     .addItemInput(<ore:dustZinc>,1)
     .addItemOutput(<nuclearcraft:ingot:5>)
     .build();
 
 val CuPtHeatRedu = newBuilder("CuFeS2_redu", "reducing_furnace", 250);
-CuPtHeatRedu.addEnergyPerTickInput(700)
+CuPtHeatRedu.addEnergyPerTickInput(500)
     .addFluidInput(<liquid:oxygen>*2000)
     .addItemInput(<contenttweaker:purified_chalcopyrite>*2)
-    .addItemOutput(<thermalfoundation:material:128>*2)
+    .addItemOutput(<rockhounding_chemistry:metal_items:11>*2)
     .addItemOutput(<ic2:purified:2>)
     .addItemOutput(<thermalfoundation:material:198>*3)
     .addFluidOutput(<liquid:sulfur_dioxide>*2000)
     .build();
 
 val FeHeatRedu = newBuilder("Fe2O3_redu_by_C", "reducing_furnace", 200);
-FeHeatRedu.addEnergyPerTickInput(1200)
+FeHeatRedu.addEnergyPerTickInput(1000)
     .addItemInput(<ore:dustCoke>,4)
     .addItemInput(<ic2:purified:2>*2)
     .addItemOutput(<thermalfoundation:material:160>*2)
@@ -260,14 +265,14 @@ FeHeatRedu.addEnergyPerTickInput(1200)
     .build();
 
 val CuHeatRedu = newBuilder("Cu_redu_by_C", "reducing_furnace", 100);
-CuHeatRedu.addEnergyPerTickInput(1000)
+CuHeatRedu.addEnergyPerTickInput(750)
     .addItemInput(<ore:dustCoke>,4)
     .addItemInput(<ic2:purified>*4)
-    .addItemOutput(<thermalfoundation:material:128>*6)
+    .addItemOutput(<rockhounding_chemistry:metal_items:11>*6)
     .build();
 
 val SnHeatRedu = newBuilder("SnO2_redu_by_C", "reducing_furnace", 100);
-SnHeatRedu.addEnergyPerTickInput(1000)
+SnHeatRedu.addEnergyPerTickInput(800)
     .addItemInput(<ore:dustCoke>,4)
     .addItemInput(<ic2:purified:5>*4)
     .addItemOutput(<thermalfoundation:material:129>*6)
@@ -275,42 +280,42 @@ SnHeatRedu.addEnergyPerTickInput(1000)
     .build();
 
 val PbHeatRedu = newBuilder("PbS_redu_by_C", "reducing_furnace", 100);
-PbHeatRedu.addEnergyPerTickInput(1000)
+PbHeatRedu.addEnergyPerTickInput(690)
     .addItemInput(<ore:dustCoke>,2)
     .addItemInput(<ic2:purified:3>*4)
-    .addItemOutput(<thermalfoundation:material:131>*5)
+    .addItemOutput(<rockhounding_chemistry:metal_items:5>*5)
     .build();
 
 val AuHeatRedu = newBuilder("Au_redu_heat_only", "reducing_furnace", 160);
-AuHeatRedu.addEnergyPerTickInput(800)
+AuHeatRedu.addEnergyPerTickInput(710)
     .addItemInput(<ic2:purified:1>*4)
     .addItemOutput(<minecraft:gold_ingot>*5)
     .addItemOutput(<thermalfoundation:material:130>)
     .build();
 
 val StHeatRedu = newBuilder("St_redu_heat_only", "reducing_furnace", 140);
-StHeatRedu.addEnergyPerTickInput(700)
+StHeatRedu.addEnergyPerTickInput(600)
     .addItemInput(<jaopca:item_crushedpurifiedastralstarmetal>*4)
     .addItemOutput(<astralsorcery:itemcraftingcomponent:1>*4)
     .addItemOutput(<astralsorcery:itemcraftingcomponent:2>)
     .build();
 
 val AgHeatRedu = newBuilder("Ag_redu_heat_only", "reducing_furnace", 140);
-AgHeatRedu.addEnergyPerTickInput(900)
+AgHeatRedu.addEnergyPerTickInput(700)
     .addItemInput(<ic2:purified:4>*4)
     .addItemOutput(<thermalfoundation:material:130>*5)
-    .addItemOutput(<minecraft:gold_ingot>)
+    .addItemOutput(<minecraft:gold_nugget>*3)
     .build();
 
 val PtHeatRedu = newBuilder("Pt_redu_heat_only", "reducing_furnace", 200);
-PtHeatRedu.addEnergyPerTickInput(900)
+PtHeatRedu.addEnergyPerTickInput(700)
     .addItemInput(<jaopca:item_crushedpurifiedplatinum>*2)
-    .addItemOutput(<thermalfoundation:material:134>*2)
+    .addItemOutput(<rockhounding_chemistry:metal_items:6>*2)
     .addItemOutput(<thermalfoundation:material:199>*3)
     .build();
 
 val NiHeatRedu = newBuilder("NiO_redu", "reducing_furnace", 120, 0);
-NiHeatRedu.addEnergyPerTickInput(1100)
+NiHeatRedu.addEnergyPerTickInput(800)
     .addItemInput(<ore:dustCoke>,3)
     .addItemInput(<jaopca:item_crushedpurifiednickel>*3)
     .addItemOutput(<thermalfoundation:material:162>*4)
@@ -319,7 +324,7 @@ NiHeatRedu.addEnergyPerTickInput(1100)
     .build();
 
 val NiOxygenHeatRedu = newBuilder("NiO_redu_with_O2", "reducing_furnace", 120, 1);
-NiOxygenHeatRedu.addEnergyPerTickInput(1400)
+NiOxygenHeatRedu.addEnergyPerTickInput(1100)
     .addFluidInput(<liquid:oxygen>*2000)
     .addItemInput(<ore:dustCoke>,3)
     .addItemInput(<jaopca:item_crushedpurifiednickel>*3)
@@ -330,14 +335,14 @@ NiOxygenHeatRedu.addEnergyPerTickInput(1400)
     .build();
 
 val CaHeatRedu = newBuilder("CaO_redu", "reducing_furnace", 250);
-CaHeatRedu.addEnergyPerTickInput(1500)
+CaHeatRedu.addEnergyPerTickInput(1120)
     .addItemInput(<primal:carbonate_slack>*6)
     .addItemInput(<ore:dustAluminum>,2)
     .addItemOutput(<thermalfoundation:material:864>*3)
     .addItemOutput(<qmd:ingot:13>*3)
     .build();
 val NaCNHeatSyn = newBuilder("NaCN_heat", "reducing_furnace", 120);
-NaCNHeatSyn.addEnergyPerTickInput(1400)
+NaCNHeatSyn.addEnergyPerTickInput(1100)
     .addFluidInput(<liquid:nitrogen>*2000)
     .addItemInput(<contenttweaker:soda>*2)
     .addItemInput(<ore:dustCalcium>,2)
@@ -347,7 +352,7 @@ NaCNHeatSyn.addEnergyPerTickInput(1400)
     .build();
 
 val PHeatRedu = newBuilder("P_Heat", "reducing_furnace", 300);
-PHeatRedu.addEnergyPerTickInput(800)
+PHeatRedu.addEnergyPerTickInput(700)
     .addItemInput(<forestry:apatite>*2)
     .addItemInput(<ore:dustCarbon>,3)
     .addItemInput(<contenttweaker:purified_sand>*2)
@@ -357,23 +362,48 @@ PHeatRedu.addEnergyPerTickInput(800)
     .build();
 
 val SiHeatRedu = newBuilder("Si_Heat", "reducing_furnace", 200);
-SiHeatRedu.addEnergyPerTickInput(850)
+SiHeatRedu.addEnergyPerTickInput(680)
     .addFluidInput(<liquid:silicon_tetrachloride>*1000)
     .addFluidInput(<liquid:hydrogen>*2000)
     .addItemOutput(<contenttweaker:silicon_seed>*6)
     .addFluidOutput(<liquid:hydrochloric_acid>*4000)
     .build();
-val nitrogenFromCa = newBuilder("N2_from_Ca", "reducing_furnace", 1000);
+val nitrogenFromCa = newBuilder("N2_from_Ca", "reducing_furnace", 800);
 nitrogenFromCa.addEnergyPerTickInput(10)
     .addItemInput(<ore:dustCalcium>)
     .addFluidOutput(<liquid:nitrogen>*4000)
     .addItemOutput(<primal:carbonate_slack>*2)
     .build();
-val nitrogenFromMg = newBuilder("N2_from_Mg", "reducing_furnace", 1000);
+val nitrogenFromMg = newBuilder("N2_from_Mg", "reducing_furnace", 800);
 nitrogenFromMg.addEnergyPerTickInput(10)
     .addItemInput(<ore:dustMagnesium>)
     .addFluidOutput(<liquid:nitrogen>*4000)
     .addItemOutput(<jaopca:item_crushedpurifiedmagnesium>)
+    .build();
+val quartzGlassFromSiCl4 = newBuilder("quartz_glass_from_sicl4", "reducing_furnace", 800);
+quartzGlassFromSiCl4.addEnergyPerTickInput(500)
+    .addFluidInput(<liquid:silicon_tetrachloride>*1000)
+    .addFluidInput(<liquid:oxygen>*1000)
+    .addFluidOutput(<liquid:chlorine>*2000)
+    .addItemOutput(<appliedenergistics2:quartz_glass>)
+    .build();
+val ZnHeatRedu = newBuilder("ZnS_redu", "reducing_furnace", 120, 0);
+ZnHeatRedu.addEnergyPerTickInput(600)
+    .addItemInput(<ore:dustCoke>)
+    .addItemInput(<jaopca:item_crushedpurifiedzinc>*2)
+    .addItemOutput(<rockhounding_chemistry:metal_items:9>*2)
+    .addItemOutput(<thermalfoundation:material:195>*3)
+    .addFluidOutput(<liquid:sulfur_dioxide>*2000)
+    .build();
+val ZnOxiHeatRedu = newBuilder("ZnS_redu_with_O2", "reducing_furnace", 120, 1);
+ZnOxiHeatRedu.addEnergyPerTickInput(500)
+    .addFluidInput(<liquid:oxygen>*3000)
+    .addItemInput(<ore:dustCoke>)
+    .addItemInput(<jaopca:item_crushedpurifiedzinc>*2)
+    .addItemOutput(<rockhounding_chemistry:metal_items:9>*3)
+    .addItemOutput(<thermalfoundation:material:195>*3)
+    .addFluidOutput(<liquid:sulfur_dioxide>*2000)
+    .addFluidOutput(<liquid:raw_flue_gas>*1000)
     .build();
 //氯化炉
 val TiChloridize = newBuilder("TiCl4_chlo", "chloridizing_furnace", 200);
@@ -406,34 +436,41 @@ PChloridize.addEnergyPerTickInput(400)
     .addFluidOutput(<liquid:phosphor_pentachloride>*2000)
     .build();
 
-val SiChloridize = newBuilder("SiCl4_chlo", "chloridizing_furnace", 100);
-SiChloridize.addEnergyPerTickInput(350)
+val SiChloridize = newBuilder("SiCl4_chlo_Si", "chloridizing_furnace", 100);
+SiChloridize.addEnergyPerTickInput(200)
     .addFluidInput(<liquid:chlorine>*2000)
     .addItemInput(<ore:dustSilicon>)
+    .addFluidOutput(<liquid:silicon_tetrachloride>*1000)
+    .build();
+val SiO2Chloridize = newBuilder("SiCl4_chlo_SiO2", "chloridizing_furnace", 150);
+SiO2Chloridize.addEnergyPerTickInput(250)
+    .addFluidInput(<liquid:chlorine>*2000)
+    .addItemInput(<contenttweaker:purified_sand>*4)
+    .addItemInput(<ore:dustCarbon>)
     .addFluidOutput(<liquid:silicon_tetrachloride>*1000)
     .build();
 
 //浮选槽
 var clean = {
-    <ic2:crushed:6>:<ic2:purified:6>,
-    <ic2:crushed>:<ic2:purified>,
-    <ic2:crushed:1>:<ic2:purified:1>,
-    <ic2:crushed:2>:<ic2:purified:2>,
-    <ic2:crushed:3>:<ic2:purified:3>,
-    <ic2:crushed:4>:<ic2:purified:4>,
-    <ic2:crushed:5>:<ic2:purified:5>,
-    <jaopca:item_crushedzinc>:<jaopca:item_crushedpurifiedzinc>,
-    <jaopca:item_crushedaluminium>:<jaopca:item_crushedpurifiedaluminium>,
-    <jaopca:item_crushedastralstarmetal>:<jaopca:item_crushedpurifiedastralstarmetal>,
-    <jaopca:item_crushedboron>:<jaopca:item_crushedpurifiedboron>,
-    <jaopca:item_crushednickel>:<jaopca:item_crushedpurifiednickel>,
-    <jaopca:item_crushedosmium>:<jaopca:item_crushedpurifiedosmium>,
-    <jaopca:item_crushedplatinum>:<jaopca:item_crushedpurifiedplatinum>,
-    <jaopca:item_crushedthorium>:<jaopca:item_crushedpurifiedthorium>,
-    <jaopca:item_crushedyellorium>:<jaopca:item_crushedpurifiedyellorium>,
-    <contenttweaker:crushed_chalcopyrite>:<contenttweaker:purified_chalcopyrite>,
-    <contenttweaker:crushed_pitchblende>:<contenttweaker:purified_pitchblende>,
-    <contenttweaker:crushed_cinnabar>:<contenttweaker:purified_cinnabar>
+    <ic2:crushed:6> : <ic2:purified:6>,
+    <ic2:crushed> : <ic2:purified>,
+    <ic2:crushed:1> : <ic2:purified:1>,
+    <ic2:crushed:2> : <ic2:purified:2>,
+    <ic2:crushed:3> : <ic2:purified:3>,
+    <ic2:crushed:4> : <ic2:purified:4>,
+    <ic2:crushed:5> : <ic2:purified:5>,
+    <jaopca:item_crushedzinc> : <jaopca:item_crushedpurifiedzinc>,
+    <jaopca:item_crushedaluminium> : <jaopca:item_crushedpurifiedaluminium>,
+    <jaopca:item_crushedastralstarmetal> : <jaopca:item_crushedpurifiedastralstarmetal>,
+    <jaopca:item_crushedboron> : <jaopca:item_crushedpurifiedboron>,
+    <jaopca:item_crushednickel> : <jaopca:item_crushedpurifiednickel>,
+    <jaopca:item_crushedosmium> : <jaopca:item_crushedpurifiedosmium>,
+    <jaopca:item_crushedplatinum> : <jaopca:item_crushedpurifiedplatinum>,
+    <jaopca:item_crushedthorium> : <jaopca:item_crushedpurifiedthorium>,
+    <jaopca:item_crushedyellorium> : <jaopca:item_crushedpurifiedyellorium>,
+    <contenttweaker:crushed_chalcopyrite> : <contenttweaker:purified_chalcopyrite>,
+    <contenttweaker:crushed_pitchblende> : <contenttweaker:purified_pitchblende>,
+    <contenttweaker:crushed_cinnabar> : <contenttweaker:purified_cinnabar>
 } as IItemStack[IItemStack];
 
 for ori in clean{
@@ -562,9 +599,9 @@ ultiGenerator2.addEnergyPerTickOutput(2048)
     .build();
 //轨道收发器
 val blueprint = {
-    <contenttweaker:technology1>:<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:tech_space"}),
-    <contenttweaker:technology3>:<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:tech_energy"}),
-    <contenttweaker:technology4>:<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:tech_life"})
+    <contenttweaker:technology1> : <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:tech_space"}),
+    <contenttweaker:technology3> : <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:tech_energy"}),
+    <contenttweaker:technology4> : <modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:tech_life"})
 }as IItemStack[IItemStack];
 
 for technode in blueprint{
@@ -577,15 +614,15 @@ for technode in blueprint{
 }
 
 val technology = {
-    <contenttweaker:technology1>:<contenttweaker:memento1>,
-    <contenttweaker:technology2>:<contenttweaker:memento2>,
-    <contenttweaker:technology3>:<contenttweaker:memento3>,
-    <contenttweaker:technology4>:<contenttweaker:memento4>,
-    <contenttweaker:technology5>:<contenttweaker:memento5>,
-    <contenttweaker:technology6>:<contenttweaker:memento6>,
-    <contenttweaker:technology7>:<contenttweaker:memento7>,
-    <contenttweaker:technology8>:<contenttweaker:memento8>,
-    <contenttweaker:technology9>:<contenttweaker:memento9>
+    <contenttweaker:technology1> : <contenttweaker:memento1>,
+    <contenttweaker:technology2> : <contenttweaker:memento2>,
+    <contenttweaker:technology3> : <contenttweaker:memento3>,
+    <contenttweaker:technology4> : <contenttweaker:memento4>,
+    <contenttweaker:technology5> : <contenttweaker:memento5>,
+    <contenttweaker:technology6> : <contenttweaker:memento6>,
+    <contenttweaker:technology7> : <contenttweaker:memento7>,
+    <contenttweaker:technology8> : <contenttweaker:memento8>,
+    <contenttweaker:technology9> : <contenttweaker:memento9>
 }as IItemStack[IItemStack];
 for mem in technology{
     val print = newBuilder(technology[mem].definition.id + "_to_", "orbital_transceiver", 200);
@@ -701,6 +738,14 @@ processorElite2.addEnergyPerTickInput(20)
     .addItemOutput(<qmd:semiconductor:6>)
     .addItemOutput(<contenttweaker:micro_laser_etcher>)
     .build();
+val storageCellCasing = newBuilder("storage_cell_casing", "tech_space", 80);
+storageCellCasing.addEnergyPerTickInput(50)
+    .addItemInput(<appliedenergistics2:part:16>)
+    .addItemInput(<appliedenergistics2:quartz_glass>)
+    .addItemInput(<ic2:casing:5>*2)
+    .addItemOutput(<appliedenergistics2:material:39>)
+    .build();
+
 //生命创造器 需要在guguutils更新后修改
 val beeCreate = {} as IItemStack[IItemStack];
 beeCreate[meadowsBeeQueen] = <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "herba"}]});
@@ -829,4 +874,21 @@ destructiveCore.addEnergyPerTickInput(80)
     .addItemInput(<ic2:casing:3>)
     .addItemInput(<jaopca:item_dustdimensionalshard>)
     .addItemOutput(<appliedenergistics2:material:44>)
+    .build();
+val fluixCrystal = newBuilder("fluix_crystal", "tech_substance", 40);
+fluixCrystal.addEnergyPerTickInput(100)
+    .addItemInput(<appliedenergistics2:material:1>)
+    .addItemOutput(<appliedenergistics2:material:7>)
+    .build();
+//时间节流器
+val moistener = newBuilder("moistener", "tech_time", 120);
+moistener.addEnergyPerTickInput(40)
+    .addItemInput(<contenttweaker:technology5>)
+    .addItemInput(<enderio:item_alloy_ingot:2>)
+    .addItemInput(<ic2:fluid_cell>)
+    .addItemInput(<rockhounding_chemistry:misc_items:1>)
+    .addItemInput(<ic2:casing>*4)
+    .addItemInput(<forestry:impregnated_casing>)
+    .addItemInput(<extrautils2:wateringcan>)
+    .addItemOutput(<forestry:moistener>)
     .build();

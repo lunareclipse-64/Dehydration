@@ -1,4 +1,5 @@
 #priority 100
+#loader crafttweaker reloadableevents
 
 recipes.addShaped(<bigreactors:turbinehousing>*2,
 [[null, <ore:plateInvar>, null],

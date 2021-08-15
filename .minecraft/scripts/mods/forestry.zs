@@ -1,4 +1,5 @@
 #priority 100
+#loader crafttweaker reloadableevents
 import mods.forestry.Carpenter;
 import mods.forestry.ThermionicFabricator;
 

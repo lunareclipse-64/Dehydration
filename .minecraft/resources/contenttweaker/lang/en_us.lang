@@ -78,6 +78,7 @@ item.contenttweaker.distill_bottle_empty.name=Empty Evaporation Device
 item.contenttweaker.distill_bottle_flesh.name=Rottenfleshed Evaporation Device
 item.contenttweaker.distill_bottle_water_flesh.name=Watered Evaporation Device
 item.contenttweaker.distill_bottle_poison_flesh.name=Watered Evaporation Device
+item.contenttweaker.uranium_tetrafluoride.name=Uranium Tetrafluoride
 
 
 fluid.titanium_tetrachloride=Titanium Tetrachloride

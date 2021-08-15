@@ -1,4 +1,5 @@
 #priority 100
+#loader crafttweaker reloadableevents
 
 recipes.addShaped(<primal:smelter:3>.withTag({type: "adobe"}), 
 [[null, <primal:adobe_brick_dry>, null], 

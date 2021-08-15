@@ -78,6 +78,7 @@ item.contenttweaker.distill_bottle_empty.name=空蒸发设备
 item.contenttweaker.distill_bottle_flesh.name=装腐肉的蒸发设备
 item.contenttweaker.distill_bottle_water_flesh.name=装满水的蒸发设备
 item.contenttweaker.distill_bottle_poison_flesh.name=装满水的蒸发设备
+item.contenttweaker.uranium_tetrafluoride.name=四氟化铀
 
 fluid.titanium_tetrachloride=四氯化钛
 fluid.floatation_agent=浮选剂

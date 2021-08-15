@@ -1,4 +1,5 @@
 #priority 7
+#loader crafttweaker reloadableevents
 import mods.recipestages.Recipes;
 
 Recipes.addShapeless("yours",<botania:manaresource:18> * 6, 

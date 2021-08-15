@@ -1,4 +1,5 @@
 #priority 10
+#loader crafttweaker reloadableevents
 //Startgame tweak
 import crafttweaker.item.IItemStack;
 import mods.recipestages.Recipes;

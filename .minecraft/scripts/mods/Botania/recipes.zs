@@ -1,4 +1,5 @@
 #priority 100
+#loader crafttweaker reloadableevents
 import mods.botaniatweaks.Agglomeration;
 import mods.botania.ElvenTrade;
 import mods.botania.RuneAltar;
@@ -54,8 +55,8 @@ recipes.addShapeless(<contenttweaker:memento_extractor>,
 [<contenttweaker:memento_extractor>.onlyDamaged(),<botania:manaresource:5>,<botania:manaresource:5>]);
 
 mods.botania.PureDaisy.removeRecipe(<minecraft:snow>);
-mods.botania.PureDaisy.addRecipe(<minecraft:water:0>,<minecraft:snow>, 400);
-mods.botania.PureDaisy.addRecipe(<minecraft:snow>,<minecraft:ice>, 600);
+mods.botania.PureDaisy.addRecipe(<minecraft:snow>, <minecraft:ice>, 400);
+mods.botania.PureDaisy.addRecipe(<liquid:water>, <minecraft:snow>, 200);
 //花药台
 Apothecary.addRecipe("endoflame",
 [<botania:petal:12>,<botania:petal:12>,<botania:petal:4>,<astralsorcery:itemcraftingcomponent:2>,<botania:rune:1>,<ore:dustCoal>,<botania:rune:3>]);
@@ -172,6 +173,7 @@ ElvenTrade.addRecipe([<minecraft:dirt>],[<biomesoplenty:dirt:1>]);
 ElvenTrade.addRecipe([<minecraft:crafting_table>],[<forestry:wood_pile>,<ore:nuggetIron>]);
 ElvenTrade.addRecipe([<minecraft:netherbrick>],[<minecraft:brick>,<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "ignis"}]}),<thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "praecantatio"}]})]);
 ElvenTrade.addRecipe([<botanicadds:elven_altar>],[<botania:runealtar>,<contenttweaker:vivid_crystal>]);
+ElvenTrade.addRecipe([<enderio:item_material:15>],[<contenttweaker:infused_crystal>,<enderio:item_alloy_ingot:2>]);
 
 
 Agglomeration.removeRecipe(<botania:manaresource:4>,[<botania:manaresource>,<botania:manaresource:2>,<botania:manaresource:1>]);

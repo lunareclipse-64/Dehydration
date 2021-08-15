@@ -1,4 +1,5 @@
 #priority -2
+#loader crafttweaker reloadableevents
 import mods.orestages.OreStages;
 
 OreStages.addReplacementById("hypothesis", "geolosys:ore_sample_vanilla:2", "geolosys:ore_sample:5");

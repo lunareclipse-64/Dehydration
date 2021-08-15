@@ -1,4 +1,5 @@
 #priority 1198
+#loader crafttweaker reloadableevents
 #loader contenttweaker
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Fluid;

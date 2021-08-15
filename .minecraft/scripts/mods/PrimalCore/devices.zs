@@ -1,4 +1,5 @@
 #priority 110
+#loader crafttweaker reloadableevents
 import mods.primal.Smelter;
 import mods.primal.Cauldron;
 import mods.primal.DryingRack;
@@ -136,7 +137,7 @@ Cauldron.addRecipe(
 	<liquid:lava>*1000,
 	<liquid:magma_basaltic>*1000,
 	[<toughasnails:ice_cube>],
-	[<immersiveengineering:material:25>*4]
+	[<rockhounding_chemistry:chemical_dusts:45>*4]
 );
 
 Cauldron.addRecipe(
@@ -253,42 +254,42 @@ Smelter.addRecipe(
     "copper_from_crashed_fair",
 	10,
 	[<ic2:crushed>*2,<primal:charcoal_fair>*2,<primal:carbonate_slack>*4],
-	[<thermalfoundation:material:128>*2]
+	[<rockhounding_chemistry:metal_items:11>*2]
 );
 
 Smelter.addRecipe(
     "copper_from_crashed_good",
 	10,
 	[<ic2:crushed>*2,<primal:charcoal_good>*2,<primal:carbonate_slack>*4],
-	[<thermalfoundation:material:128>*2,<thermalfoundation:material:192>*2]
+	[<rockhounding_chemistry:metal_items:11>*2,<thermalfoundation:material:192>*2]
 );
 
 Smelter.addRecipe(
     "copper_from_crashed_high",
 	10,
 	[<ic2:crushed>*2,<primal:charcoal_high>*2,<primal:carbonate_slack>*4],
-	[<thermalfoundation:material:128>*2,<thermalfoundation:material:192>*4]
+	[<rockhounding_chemistry:metal_items:11>*2,<thermalfoundation:material:192>*4]
 );
 
 Smelter.addRecipe(
     "lead_from_crashed_fair",
 	12,
 	[<ic2:crushed:3>*2,<primal:charcoal_fair>*2,<primal:carbonate_slack>*4],
-	[<thermalfoundation:material:131>*2]
+	[<rockhounding_chemistry:metal_items:5>*2]
 );
 
 Smelter.addRecipe(
     "lead_from_crashed_good",
 	12,
 	[<ic2:crushed:3>*2,<primal:charcoal_good>*2,<primal:carbonate_slack>*4],
-	[<thermalfoundation:material:131>*2,<thermalfoundation:material:195>*2]
+	[<rockhounding_chemistry:metal_items:5>*2,<thermalfoundation:material:195>*2]
 );
 
 Smelter.addRecipe(
     "lead_from_crashed_high",
 	12,
 	[<ic2:crushed:3>*2,<primal:charcoal_high>*2,<primal:carbonate_slack>*4],
-	[<thermalfoundation:material:131>*2,<thermalfoundation:material:195>*4]
+	[<rockhounding_chemistry:metal_items:5>*2,<thermalfoundation:material:195>*4]
 );
 
 Smelter.addRecipe(
@@ -337,21 +338,21 @@ Smelter.addRecipe(
     "zinc_from_crashed_fair",
 	10,
 	[<jaopca:item_crushedzinc>*2,<primal:charcoal_fair>*2,<primal:carbonate_slack>*4],
-	[<primal:zinc_ingot>*2]
+	[<rockhounding_chemistry:metal_items:9>*2]
 );
 
 Smelter.addRecipe(
     "zinc_from_crashed_good",
 	10,
 	[<jaopca:item_crushedzinc>*2,<primal:charcoal_good>*2,<primal:carbonate_slack>*4],
-	[<primal:zinc_ingot>*2,<primal:zinc_nugget>*2]
+	[<rockhounding_chemistry:metal_items:9>*2,<primal:zinc_nugget>*2]
 );
 
 Smelter.addRecipe(
     "zinc_from_crashed_high",
 	10,
 	[<jaopca:item_crushedzinc>*2,<primal:charcoal_high>*2,<primal:carbonate_slack>*4],
-	[<primal:zinc_ingot>*2,<primal:zinc_nugget>*4]
+	[<rockhounding_chemistry:metal_items:9>*2,<primal:zinc_nugget>*4]
 );
 
 Smelter.addRecipe(
@@ -379,14 +380,14 @@ Smelter.addRecipe(
     "chalcopyrite_crushed",
 	7,
 	[<contenttweaker:crushed_chalcopyrite>*2,<primal:charcoal_mote>*2,<primal:carbonate_slack>*4],
-	[<thermalfoundation:material:128>*2]
+	[<rockhounding_chemistry:metal_items:11>*2]
 );
 
 Smelter.addRecipe(
     "chalcopyrite_purified",
 	6,
 	[<contenttweaker:purified_chalcopyrite>*2,<primal:charcoal_mote>*2],
-	[<thermalfoundation:material:128>*2]
+	[<rockhounding_chemistry:metal_items:11>*2]
 );
 
 Smelter.addRecipe(

@@ -1,4 +1,5 @@
 #priority 1050
+#loader crafttweaker reloadableevents
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -59,7 +60,7 @@ var redirectS1 as IIngredient[] = [
     <ic2:crushed:2>,
     <ic2:crushed:5>,
     <ic2:dust:15>,
-    <immersiveengineering:material:25>,
+    <rockhounding_chemistry:chemical_dusts:45>,
     <jaopca:item_dusttinyamber>,
     <minecraft:bucket>,
     <rockhounding_chemistry:machines_a:13>,
@@ -81,10 +82,11 @@ var redirectS1 as IIngredient[] = [
     <thaumcraft:salis_mundus>,
     <thaumcraft:thaumonomicon>,
     <thermalfoundation:material:32>,
-    <thermalfoundation:material:128>,
+    <rockhounding_chemistry:metal_items:11>,
     <thermalfoundation:material:192>,
     <thermalfoundation:material:768>,
-    <thermalfoundation:storage_resource>
+    <thermalfoundation:storage_resource>,
+    <contenttweaker:memento1>
 ];
 for item in redirectS1{
     setRecipeStage("exploration", item);
@@ -108,7 +110,8 @@ var redirectS2 as IIngredient[] = [
     <bloodmagic:dagger_of_sacrifice>,
     <primal_tech:charcoal_block>,
     <thermalfoundation:material:33>,
-    <thermalfoundation:material:866>
+    <thermalfoundation:material:866>,
+    <contenttweaker:memento2>
 ];
 for item in redirectS2{
     setRecipeStage("hypothesis", item);
@@ -125,7 +128,8 @@ var redirectS3 as IIngredient[] = [
     <contenttweaker:memento3>,
     <ic2:te:115>,
     <minecraft:redstone_ore>,
-    <minecraft:slime_ball>
+    <minecraft:slime_ball>,
+    <contenttweaker:memento3>
 ];
 for item in redirectS3{
     setRecipeStage("yours", item);
@@ -187,7 +191,8 @@ var redirectS4 as IIngredient[] = [
     <extrautils2:passivegenerator>,
     <extrautils2:passivegenerator:1>,
     <minecraft:beacon>,
-    <nuclearcraft:part:6>
+    <nuclearcraft:part:6>,
+    <contenttweaker:memento4>
 ];
 for item in redirectS4{
     setRecipeStage("discovery", item);
@@ -197,10 +202,24 @@ var redirectS5 as IIngredient[] = [
     <astralsorcery:blockcelestialgateway>,
     <appliedenergistics2:controller>,
     <appliedenergistics2:material:43>,
-    <appliedenergistics2:material:44>
+    <appliedenergistics2:material:44>,
+    <contenttweaker:technology1>,
+    <contenttweaker:technology2>,
+    <contenttweaker:technology3>,
+    <contenttweaker:technology4>,
+    <contenttweaker:memento5>
 ];
 for item in redirectS5{
     setRecipeStage("renaissance", item);
+}
+
+var redirectS6 as IIngredient[] = [
+    <contenttweaker:technology5>,
+    <contenttweaker:technology6>,
+    <contenttweaker:memento6>
+];
+for item in redirectS6{
+    setRecipeStage("automation", item);
 }
 //mod阶段化
 mods.recipestages.Recipes.setPrintContainers(true);
@@ -242,7 +261,6 @@ for mod in modsS1{
 
 
 var modsS2 as string[] = [
-    "planarartifice",
     "jaopca",
     "chisel",
     "backpack"
@@ -252,6 +270,9 @@ for mod in modsS2{
 	stageModItems("hypothesis", mod);
     setRecipeStageByMod("hypothesis", mod);
 }
+stageModItems("hypothesis", "thaumcraft");
+stageModItems("hypothesis", "planarartifice");
+
 
 var modsS3 as string[] = [
     "bloodmagic",
@@ -451,11 +472,14 @@ for recipe in recS5{
 
 //删除物品
 var banneditem as IIngredient[] = [
+    <actuallyadditions:block_grinder>,
+    <actuallyadditions:block_grinder_double>,
     <actuallyadditions:block_laser_relay_item>,
     <actuallyadditions:block_misc:3>,
     <advancedrocketry:arcfurnace>,
     <advancedrocketry:centrifuge>, 
 	<advancedrocketry:platepress>,
+    <appliedenergistics2:material:49>,
     <astralsorcery:blockbore>,
 	<astralsorcery:itemchargedcrystalaxe>,
 	<astralsorcery:itemchargedcrystalpickaxe>,
@@ -474,6 +498,7 @@ var banneditem as IIngredient[] = [
 	<enderio:block_reservoir>,
     <enderio:block_simple_alloy_smelter>,
 	<enderio:item_dark_steel_crook>,
+    <extrautils2:machine>.withTag({Type: "extrautils2:crusher"}),
     <extrautils2:teleporter>,
 	<extrautils2:teleporter:1>,
     <fluid:hard_carbon>,
@@ -489,6 +514,8 @@ var banneditem as IIngredient[] = [
     <geolosys:ore_vanilla:1>,
     <gugu-utils:starlightinputhatch>,
     <ic2:dust>,
+    <ic2:dust:8>,
+    <ic2:dust:11>,
 	<ic2:ingot:2>,
     <ic2:ingot:3>,
     <ic2:ingot:4>,
@@ -511,6 +538,9 @@ var banneditem as IIngredient[] = [
 	<immersiveengineering:metal:3>,
 	<immersiveengineering:metal:4>,
     <immersiveengineering:metal:8>,
+    <immersiveengineering:metal:10>,
+    <immersiveengineering:metal:13>,
+    <immersiveengineering:metal:18>,
 	<immersiveengineering:metal:29>,
 	<immersiveengineering:metal:39>,
 	<immersiveengineering:metal_device0:5>,
@@ -559,6 +589,11 @@ var banneditem as IIngredient[] = [
     <nuclearcraft:alloy>,
     <nuclearcraft:alloy:5>,
     <nuclearcraft:alloy:7>,
+    <nuclearcraft:dust:6>,
+    <nuclearcraft:dust:7>,
+    <nuclearcraft:dust:9>,
+    <nuclearcraft:dust:11>,
+    <nuclearcraft:dust:12>,
     <nuclearcraft:fluid_hard_carbon>,
 	<nuclearcraft:ingot>,
 	<nuclearcraft:ingot:1>,
@@ -579,15 +614,19 @@ var banneditem as IIngredient[] = [
 	<primal:fire_bow>,
     <primal:flint_saw>,
 	<primal:gold_plate>,
+    <primal:iron_dust>,
 	<primal:iron_plate>,
 	<primal:lead_ingot>,
+    <primal:nickel_dust>,
 	<primal:nickel_ingot>,
 	<primal:platinum_ingot>,
     <primal:shibuichi_ingot>,
 	<primal:silver_ingot>,
     <primal:steel_ingot>,
 	<primal:tin_ingot>,
+    <primal:vanadium_dust>,
 	<primal:vanadium_ingot>,
+    <primal:zinc_ingot>,
     <primal_tech:clay_kiln>,
     <primal_tech:stone_club>,
 	<primal_tech:stone_grill>,
@@ -595,16 +634,18 @@ var banneditem as IIngredient[] = [
     <qmd:ingot:4>,
     <qmd:ingot:5>,
     <qmd:ingot:7>,
+    <qmd:ingot:8>,
     <qmd:ingot:10>,  
 	<rockhounding_chemistry:machines_e:2>,
-	<rockhounding_chemistry:metal_items:2>,
-	<rockhounding_chemistry:metal_items:3>,
-	<rockhounding_chemistry:metal_items:5>,
-    <rockhounding_chemistry:metal_items:6>,
-	<rockhounding_chemistry:metal_items:9>,
-	<rockhounding_chemistry:metal_items:11>,
-    <rockhounding_chemistry:metal_items:13>,
     <rockhounding_chemistry:misc_items:19>,
+    <thermalfoundation:material>,
+    <thermalfoundation:material:68>,
+    <thermalfoundation:material:69>,
+    <thermalfoundation:material:128>,
+    <thermalfoundation:material:131>,
+    <thermalfoundation:material:132>,
+    <thermalfoundation:material:133>,
+    <thermalfoundation:material:134>,
     <thermalfoundation:material:161>,
     <thermalfoundation:material:163>,
     <thermalfoundation:material:164>,
@@ -620,7 +661,54 @@ var banneditem as IIngredient[] = [
 	<thaumcraft:cluster:7>,
 	<thaumcraft:nugget>,
 	<thaumcraft:plate:1>,
-    <toughasnails:campfire>
+    <toughasnails:campfire>,
+    <enderio:item_material:26>,
+    <immersiveengineering:metal:9>,
+    <ic2:dust:4>,
+    <nuclearcraft:dust>,
+    <thermalfoundation:material:64>,
+    <primal:zinc_dust>,
+    <nuclearcraft:gem_dust:10>,
+    <nuclearcraft:dust:10>,
+    <nuclearcraft:fission_dust:6>,
+    <nuclearcraft:dust:13>,
+    <ic2:dust:14>,
+    <immersiveengineering:metal:12>,
+    <primal:silver_dust>,
+    <thermalfoundation:material:66>,
+    <ic2:dust:17>,
+    <enderio:item_material:27>,
+    <nuclearcraft:dust:1>,
+    <thermalfoundation:material:65>,
+    <thermalfoundation:material:71>,
+    <thermalfoundation:material:70>,
+    <thermalfoundation:material:1>,
+    <immersiveengineering:metal:19>,
+    <ic2:dust:7>,
+    <appliedenergistics2:material:51>,
+    <primal:gold_dust>,
+    <primal:lead_dust>,
+    <nuclearcraft:dust:2>,
+    <ic2:dust:10>,
+    <immersiveengineering:metal:11>,
+    <thermalfoundation:material:67>,
+    <nuclearcraft:fission_dust>,
+    <nuclearcraft:dust:4>,
+    <nuclearcraft:dust:3>,
+    <immersiveengineering:metal:15>,
+    <immersiveengineering:metal:17>,
+    <nuclearcraft:dust:5>,
+    <ic2:dust:2>,
+    <primal:aluminum_dust>,
+    <thermalfoundation:material:771>,
+    <nuclearcraft:gem_dust:6>,
+    <immersiveengineering:material:25>,
+    <ic2:dust:16>,
+    <primal:copper_dust>,
+    <primal:platinum_dust>,
+    <nuclearcraft:dust:5>,
+    <ic2:ingot:8>,
+    <nuclearcraft:gem_dust:7>
 ];
 
 for item in banneditem{

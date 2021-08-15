@@ -1,4 +1,5 @@
 #priority 100
+#loader crafttweaker reloadableevents
 
 recipes.addShaped(<thermalfoundation:tool.pickaxe_copper>, [
     [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>], 

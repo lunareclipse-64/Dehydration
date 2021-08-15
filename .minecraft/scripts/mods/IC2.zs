@@ -1,4 +1,5 @@
 #priority 100
+#loader crafttweaker reloadableevents
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -19,10 +20,10 @@ recipes.addShaped(<ic2:treetap>,
 
 recipes.addShaped(<ic2:crafting:6>, 
 [[<ic2:cable:4>.withTag({type: 4 as byte, insulation: 1 as byte}), <ic2:casing:6>, null], 
-[<ic2:crafting:5>, <ic2:crafting:5>, <ore:stickIron>], 
+[<ic2:casing:3>, <ic2:crafting:5>, <ore:stickIron>], 
 [<ic2:cable:4>.withTag({type: 4 as byte, insulation: 1 as byte}), <ic2:casing:6>, null]]);
 
-recipes.addShaped(<ic2:crafting:5>, 
+recipes.addShaped(<ic2:crafting:5>*3, 
 [[<ic2:cable>, <ic2:cable>, <ic2:cable>], 
 [<ic2:cable>, <ore:stickIron>, <ic2:cable>], 
 [<ic2:cable>, <ic2:cable>, <ic2:cable>]]);
@@ -117,12 +118,15 @@ Macerator.addRecipe(<primal:zinc_dust>, <ore:ingotZinc>);
 Macerator.addRecipe(<ic2:dust:15>, <ore:stoneCommon>);
 Macerator.addRecipe(<nuclearcraft:compound:7>, <rockhounding_chemistry:borate_shards>);
 Macerator.addRecipe(<rockhounding_chemistry:chemical_dusts:42>, <ore:itemSilicon>);
+Macerator.addRecipe(<appliedenergistics2:material:8>, <appliedenergistics2:material:7>);
+Macerator.addRecipe(<contenttweaker:crushed_cinnabar>, <thermalfoundation:material:866>);
 
 MetalFormer.addRollingRecipe(<thermalfoundation:material:354>, <thermalfoundation:material:162>);
 MetalFormer.addRollingRecipe(<rockhounding_chemistry:ingot_pattern>, <immersiveengineering:sheetmetal_slab:9>);
 
 MetalFormer.addExtrudingRecipe(<immersiveengineering:material:19>, <nuclearcraft:part:15> * 6);
 MetalFormer.addExtrudingRecipe(<contenttweaker:silicon_seed>*4, <qmd:semiconductor:2>);
+MetalFormer.addExtrudingRecipe(<appliedenergistics2:part:140>*4, <extrautils2:ingredients>);
 
 BlockCutter.addRecipe(<minecraft:glass_pane>*3, <minecraft:glass>, 8);
 BlockCutter.addRecipe(<qmd:semiconductor:3>*4, <qmd:semiconductor:2>, 9);

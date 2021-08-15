@@ -1,4 +1,6 @@
 #priority 100
+#loader crafttweaker reloadableevents
+import mods.recipestages.Recipes;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
@@ -16,6 +18,8 @@ import mods.rockhounding_chemistry.MaterialCabinet;
 import mods.rockhounding_chemistry.LeachingVat;
 import mods.rockhounding_chemistry.ChemicalExtractor;
 import mods.rockhounding_chemistry.ToxicMutation;
+import mods.rockhounding_chemistry.MineralSizer;
+import mods.rockhounding_chemistry.Precipitator;
 //合成
 recipes.addShaped(<rockhounding_chemistry:machines_a:13>, 
 [[<primal:crude_iron_plate>|<ore:plateIron>, <primal_tech:rock>, <primal:crude_iron_plate>|<ore:plateIron>], 
@@ -44,33 +48,6 @@ recipes.addShaped(<rockhounding_chemistry:machines_c>,
 [[<rockhounding_chemistry:misc_blocks_a>, <rockhounding_chemistry:misc_items:5>, <rockhounding_chemistry:misc_blocks_a>],
 [<rockhounding_chemistry:misc_items:7>, <rockhounding_chemistry:misc_items:10>, <rockhounding_chemistry:misc_items:7>], 
 [<rockhounding_chemistry:misc_items:5>, <contenttweaker:magnetic_refrigerator>, <rockhounding_chemistry:misc_items:5>]]);
-
-var dustCraft = {
-    <ore:dustTitanium>:<rockhounding_chemistry:metal_items:4>,
-    <ore:dustVanadium>:<rockhounding_chemistry:metal_items>,
-    <ore:dustChromium>:<qmd:ingot:2>,
-    <ore:dustManganese>:<nuclearcraft:ingot:11>,
-    <ore:dustCobalt>:<rockhounding_chemistry:metal_items:10>,
-    <ore:dustCopper>:<thermalfoundation:material:128>,
-    <ore:dustZinc>:<primal:zinc_ingot>,
-    <ore:dustStrontium>:<qmd:ingot:14>,
-    <ore:dustZirconium>:<rockhounding_chemistry:metal_items:1>,
-    <ore:dustNiobium>:<qmd:ingot:1>,
-    <ore:dustMolybdenum>:<rockhounding_chemistry:metal_items:12>,
-    <ore:dustSilver>:<thermalfoundation:material:130>,
-    <ore:dustNeodymium>:<qmd:ingot2:1>,
-    <ore:dustHafnium>:<qmd:ingot:6>,
-    <ore:dustTungsten>:<qmd:ingot>,
-    <ore:dustGold>:<minecraft:gold_ingot>,
-    <ore:dustPotassium>:<qmd:ingot:12>,
-    <ore:dustIron>:<minecraft:iron_ingot>,
-    <ore:dustYttrium>:<qmd:ingot2>,
-    <ore:dustLead>:<thermalfoundation:material:131>,
-    <ore:dustIridium>:<thermalfoundation:material:135>
-} as IItemStack[IIngredient];
-for dust in dustCraft{
-    recipes.addShapeless(dustCraft[dust], [dust,<thermalfoundation:material:1024>]);
-}
 
 //原盐调味架
 SeasoningRack.removeByInput(<rockhounding_chemistry:misc_blocks_a:12>);
@@ -110,19 +87,29 @@ LeachingVat.add(<rockhounding_chemistry:mineral_ores:9>,
 <rockhounding_chemistry:silicate_shards>,<rockhounding_chemistry:silicate_shards:1>,<rockhounding_chemistry:silicate_shards:4>,
 <rockhounding_chemistry:silicate_shards:6>], 
 [2.61,2.95,2.89,3.67,2.25,2.98,4.08,7.1,4.65,3.82,3.09,3.41,2.67], 
-<liquid:leachate>*1000);
+<liquid:low_leachate>*1000);
+
+LeachingVat.add(<thaumcraft:nugget:10>, 
+[<rockhounding_chemistry:oxide_shards:3>,<rockhounding_chemistry:carbonate_shards:3>,<rockhounding_chemistry:phosphate_shards:2>,
+<rockhounding_chemistry:arsenate_shards>,<rockhounding_chemistry:oxide_shards:5>,<rockhounding_chemistry:silicate_shards:2>,
+<rockhounding_chemistry:silicate_shards:5>,<rockhounding_chemistry:silicate_shards:10>], 
+[4.84,4.36,5.15,3.72,5.69,4.2,2.91,4.08],
+<liquid:high_leachate>*1000);
 
 //催化重整
 GasReformer.removeByOutput(<liquid:syngas>);
 
 //合金炉
 MetalAlloyer.add(["dustIron","dustChromium","dustNickel","dustCarbon"], [74,19,6,1], <qmd:ingot_alloy:2>);
-MetalAlloyer.add(["dustIron","dustCarbon","dustManganese","dustVanadium"], [92,4,3,2], <nuclearcraft:alloy:15>);
+MetalAlloyer.add(["dustIron","dustManganese","dustVanadium"], [97,2,1], <nuclearcraft:alloy:15>);
 
 //萃取机
 ChemicalExtractor.add("Silicate", <contenttweaker:kaolinite>, ["dustSilicon","dustAluminum","dustIron","dustTitanium"], [21,15,4,3]);
 //物料柜
-
+//沉淀室
+Precipitator.add("铀氟化1", <contenttweaker:purified_pitchblende>, null, <liquid:hydrofluoric_acid>*500, <liquid:toxic_waste>*400, <contenttweaker:uranium_tetrafluoride>);
+Precipitator.add("铀氟化2", <ic2:purified:6>, null, <liquid:hydrofluoric_acid>*500, <liquid:toxic_waste>*400, <contenttweaker:uranium_tetrafluoride>);
+Precipitator.add("铀氟化3", <rockhounding_chemistry:chemical_dusts:55>, null, <liquid:hydrofluoric_acid>*500, <liquid:toxic_waste>*400, <contenttweaker:uranium_tetrafluoride>);
 //转换器
 val transpose as ILiquidStack[]=[
     <liquid:hydrogen>,
@@ -143,3 +130,11 @@ for trans in transpose{
 //毒物突变
 ToxicMutation.removeByOutput(<minecraft:nether_wart>);
 ToxicMutation.add(<biomesoplenty:mushroom:3>, <minecraft:red_mushroom>);
+
+//矿物筛选
+MineralSizer.remove(<minecraft:stone:1>);
+
+MineralSizer.add("stoneGranite", 
+[<rockhounding_chemistry:chemical_items:4>,<jaopca:item_crushedthorium>,
+<rockhounding_chemistry:oxide_shards:22>,<rockhounding_chemistry:silicate_shards:15>], 
+[4,10,12,14]);

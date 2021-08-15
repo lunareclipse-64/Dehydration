@@ -1,4 +1,5 @@
 #priority 1200
+#loader crafttweaker reloadableevents
 import crafttweaker.oredict.IOreDictEntry;
 <ore:dustEndstone>.remove(<nuclearcraft:gem_dust:11>);
 <ore:dustSandstone>.add(<nuclearcraft:gem_dust:11>);
@@ -10,6 +11,8 @@ import crafttweaker.oredict.IOreDictEntry;
 <ore:ingotBrass>.remove(<thaumcraft:ingot:2>);
 <ore:dustCarbon>.add(<thermalfoundation:material:769>);
 <ore:slabSteelScaffolding>.add(<immersiveengineering:metal_decoration1_slab:*>);
+<ore:dustYellorium>.add(<rockhounding_chemistry:chemical_dusts:55>);
+<ore:dustYellowcake>.add(<bigreactors:dustyellorium>);
 for i in 0 to 15 {
     <ore:pedalDust>.add(<botania:dye>.definition.makeStack(i));
 }

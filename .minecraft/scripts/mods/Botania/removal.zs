@@ -1,4 +1,5 @@
 #priority 998
+#loader crafttweaker reloadableevents
 import mods.botaniatweaks.Agglomeration;
 import mods.botania.ElvenTrade;
 import mods.botania.RuneAltar;

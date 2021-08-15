@@ -1,4 +1,5 @@
 #priority 0
+#loader crafttweaker reloadableevents
 
 recipes.addShapeless(<botania:grassseeds>, 
 [<biomesoplenty:mushroom:3>, <minecraft:wheat_seeds>, <ore:toolWorkBlade>.transformDamage(5)]);

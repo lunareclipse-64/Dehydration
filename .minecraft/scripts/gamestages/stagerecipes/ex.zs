@@ -1,4 +1,5 @@
 #priority 9
+#loader crafttweaker reloadableevents
 import mods.recipestages.Recipes;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -230,18 +231,18 @@ Recipes.addShaped("exploration",<minecraft:hopper>,
 [<ore:ingotCrudeIron>|<ore:ingotIron>, <ore:chest>, <ore:ingotCrudeIron>|<ore:ingotIron>], 
 [null, <ore:ringIron>, null]]);
 //all dust to ingot re-add
-furnace.addRecipe(<thermalfoundation:material:128>,<ore:dustCopper>);
+furnace.addRecipe(<rockhounding_chemistry:metal_items:11>,<ore:dustCopper>);
 furnace.addRecipe(<minecraft:iron_ingot>,<ore:dustIron>);
 furnace.addRecipe(<thermalfoundation:material:129>,<ore:dustTin>);
 furnace.addRecipe(<minecraft:gold_ingot>,<ore:dustGold>);
 furnace.addRecipe(<thermalfoundation:material:130>,<ore:dustSilver>);
-furnace.addRecipe(<thermalfoundation:material:132>,<ore:dustAluminum>);
-furnace.addRecipe(<thermalfoundation:material:132>,<ore:dustAluminium>);
-furnace.addRecipe(<thermalfoundation:material:133>,<ore:dustNickel>);
-furnace.addRecipe(<primal:zinc_ingot>,<ore:dustZinc>);
+furnace.addRecipe(<rockhounding_chemistry:metal_items:3>,<ore:dustAluminum>);
+furnace.addRecipe(<rockhounding_chemistry:metal_items:3>,<ore:dustAluminium>);
+furnace.addRecipe(<rockhounding_chemistry:metal_items:13>,<ore:dustNickel>);
+furnace.addRecipe(<rockhounding_chemistry:metal_items:9>,<ore:dustZinc>);
 furnace.addRecipe(<libvulpes:productingot:9>,<ore:dustAluminum>);
 furnace.addRecipe(<libvulpes:productingot:9>,<ore:dustAluminium>);
-furnace.addRecipe(<thermalfoundation:material:131>,<ore:dustLead>);
+furnace.addRecipe(<rockhounding_chemistry:metal_items:5>,<ore:dustLead>);
 
 //all ores crushed
 Recipes.addShapeless("exploration",<jaopca:item_crushedosmium>, [<ore:toolGallagher>.transformDamage(6), <geolosys:cluster:12>]);

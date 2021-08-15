@@ -1,4 +1,5 @@
 #priority 100
+#loader crafttweaker reloadableevents
 import crafttweaker.item.IItemStack;
 import mods.astralsorcery.LightTransmutation.addTransmutation;
 import mods.astralsorcery.Altar.addDiscoveryAltarRecipe;

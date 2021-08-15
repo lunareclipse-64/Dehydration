@@ -1,4 +1,5 @@
 #priority 1000
+#loader crafttweaker reloadableevents
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import mods.jei.JEI.hideCategory;
@@ -11,11 +12,27 @@ val removeByOutput as IIngredient[]=[
 	<actuallyadditions:block_laser_relay>,
 	<actuallyadditions:block_laser_relay_item_whitelist>,
 	<actuallyadditions:block_misc:5>,
+	<advancedrocketry:misc:1>,
 	<appliedenergistics2:controller>,
+	<appliedenergistics2:drive>,
+	<appliedenergistics2:energy_cell>,
+	<appliedenergistics2:fluid_interface>,
 	<appliedenergistics2:grindstone>,
 	<appliedenergistics2:inscriber>,
+	<appliedenergistics2:material:35>,
+	<appliedenergistics2:material:36>,
+	<appliedenergistics2:material:37>,
+	<appliedenergistics2:material:38>,
+	<appliedenergistics2:material:39>,
 	<appliedenergistics2:material:43>,
 	<appliedenergistics2:material:44>,
+	<appliedenergistics2:material:54>,
+	<appliedenergistics2:material:55>,
+	<appliedenergistics2:material:56>,
+	<appliedenergistics2:material:57>,
+	<appliedenergistics2:part:140>,
+	<appliedenergistics2:part:180>,
+	<appliedenergistics2:quartz_glass>,
 	<astralsorcery:blockaltar>,
 	<astralsorcery:blockblackmarble>,
 	<astralsorcery:blockinfusedwood:2>,
@@ -78,6 +95,8 @@ val removeByOutput as IIngredient[]=[
 	<cookingforblockheads:sink>,
 	<enderio:block_enhanced_wireless_charger>,
 	<enderio:block_wireless_charger_extension>,
+	<enderio:block_electric_light>,
+	<enderio:item_material:15>,
 	<enderio:item_material:65>,
 	<enderio:item_soul_vial>,
 	<enderio:item_travel_staff>,
@@ -93,6 +112,7 @@ val removeByOutput as IIngredient[]=[
 	<forestry:alveary.sieve>,
 	<forestry:alveary.stabiliser>,
 	<forestry:carpenter>,
+	<forestry:cart.beehouse>,
 	<forestry:centrifuge>,
 	<forestry:fabricator>,
 	<forestry:fermenter>,
@@ -229,6 +249,9 @@ val removeByOutput as IIngredient[]=[
 	<primal_tech:stone_grill>,
 	<primal_tech:work_stump>,
 	<qmd:part:10>,
+	<rftools:clock_module>,
+	<rftools:screen>,
+	<rftoolsdim:time_absorber>,
 	<rockhounding_chemistry:ingot_pattern>,
 	<rockhounding_chemistry:machines_a:2>,
 	<rockhounding_chemistry:machines_a:11>,
@@ -294,7 +317,7 @@ recipes.removeShapeless(<immersiveengineering:metal:12>, [<ore:oreSilver>,<immer
 recipes.removeShapeless(<ic2:ingot:8>, [<ore:oreUranium>], true);
 recipes.removeShapeless(<immersiveengineering:metal:14>, [<ore:oreUranium>], true);
 recipes.removeShapeless(<nuclearcraft:dust:4>, [<ore:oreUranium>], true);
-recipes.removeShapeless(<primal:zinc_ingot>, [<ore:oreZinc>], true);
+recipes.removeShapeless(<rockhounding_chemistry:metal_items:9>, [<ore:oreZinc>], true);
 recipes.removeShapeless(<primal:zinc_dust>, [<ore:oreZinc>], true);
 recipes.removeShapeless(<nuclearcraft:ingot:5>, [<ore:oreBoron>], true);
 recipes.removeShapeless(<nuclearcraft:dust:5>, [<ore:oreBoron>], true);
@@ -305,15 +328,15 @@ recipes.removeShapeless(<nuclearcraft:dust:6>, [<ore:oreLithium>], true);
 recipes.removeShapeless(<nuclearcraft:ingot:7>, [<ore:oreMagnesium>], true);
 recipes.removeShapeless(<nuclearcraft:dust:7>, [<ore:oreMagnesium>], true);
 recipes.removeShapeless(<immersiveengineering:metal:19>, [<ore:oreGold>,<immersiveengineering:tool>], true);
-recipes.removeShapeless(<thermalfoundation:material:133>, [<ore:oreNickel>], true);
+recipes.removeShapeless(<rockhounding_chemistry:metal_items:13>, [<ore:oreNickel>], true);
 recipes.removeShapeless(<thermalfoundation:material:69>, [<ore:oreNickel>], true);
 recipes.removeShapeless(<immersiveengineering:metal:13>, [<ore:oreNickel>], true);
 recipes.removeShapeless(<bigreactors:ingotyellorium>, [<ore:oreYellorium>], true);
 recipes.removeShapeless(<bigreactors:dustyellorium>, [<ore:oreYellorium>], true);
-recipes.removeShapeless(<thermalfoundation:material:132>, [<ore:oreAluminum>], true);
+recipes.removeShapeless(<rockhounding_chemistry:metal_items:3>, [<ore:oreAluminum>], true);
 recipes.removeShapeless(<immersiveengineering:metal:10>, [<ore:oreAluminum>], true);
 recipes.removeShapeless(<thermalfoundation:material:68>, [<ore:oreAluminum>], true);
-recipes.removeShapeless(<thermalfoundation:material:132>, [<ore:oreAluminium>], true);
+recipes.removeShapeless(<rockhounding_chemistry:metal_items:3>, [<ore:oreAluminium>], true);
 recipes.removeShapeless(<immersiveengineering:metal:10>, [<ore:oreAluminium>], true);
 recipes.removeShapeless(<thermalfoundation:material:68>, [<ore:oreAluminium>], true);
 recipes.removeShapeless(<thermalfoundation:material:70>, [<ore:orePlatinum>,<immersiveengineering:tool>], true);
@@ -332,7 +355,20 @@ val removeByName as string[] = [
 	"thaumcraft:salismundus",
 	"planarartifice:transmutation_redstone",
 	"genetics:dna_dye",
-	"binniecore:glass_container"
+	"binniecore:glass_container",
+	"appliedenergistics2:network/blocks/interfaces_interface",
+	"appliedenergistics2:network/cells/storage_cell_1k",
+	"appliedenergistics2:network/cells/storage_cell_4k",
+	"appliedenergistics2:network/cells/storage_cell_16k",
+	"appliedenergistics2:network/cells/storage_cell_64k",
+	"appliedenergistics2:network/cells/fluid_storage_cell_1k",
+	"appliedenergistics2:network/cells/fluid_storage_cell_4k",
+	"appliedenergistics2:network/cells/fluid_storage_cell_16k",
+	"appliedenergistics2:network/cells/fluid_storage_cell_64k",
+	"rftoolsdim:time_absorber",
+	"extrautils2:redstone_crystal",
+	"ic2:321",
+	"ic2:322"
 ];
 for name in removeByName{recipes.removeByRecipeName(name);}
 
@@ -357,12 +393,12 @@ val removeFurnace as IIngredient[] = [
 	<ore:ingotIridium>,
 	<ore:ingotOsmium>,
     <minecraft:glass>,
-	<thermalfoundation:material:128>,
+	<rockhounding_chemistry:metal_items:11>,
 	<thermalfoundation:material:129>,
 	<minecraft:iron_ingot>,
 	<minecraft:gold_ingot>,
 	<thermalfoundation:material:130>,
-	<thermalfoundation:material:131>,
+	<rockhounding_chemistry:metal_items:5>,
 	<ic2:ingot:2>,
 	<ic2:ingot:3>,
 	<ic2:ingot:4>,
@@ -374,11 +410,11 @@ val removeFurnace as IIngredient[] = [
 	<libvulpes:productingot:10>,
 	<nuclearcraft:ingot:6>,
 	<nuclearcraft:ingot:7>,
-	<thermalfoundation:material:133>,
-	<thermalfoundation:material:134>,
+	<rockhounding_chemistry:metal_items:13>,
+	<rockhounding_chemistry:metal_items:6>,
 	<rockhounding_chemistry:metal_items:6>,
 	<nuclearcraft:ingot:3>,
-	<primal:zinc_ingot>,
+	<rockhounding_chemistry:metal_items:9>,
 	<libvulpes:productingot:9>,
 	<primal:iron_gallagher>,
 	<thermalfoundation:material:135>,
@@ -393,11 +429,11 @@ val removeFurnace as IIngredient[] = [
 for item in removeFurnace{furnace.remove(item);}
 
 var removeFurnaceByIO = {
-    <nuclearcraft:ingot:14>:<nuclearcraft:ingot:11>,
-	<ore:oreCopper>:<ore:ingotCopper>,
-	<ore:oreTin>:<ore:ingotTin>,
-	<thaumcraft:cluster:6>:<thaumcraft:quicksilver>,
-	<ore:oreUranium>:<ore:ingotUranium>
+    <nuclearcraft:ingot:14> : <nuclearcraft:ingot:11>,
+	<ore:oreCopper> : <ore:ingotCopper>,
+	<ore:oreTin> : <ore:ingotTin>,
+	<thaumcraft:cluster:6> : <thaumcraft:quicksilver>,
+	<ore:oreUranium> : <ore:ingotUranium>
 } as IIngredient[IIngredient];
 for dust in removeFurnaceByIO{
     furnace.remove(removeFurnaceByIO[dust], dust);
@@ -429,7 +465,6 @@ recipes.addHiddenShaped("e_egg1", <contenttweaker:fbucket>, [[<ore:ingotTin>, nu
 //合成替换
 recipes.replaceAllOccurences(<advancedrocketry:wafer>, <qmd:semiconductor:3>);
 recipes.replaceAllOccurences(<immersiveengineering:metal_decoration0>, <ore:coilCopper>);
-recipes.replaceAllOccurences(<nuclearcraft:part:4>, <ic2:crafting:5>);
 recipes.replaceAllOccurences(<libvulpes:productfan:6>, <rockhounding_chemistry:misc_items:20>);
 recipes.replaceAllOccurences(<minecraft:furnace>, <contenttweaker:combustion_chamber>);
 recipes.replaceAllOccurences(<qmd:semiconductor:4>, <appliedenergistics2:material:22>);

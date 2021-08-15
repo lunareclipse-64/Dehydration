@@ -1,4 +1,5 @@
 #priority 100
+#loader crafttweaker reloadableevents
 
 recipes.addShaped(<extrautils2:glasscutter>, 
 [[null, null, <ore:pointDiamond>], 

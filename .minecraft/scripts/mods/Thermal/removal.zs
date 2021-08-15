@@ -62,6 +62,7 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
     var r = p.getRayTrace(4,1,true);
     var l = event.world.getBlock(r.blockPos);
 	var w = event.world;
+//	p.sendMessage(l.definition.id + " ,with meta:" + l.meta);
 	if((event.block.definition.id has "compactmachines3:machine")&&(w.getProvider().getDimensionID() == 144))
 	{
 		event.cancel();
@@ -103,6 +104,7 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
 				if(BlockID has "blood_rune"){p.give(<contenttweaker:memento3>);w.destroyBlock(event.position, false);event.damageItem(1);}
 				if((BlockID == "ic2:resource")&&(BlockMeta == 12)){p.give(<contenttweaker:memento4>);w.destroyBlock(event.position, false);event.damageItem(1);}
 				if(BlockID == "qmd:beamline"){p.give(<contenttweaker:memento5>);w.destroyBlock(event.position, false);event.damageItem(1);}
+				if(BlockID == "appliedenergistics2:controller"){p.give(<contenttweaker:memento6>);event.damageItem(1);}
 			}
 			if((h has "extrautils2:ingredients") && (meta == 0) && (BlockID == "bloodmagic:output_routing_node") && p.isSneaking)
 			{
@@ -198,7 +200,7 @@ events.onBlockHarvestDrops(function(event as crafttweaker.event.BlockHarvestDrop
 	}
 	if(blockID=="minecraft:coal_ore")
 	{
-		event.drops += <immersiveengineering:material:25>%5;
+		event.drops += <rockhounding_chemistry:chemical_dusts:45>%5;
 	}
 	if(blockID=="thaumcraft:ore_cinnabar")
 	{
@@ -227,6 +229,10 @@ events.onBlockHarvestDrops(function(event as crafttweaker.event.BlockHarvestDrop
 	if(blockID=="minecraft:leaves")
 	{
 		event.drops += <minecraft:stick>%15;
+	}
+	if((blockID=="forestry:resources") && (meta==0))
+	{
+		event.drops += <nuclearcraft:gem:2>%4;
 	}
 });
 

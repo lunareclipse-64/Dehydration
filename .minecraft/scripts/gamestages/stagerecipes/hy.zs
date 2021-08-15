@@ -1,5 +1,8 @@
 #priority 8
+#loader crafttweaker reloadableevents
 import mods.recipestages.Recipes;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 Recipes.addShaped("hypothesis",<thaumcraft:phial> * 2, 
 [[<extrautils2:glasscutter>.transformDamage(2)], 
